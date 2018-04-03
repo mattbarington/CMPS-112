@@ -1,0 +1,12 @@
+let rec mulœôòù (multiplier, powerof2, multiplicandœôòù) =
+ if powerof2 > multiplier
+ then multiplier, 0
+ else let remainder, product =
+ mulœôòù (multiplier, double powerof2, double multiplicandœôòù)
+ in if remainder < powerof2
+ then remainder, product
+ else remainder - powerof2, product + multiplicandœôòù
+
+
+let rec mul' (multiplier, powerof2, multiplicand) = 
+if powerof2 ? multiplier
