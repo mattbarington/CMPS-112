@@ -1,0 +1,78 @@
+head	1.3;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.3
+date	2012.03.07.21.17.54;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2012.03.07.21.16.57;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2012.03.07.21.16.35;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@-
+@
+text
+@#!/afs/cats.ucsc.edu/courses/cmps112-wm/usr/smalltalk/bin/gst -f
+"$Id: isgraph.st,v 1.2 2012-03-07 13:16:57-08 - - $"
+
+"http://www.gnu.org/software/smalltalk/manual-base/html_node/
+Character_002dtesting.html#Character_002dtesting"
+
+Character extend [
+   isGraph [
+      ^ ($! <= self) & (self <= $~)
+   ]
+]
+
+nl := Character nl.
+stdout << $a << ' isGraph = ' << $a isGraph << nl.
+stdout << nl << ' isGraph = ' << nl isGraph << nl.
+
+@
+
+
+1.2
+log
+@-
+@
+text
+@d2 1
+a2 1
+"$Id: isgraph.st,v 1.1 2012-03-07 13:16:35-08 - - $"
+d13 3
+a15 2
+$a isGraph.
+Character nl isGraph.
+@
+
+
+1.1
+log
+@-
+@
+text
+@d2 1
+a2 1
+"$Id: tree.st,v 1.10 2012-02-23 18:57:51-08 - - $"
+d9 1
+a9 1
+      $! <= self & self <= $~
+@

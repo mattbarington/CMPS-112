@@ -1,0 +1,53 @@
+****mks**** echo 'This is a test file.' >test.data 2>&1
+****status: 0x0000
+
+****mks**** echo 'Hello, world!' >>test.data 2>&1
+****status: 0x0000
+
+****mks**** echo 'foo bar baz qux' >>test.data 2>&1
+****status: 0x0000
+
+****mks**** catfile.st test.data mks /dev/null 2>&1
+::::::::::::::::::::::::::::::::
+test.data
+::::::::::::::::::::::::::::::::
+     1: This is a test file.
+     2: Hello, world!
+     3: foo bar baz qux
+::::::::::::::::::::::::::::::::
+mks
+::::::::::::::::::::::::::::::::
+     1: #!/usr/bin/perl
+     2: # $Id: mks,v 1.1 2012-02-23 18:34:28-08 - - $
+     3: #
+     4: # Run Smalltalk programs and capture output.
+     5: #
+     6: 
+     7: $0 =~ s|.*/||;
+     8: system "cid $0";
+     9: for $prog (@ARGV) {
+    10:    system "cid $prog";
+    11:    @commands = `perl -ne 'print if s|"TEST: (.*)"|\$1|' $prog`;
+    12:    print @commands;
+    13:    $lis = "$prog.lis";
+    14:    open LIS, ">$lis" or die "$0: $lis: $!\n";
+    15:    for $command (@commands) {
+    16:       chomp $command;
+    17:       $command =~ s/$/ 2>&1/;
+    18:       print LIS "****$0**** $command\n";
+    19:       print LIS `$command`;
+    20:       printf LIS "****status: 0x%04X\n\n", $?;
+    21:       print "\n";
+    22:    }
+    23:    close LIS;
+    24:    system "mkpspdf $prog.ps $prog $prog.lis";
+    25: }
+    26: 
+::::::::::::::::::::::::::::::::
+/dev/null
+::::::::::::::::::::::::::::::::
+****status: 0x0000
+
+****mks**** rm test.data 2>&1
+****status: 0x0000
+

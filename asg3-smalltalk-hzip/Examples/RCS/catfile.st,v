@@ -1,0 +1,291 @@
+head	1.11;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.11
+date	2012.03.02.23.10.13;	author -;	state -;
+branches;
+next	1.10;
+
+1.10
+date	2012.03.02.23.09.45;	author -;	state -;
+branches;
+next	1.9;
+
+1.9
+date	2012.03.02.23.08.52;	author -;	state -;
+branches;
+next	1.8;
+
+1.8
+date	2012.03.02.23.07.02;	author -;	state -;
+branches;
+next	1.7;
+
+1.7
+date	2011.05.06.03.45.21;	author -;	state -;
+branches;
+next	1.6;
+
+1.6
+date	2011.05.06.00.40.12;	author -;	state -;
+branches;
+next	1.5;
+
+1.5
+date	2011.05.06.00.11.21;	author -;	state -;
+branches;
+next	1.4;
+
+1.4
+date	2011.04.20.00.21.53;	author -;	state -;
+branches;
+next	1.3;
+
+1.3
+date	2011.04.19.23.15.45;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2011.04.19.22.46.10;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2011.04.18.21.53.00;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.11
+log
+@-
+@
+text
+@#!/afs/cats.ucsc.edu/courses/cmps112-wm/usr/smalltalk/bin/gst -f
+"$Id: catfile.st,v 1.10 2012-03-02 15:09:45-08 - - $"
+execname := '$RCSfile: catfile.st,v $' =~ '.*: (.*),v.*' at: 1.
+
+FileStream extend [
+   nl := Character nl.
+   catFile [
+      |count|
+      count := 0.
+      [self atEnd not] whileTrue: [
+         count := count + 1.
+         count asString size to: 5 do: [:skip| stdout << ' '].
+         stdout << count << ': ' << self nextLine << nl.
+      ]
+   ]
+]
+
+nl := Character nl.
+Smalltalk arguments size = 0
+   ifTrue: [stdin catFile]
+   ifFalse: [
+      Smalltalk arguments do: [:filename |
+         |separator|
+         separator := '::::::::::::::::::::::::::::::::'.
+         stdout << separator << nl << filename << nl << separator << nl.
+         filename = '-'
+            ifTrue: [stdin catFile]
+            ifFalse: [
+               [
+                  |infile|
+                  infile := FileStream open: filename
+                                       mode: FileStream read.
+                  infile catFile.
+                  infile close.
+               ] on: SystemExceptions.FileError do: [:signal |
+                  |errno|
+                  errno := File errno.
+                  stdout flush.
+                  stderr << execname << ': ' << filename << ': '
+                         << signal messageText << nl.
+                  stderr flush.
+               ]
+            ]
+      ]
+   ]
+
+"TEST: echo 'This is a test file.' >test.data"
+"TEST: echo 'Hello, world!' >>test.data"
+"TEST: echo 'foo bar baz qux' >>test.data"
+"TEST: catfile.st test.data mks /dev/null"
+"TEST: rm test.data"
+
+@
+
+
+1.10
+log
+@-
+@
+text
+@d2 1
+a2 1
+"$Id: catfile.st,v 1.9 2012-03-02 15:08:52-08 - - $"
+a46 2
+"TEST: echo 'Hello, world!' >test.data"
+"TEST: echo 'foo bar baz qux' >test.data"
+d48 2
+@
+
+
+1.9
+log
+@-
+@
+text
+@d2 1
+a2 1
+"$Id: catfile.st,v 1.8 2012-03-02 15:07:02-08 - - $"
+d47 5
+a51 4
+"TEST: echo 'Hello, world!' >/tmp/data.$$"
+"TEST: echo 'foo bar baz qux' >/tmp/data.$$"
+"TEST: echo 'This is a test file.' >/tmp/data.$$"
+"TEST: catfile.st /tmp/data.$$ mks /dev/null"
+@
+
+
+1.8
+log
+@-
+@
+text
+@d2 1
+a2 1
+"$Id: catfile.st,v 1.7 2011-05-05 20:45:21-07 - - $"
+d47 4
+a50 2
+"TEST: (echo hello world; echo foo bar baz qux) \ "
+"TEST: | catfile.st mks /dev/null"
+@
+
+
+1.7
+log
+@-
+@
+text
+@d2 1
+a2 1
+"$Id: catfile.st,v 1.6 2011-05-05 17:40:12-07 - - $"
+d47 2
+a48 1
+"TEST: catfile.st foobar mkst /dev/null"
+@
+
+
+1.6
+log
+@-
+@
+text
+@d2 1
+a2 1
+"$Id: catfile.st,v 1.5 2011-05-05 17:11:21-07 - - $"
+d31 2
+a32 1
+                  infile := FileStream open: filename mode: FileStream read.
+d47 2
+@
+
+
+1.5
+log
+@-
+@
+text
+@d2 1
+a2 1
+"$Id: catfile.st,v 1.4 2011-04-19 17:21:53-07 - - $"
+d35 2
+@
+
+
+1.4
+log
+@-
+@
+text
+@d2 1
+a2 1
+"$Id: catfile.st,v 1.3 2011-04-19 16:15:45-07 - - $"
+a3 1
+nl := Character nl.
+d6 1
+d13 1
+a13 1
+         stdout << count << ': ' << self nextLine << Character nl.
+d18 1
+@
+
+
+1.3
+log
+@-
+@
+text
+@d2 1
+a2 1
+"$Id: catfile.st,v 1.2 2011-04-19 15:46:10-07 - - $"
+d42 1
+@
+
+
+1.2
+log
+@-
+@
+text
+@d2 2
+a3 2
+"$Id: catfile.st,v 1.1 2011/04/18 21:53:00 - - $"
+execname := '$RCSfile$' =~ ".*: (.*),v.*" at: 1.
+d5 4
+a8 7
+Smalltalk arguments do: [:filename |
+   |separator|
+   separator := '::::::::::::::::::::::::::::::::'.
+   stdout << separator << nl << filename << nl << separator << nl.
+   [
+      |infile count|
+      infile := FileStream open: filename mode: FileStream read.
+d10 1
+a10 1
+      [infile atEnd not] whileTrue: [
+d13 2
+a14 7
+         stdout << count << ': ' << (infile upTo: nl) << nl.
+      ].
+      infile close.
+   ] on: SystemExceptions.FileError do: [:signal |
+      stdout << signal messageText << nl.
+      stdout << execname << filename << ': '
+             << (File stringError: File errno) << nl.
+d17 25
+@
+
+
+1.1
+log
+@-
+@
+text
+@d2 23
+a24 4
+"$Id$"
+filename := Smalltalk arguments at: 1.
+'filename = ' display.
+filename = displayNl.
+@

@@ -1,0 +1,189 @@
+Decompressing
+An instance of SmallInteger
+116
+An instance of SmallInteger
+111
+An instance of SmallInteger
+0
+An instance of SmallInteger
+9
+An instance of SmallInteger
+32
+loc a
+An instance of OrderedCollection
+  firstIndex: 3
+  lastIndex: 7
+  contents: [
+    [1]: Leaf(32,0)
+    [2]: Leaf(9,0)
+    [3]: Leaf(256,0)
+    [4]: Leaf(111,0)
+    [5]: Leaf(116,0)
+  ]
+loc b
+An instance of OrderedCollection
+  firstIndex: 2
+  lastIndex: 5
+  contents: [
+    [1]: Tree(0,1,Leaf(9,0),Leaf(32,0))
+    [2]: Leaf(256,0)
+    [3]: Leaf(111,0)
+    [4]: Leaf(116,0)
+  ]
+loc c
+loc a
+An instance of OrderedCollection
+  firstIndex: 2
+  lastIndex: 5
+  contents: [
+    [1]: Tree(0,1,Leaf(9,0),Leaf(32,0))
+    [2]: Leaf(256,0)
+    [3]: Leaf(111,0)
+    [4]: Leaf(116,0)
+  ]
+loc b
+An instance of OrderedCollection
+  firstIndex: 2
+  lastIndex: 4
+  contents: [
+    [1]: Tree(0,1,Leaf(256,0),Leaf(32,0))
+    [2]: Leaf(111,0)
+    [3]: Leaf(116,0)
+  ]
+loc c
+An instance of SmallInteger
+10
+loc a
+An instance of OrderedCollection
+  firstIndex: 1
+  lastIndex: 4
+  contents: [
+    [1]: Leaf(10,0)
+    [2]: Tree(0,1,Leaf(256,0),Leaf(32,0))
+    [3]: Leaf(111,0)
+    [4]: Leaf(116,0)
+  ]
+loc b
+An instance of OrderedCollection
+  firstIndex: 2
+  lastIndex: 4
+  contents: [
+    [1]: Tree(0,1,Tree(0,1,Leaf(256,0),Leaf(32,0)),Leaf(32,0))
+    [2]: Leaf(111,0)
+    [3]: Leaf(116,0)
+  ]
+loc c
+An instance of SmallInteger
+97
+loc a
+An instance of OrderedCollection
+  firstIndex: 1
+  lastIndex: 4
+  contents: [
+    [1]: Leaf(97,0)
+    [2]: Tree(0,1,Tree(0,1,Leaf(256,0),Leaf(32,0)),Leaf(32,0))
+    [3]: Leaf(111,0)
+    [4]: Leaf(116,0)
+  ]
+loc b
+An instance of OrderedCollection
+  firstIndex: 2
+  lastIndex: 4
+  contents: [
+    [1]: Tree(0,1,Tree(0,1,Tree(0,1,Leaf(256,0),Leaf(32,0)),Leaf(32,0)),Leaf(32,0))
+    [2]: Leaf(111,0)
+    [3]: Leaf(116,0)
+  ]
+loc c
+loc a
+An instance of OrderedCollection
+  firstIndex: 2
+  lastIndex: 4
+  contents: [
+    [1]: Tree(0,1,Tree(0,1,Tree(0,1,Leaf(256,0),Leaf(32,0)),Leaf(32,0)),Leaf(32,0))
+    [2]: Leaf(111,0)
+    [3]: Leaf(116,0)
+  ]
+loc b
+An instance of OrderedCollection
+  firstIndex: 2
+  lastIndex: 3
+  contents: [
+    [1]: Tree(0,1,Leaf(111,0),Leaf(32,0))
+    [2]: Leaf(116,0)
+  ]
+loc c
+loc a
+An instance of OrderedCollection
+  firstIndex: 2
+  lastIndex: 3
+  contents: [
+    [1]: Tree(0,1,Leaf(111,0),Leaf(32,0))
+    [2]: Leaf(116,0)
+  ]
+loc b
+An instance of OrderedCollection
+  firstIndex: 1
+  lastIndex: 1
+  contents: [
+    [1]: Tree(0,1,Leaf(116,0),Leaf(32,0))
+  ]
+loc c
+An instance of SmallInteger
+101
+loc a
+An instance of OrderedCollection
+  firstIndex: 8
+  lastIndex: 9
+  contents: [
+    [1]: Leaf(101,0)
+    [2]: Tree(0,1,Leaf(116,0),Leaf(32,0))
+  ]
+loc b
+An instance of OrderedCollection
+  firstIndex: 2
+  lastIndex: 2
+  contents: [
+    [1]: Tree(0,1,Tree(0,1,Leaf(116,0),Leaf(32,0)),Leaf(32,0))
+  ]
+loc c
+loc a
+An instance of OrderedCollection
+  firstIndex: 2
+  lastIndex: 2
+  contents: [
+    [1]: Tree(0,1,Tree(0,1,Leaf(116,0),Leaf(32,0)),Leaf(32,0))
+  ]
+loc e
+An instance of Tree
+  char: 0
+  count: 1
+  left: Leaf(116,0)
+  right: Leaf(32,0)
+An instance of OrderedCollection
+  firstIndex: 2
+  lastIndex: 1
+  contents: [
+  ]
+An instance of Leaf
+  char: 32
+  count: 0
+Object: Leaf new "<0x10bac07c0>" error: interrupted!!!
+SystemExceptions.UserInterrupt(Exception)>>signal (ExcHandling.st:254)
+SystemExceptions.UserInterrupt class(Exception class)>>signal (ExcHandling.st:151)
+Leaf(Object)>>userInterrupt (Object.st:1414)
+DeferredVariableBinding>>value (DeferBinding.st:70)
+UndefinedObject>>executeStatements (hzip.st:326)
+Object: nil error: did not understand #freq
+MessageNotUnderstood(Exception)>>signal (ExcHandling.st:254)
+UndefinedObject(Object)>>doesNotUnderstand: #freq (SysExcept.st:1448)
+UndefinedObject>>executeStatements (hzip.st:359)
+Object: SortedCollection new: 16 "<0x10ba67ef0>" error: Invalid value SortedCollection (): the collection is empty
+SystemExceptions.EmptyCollection(Exception)>>signal (ExcHandling.st:254)
+SystemExceptions.EmptyCollection class(SystemExceptions.InvalidValue class)>>signalOn: (SysExcept.st:411)
+SortedCollection(OrderedCollection)>>removeFirst (OrderColl.st:297)
+UndefinedObject>>executeStatements (hzip.st:376)
+Object: nil error: did not understand #inorder:prefix:
+MessageNotUnderstood(Exception)>>signal (ExcHandling.st:254)
+UndefinedObject(Object)>>doesNotUnderstand: #inorder:prefix: (SysExcept.st:1448)
+UndefinedObject>>executeStatements (hzip.st:379)

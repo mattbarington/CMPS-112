@@ -1,0 +1,228 @@
+head	1.8;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.8
+date	2011.05.06.03.45.21;	author -;	state -;
+branches;
+next	1.7;
+
+1.7
+date	2011.04.20.00.21.53;	author -;	state -;
+branches;
+next	1.6;
+
+1.6
+date	2011.04.15.04.25.53;	author -;	state -;
+branches;
+next	1.5;
+
+1.5
+date	2011.04.15.04.25.40;	author -;	state -;
+branches;
+next	1.4;
+
+1.4
+date	2011.04.15.04.03.00;	author -;	state -;
+branches;
+next	1.3;
+
+1.3
+date	2011.04.15.04.00.29;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2011.04.15.03.38.18;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2011.04.15.03.20.53;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.8
+log
+@-
+@
+text
+@#!/afs/cats.ucsc.edu/courses/cmps112-wm/usr/smalltalk/bin/gst -f
+"$Id: cmdline.st,v 1.7 2011-04-19 17:21:53-07 - - $"
+""
+"Parse command line arguments"
+""
+
+execname := '$RCSfile: cmdline.st,v $' =~ '.*: (.*),v.*' at: 1.
+nl := Character nl.
+
+stdout << 'execname: ' << execname << nl.
+stdout << 'version: ' << Smalltalk version << nl.
+stdout << 'hostSystem: ' << Smalltalk hostSystem << nl.
+stdout << 'arguments: ' << Smalltalk arguments << nl.
+
+(1 to: Smalltalk arguments size)
+do: [:index |
+    'argument[' display.
+    index display.
+    '] = "' display.
+    (Smalltalk arguments at: index) display.
+    '"' displayNl.
+].
+
+(1 to: Smalltalk getArgc)
+do: [:argi |
+   'argv[' display.
+   argi display.
+   '] = "' display.
+   (Smalltalk getArgv: argi) display.
+   '"' displayNl.
+].
+
+Smalltalk arguments: '-a -b --foo --bar'
+do: [:opt :arg |
+   'arguments:do: ' display.
+   opt display.
+   ' ' display.
+   arg displayNl.
+]
+ifError: [
+   'Error: invalid option' displayNl.
+   '--foo'
+]
+
+'$RCSfile: cmdline.st,v $' display.
+'finished.' displayNl.
+
+"TEST: cmdline.st foo bar baz"
+
+@
+
+
+1.7
+log
+@-
+@
+text
+@d2 1
+a2 1
+"$Id: cmdline.st,v 1.6 2011-04-14 21:25:53-07 - - $"
+d7 1
+a7 1
+execname := '$RCSfile: catfile.st,v $' =~ '.*: (.*),v.*' at: 1.
+d48 2
+@
+
+
+1.6
+log
+@-
+@
+text
+@d2 1
+a2 1
+"$Id: cmdline.st,v 1.5 2011-04-14 21:25:40-07 - - $"
+d7 2
+a8 2
+'version = ' display.
+Smalltalk version displayNl.
+d10 4
+a13 5
+'hostSystem = ' display.
+Smalltalk hostSystem displayNl.
+
+'arguments = ' display.
+Smalltalk arguments displayNl.
+d45 1
+a45 1
+'$RCSfile$' display.
+@
+
+
+1.5
+log
+@-
+@
+text
+@d2 1
+a2 1
+"$Id: cmdline.st,v 1.4 2011-04-14 21:03:00-07 - - $"
+d46 1
+a46 1
+'$RCSfile' display.
+@
+
+
+1.4
+log
+@-
+@
+text
+@d2 1
+a2 1
+"$Id: cmdline.st,v 1.1 2011-04-14 20:20:53-07 - - $"
+d16 2
+a17 1
+(1 to: Smalltalk arguments size) do: [:index |
+d25 12
+a36 2
+Smalltalk arguments: 'foo bar' do: [:opt :arg |
+   'arguments ' display.
+d40 8
+a47 1
+].
+@
+
+
+1.3
+log
+@-
+@
+text
+@d24 7
+@
+
+
+1.2
+log
+@-
+@
+text
+@d1 1
+a1 1
+#!/afs/cats.ucsc.edu/courses/cmps112-wm/usr/smalltalk/bin/gst
+d7 2
+a8 6
+Transcript show: 'version = ';
+    show: Smalltalk version;
+    nl.
+Transcript show: 'arguments = ';
+    show: Smalltalk arguments;
+    nl.
+d10 12
+a21 3
+SystemDictionary arguments: '' do:
+[:opt :arg |
+   Transcript show: opt; show: arg; nl.
+d23 1
+@
+
+
+1.1
+log
+@-
+@
+text
+@d2 1
+a2 1
+"$Id$
+d6 8
+@

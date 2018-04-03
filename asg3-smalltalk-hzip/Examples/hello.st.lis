@@ -1,0 +1,6 @@
+****mks**** hello.st 2>&1
+Hello, World!
+$Id: hello.st,v 1.10 2012-02-23 17:45:49-08 - - $
+hello.st: Quitting with status 127
+****status: 0x7F00
+

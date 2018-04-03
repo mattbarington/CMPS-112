@@ -1,0 +1,17 @@
+****mks**** cmdline.st foo bar baz 2>&1
+execname: cmdline.st
+version: GNU Smalltalk version 3.2.5
+hostSystem: x86_64-unknown-linux-gnu
+arguments: ('foo' 'bar' 'baz' )
+argument[1] = "foo"
+argument[2] = "bar"
+argument[3] = "baz"
+argv[1] = "foo"
+argv[2] = "bar"
+argv[3] = "baz"
+arguments:do: nil foo
+arguments:do: nil bar
+arguments:do: nil baz
+$RCSfile: cmdline.st,v $finished.
+****status: 0x0000
+

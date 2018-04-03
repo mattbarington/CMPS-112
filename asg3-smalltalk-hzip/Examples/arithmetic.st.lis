@@ -1,0 +1,41 @@
+****mks**** arithmetic.st 2>&1
+x := 3 + 4 * 5.
+An instance of SmallInteger
+35
+y1 := 64 raisedTo: 20.
+An instance of LargePositiveInteger
+  [1]: 0
+  [2]: 0
+  [3]: 0
+  [4]: 0
+  [5]: 0
+  [6]: 0
+  [7]: 0
+  [8]: 0
+  [9]: 0
+  [10]: 0
+  [11]: 0
+  [12]: 0
+  [13]: 0
+  [14]: 0
+  [15]: 0
+  [16]: 1
+1329227995784915872903807060280344576
+y2 := 6 * 6 raisedTo: 3 * 4.
+An instance of LargePositiveInteger
+  [1]: 0
+  [2]: 0
+  [3]: 0
+  [4]: 225
+  [5]: 184
+  [6]: 28
+  [7]: 194
+  [8]: 65
+4738381338321616896
+z := 22/7.
+An instance of Fraction
+  numerator: 22
+  denominator: 7
+22/7
+****status: 0x0000
+

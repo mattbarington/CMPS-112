@@ -1,0 +1,15 @@
+****mks**** divide.st 2>&1
+rat = -7/3
+An instance of Fraction
+  numerator: -7
+  denominator: 3
+div = -3
+An instance of SmallInteger
+mod = 2
+An instance of SmallInteger
+quo = -2
+An instance of SmallInteger
+rem = -1
+An instance of SmallInteger
+****status: 0x0000
+

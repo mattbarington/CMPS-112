@@ -1,0 +1,3149 @@
+%PDF-1.4
+5 0 obj
+<</Length 6 0 R>>
+stream
+q 0.1 0 0 0.1 0 0 cm
+/R7 gs
+0 G
+740 240 5000 7440 re
+S
+5 w
+0 0 0 RG
+740 240 m
+740 7640 l
+740 240 m
+740 960 l
+380 960 l
+380 240 l
+h
+S
+0 0 0 rg
+q
+10 0 0 10 0 0 cm BT
+/R8 12 Tf
+0 1 -1 0 54 38.6641 Tm
+(10/10/14)Tj
+-0.659766 -12.8 Td
+(16:37:29)Tj
+ET
+Q
+380 6920 360 720 re
+S
+q
+10 0 0 10 0 0 cm BT
+/R10 28.8 Tf
+0 1 -1 0 66.8 707.484 Tm
+(1)Tj
+/R10 18 Tf
+16.0129 0 Td
+(/21)Tj
+/R12 14 Tf
+-408.622 -2.7 Td
+(angelfire-notes-smalltalk.txt)Tj
+-96.2402 18 Td
+($cmps112-wm/Languages/smalltalk/angelfire-notes-smalltalk/)Tj
+ET
+Q
+0 g
+q
+10 0 0 10 0 0 cm BT
+/R14 10 Tf
+0 1 -1 0 87 54 Tm
+(1:)Tj
+11 TL
+(2:)'
+T*[(3:)-600(    [1]Chris Rathman / [2]ChrisRath@aol.com)]TJ
+T*[(4:)-600(     _________________________________________________________________)]TJ
+(5:)'
+T*[(6:)-600("************************************************************************)]TJ
+T*[(7:)-600( * Allowable characters:                                                *)]TJ
+T*[(8:)-600( *    - a-z                                                             *)]TJ
+T*[(9:)-600( *    - A-Z                                                             *)]TJ
+-6 -11 Td
+[(10:)-600( *    - 0-9                                                             *)]TJ
+T*[(11:)-600( *    - .+/\\*~<>@%|&?                                                   *)]TJ
+T*[(12:)-600( *    - blank, tab, cr, ff, lf                                          *)]TJ
+T*[(13:)-600( *                                                                      *)]TJ
+T*[(14:)-600( * Variables:                                                           *)]TJ
+T*[(15:)-600( *    - variables must be declared before use                           *)]TJ
+T*[(16:)-600( *    - shared vars must begin with uppercase                           *)]TJ
+T*[(17:)-600( *    - local vars must begin with lowercase                            *)]TJ
+T*[(18:)-600( *    - reserved names: nil, true, false, self, super, and Smalltalk    *)]TJ
+T*[(19:)-600( *                                                                      *)]TJ
+T*[(20:)-600( * Variable scope:                                                      *)]TJ
+T*[(21:)-600( *    - Global: defined in Dictionary Smalltalk and accessible by all   *)]TJ
+T*[(22:)-600( *         objects in system                                            *)]TJ
+T*[(23:)-600( *    - Special: \(reserved\) Smalltalk, super, self, true, false, & nil  *)]TJ
+T*[(24:)-600( *    - Method Temporary: local to a method                             *)]TJ
+T*[(25:)-600( *    - Block Temporary: local to a block                               *)]TJ
+T*[(26:)-600( *    - Pool: variables in a Dictionary object                          *)]TJ
+T*[(27:)-600( *    - Method Parameters: automatic local vars created as a result of  *)]TJ
+T*[(28:)-600( *         message call with params                                     *)]TJ
+T*[(29:)-600( *    - Block Parameters: automatic local vars created as a result of   *)]TJ
+T*[(30:)-600( *         value: message call                                          *)]TJ
+T*[(31:)-600( *    - Class: shared with all instances of one class & its subclasses  *)]TJ
+T*[(32:)-600( *    - Class Instance: unique to each instance of a class              *)]TJ
+T*[(33:)-600( *    - Instance Variables: unique to each instance                     *)]TJ
+T*[(34:)-600( ************************************************************************")]TJ
+T*[(35:)-600("Comments are enclosed in quotes")]TJ
+T*[(36:)-600("Period \(.\) is the statement seperator")]TJ
+(37:)'
+T*[(38:)-600("************************************************************************)]TJ
+T*[(39:)-600( * Transcript:                                                          *)]TJ
+T*[(40:)-600( ************************************************************************")]TJ
+T*[(41:)-600(Transcript clear.                                           "clear to transcript window")]TJ
+T*[(42:)-600(Transcript show: 'Hello World'.                             "output string in transcript window")]TJ
+T*[(43:)-600(Transcript nextPutAll: 'Hello World'.                       "output string in transcript window")]TJ
+T*[(44:)-600(Transcript nextPut: $A.                                     "output character in transcript window")]TJ
+T*[(45:)-600(Transcript space.                                           "output space character in transcript window")]TJ
+ET
+Q
+Q
+endstream
+endobj
+6 0 obj
+4358
+endobj
+19 0 obj
+<</Length 20 0 R>>
+stream
+q 0.1 0 0 0.1 0 0 cm
+/R7 gs
+0 G
+740 240 5000 7440 re
+S
+5 w
+0 0 0 RG
+740 240 m
+740 7640 l
+740 240 m
+740 960 l
+380 960 l
+380 240 l
+h
+S
+0 0 0 rg
+q
+10 0 0 10 0 0 cm BT
+/R8 12 Tf
+0 1 -1 0 54 38.6641 Tm
+(10/10/14)Tj
+-0.659766 -12.8 Td
+(16:37:29)Tj
+ET
+Q
+380 6920 360 720 re
+S
+q
+10 0 0 10 0 0 cm BT
+/R10 28.8 Tf
+0 1 -1 0 66.8 707.484 Tm
+(2)Tj
+/R10 18 Tf
+16.0129 0 Td
+(/21)Tj
+/R12 14 Tf
+-408.622 -2.7 Td
+(angelfire-notes-smalltalk.txt)Tj
+-96.2402 18 Td
+($cmps112-wm/Languages/smalltalk/angelfire-notes-smalltalk/)Tj
+ET
+Q
+0 g
+q
+10 0 0 10 0 0 cm BT
+/R14 10 Tf
+0 1 -1 0 87 48 Tm
+[(46:)-600(Transcript tab.                                             "output tab character in transcript window")]TJ
+11 TL
+T*[(47:)-600(Transcript cr.                                              "carriage return /linefeed")]TJ
+T*[(48:)-600('Hello' printOn: Transcript.                                "append print string into the window")]TJ
+T*[(49:)-600('Hello' storeOn: Transcript.                                "append store string into the window")]TJ
+T*[(50:)-600(Transcript endEntry.                                        "flush the output buffer")]TJ
+(51:)'
+T*[(52:)-600("************************************************************************)]TJ
+T*[(53:)-600( * Assignment:                                                          *)]TJ
+T*[(54:)-600( ************************************************************************")]TJ
+T*[(55:)-600(| x y |)]TJ
+T*[(56:)-600(x _ 4.                                                      "assignment \(Squeak\) <-")]TJ
+T*[(57:)-600(x := 5.                                                     "assignment")]TJ
+T*[(58:)-600(x := y := z := 6.                                           "compound assignment")]TJ
+T*[(59:)-600(x := \(y := 6\) + 1.)]TJ
+T*[(60:)-600(x := Object new.                                            "bind to allocatedinstance of a class")]TJ
+T*[(61:)-600(x := 123 class.                                             "discover the object class")]TJ
+T*[(62:)-600(x := Integer superclass.                                    "discover the superclass of a class")]TJ
+T*[(63:)-600(x := Object allInstances.                                   "get an array of all instances of a class")]TJ
+T*[(64:)-600(x := Integer allSuperclasses.                               "get all superclasses of a class")]TJ
+T*[(65:)-600(x := 1.2 hash.                                              "hash value for object")]TJ
+T*[(66:)-600(y := x copy.                                                "copy object")]TJ
+T*[(67:)-600(y := x shallowCopy.                                         "copy object \(not overridden\)")]TJ
+T*[(68:)-600(y := x deepCopy.                                            "copy object and instance vars")]TJ
+T*[(69:)-600(y := x veryDeepCopy.                                        "complete tree copy using a dictionary")]TJ
+(70:)'
+T*[(71:)-600("************************************************************************)]TJ
+T*[(72:)-600( * Constants:                                                           *)]TJ
+T*[(73:)-600( ************************************************************************")]TJ
+T*[(74:)-600(| b |)]TJ
+T*[(75:)-600(b := true.                                                  "true constant")]TJ
+T*[(76:)-600(b := false.                                                 "false constant")]TJ
+T*[(77:)-600(x := nil.                                                   "nil object constant")]TJ
+T*[(78:)-600(x := 1.                                                     "integer constants")]TJ
+T*[(79:)-600(x := 3.14.                                                  "float constants")]TJ
+T*[(80:)-600(x := 2e-2.                                                  "fractional constants")]TJ
+T*[(81:)-600(x := 16r0F.                                                 "hex constant".)]TJ
+T*[(82:)-600(x := -1.                                                    "negative constants")]TJ
+T*[(83:)-600(x := 'Hello'.                                               "string constant")]TJ
+T*[(84:)-600(x := 'I''m here'.                                           "single quote escape")]TJ
+T*[(85:)-600(x := $A.                                                    "character constant")]TJ
+T*[(86:)-600(x := $ .                                                    "character constant \(space\)")]TJ
+T*[(87:)-600(x := #aSymbol.                                              "symbol constants")]TJ
+T*[(88:)-600(x := #\(3 2 1\).                                              "array constants")]TJ
+T*[(89:)-600(x := #\('abc' 2 $a\).                                         "mixing of types allowed")]TJ
+(90:)'
+ET
+Q
+Q
+endstream
+endobj
+20 0 obj
+4646
+endobj
+24 0 obj
+<</Length 25 0 R>>
+stream
+q 0.1 0 0 0.1 0 0 cm
+/R7 gs
+0 G
+740 240 5000 7440 re
+S
+5 w
+0 0 0 RG
+740 240 m
+740 7640 l
+740 240 m
+740 960 l
+380 960 l
+380 240 l
+h
+S
+0 0 0 rg
+q
+10 0 0 10 0 0 cm BT
+/R8 12 Tf
+0 1 -1 0 54 38.6641 Tm
+(10/10/14)Tj
+-0.659766 -12.8 Td
+(16:37:29)Tj
+ET
+Q
+380 6920 360 720 re
+S
+q
+10 0 0 10 0 0 cm BT
+/R10 28.8 Tf
+0 1 -1 0 66.8 707.484 Tm
+(3)Tj
+/R10 18 Tf
+16.0129 0 Td
+(/21)Tj
+/R12 14 Tf
+-408.622 -2.7 Td
+(angelfire-notes-smalltalk.txt)Tj
+-96.2402 18 Td
+($cmps112-wm/Languages/smalltalk/angelfire-notes-smalltalk/)Tj
+ET
+Q
+0 g
+q
+10 0 0 10 0 0 cm BT
+/R14 10 Tf
+0 1 -1 0 87 48 Tm
+[(91:)-600("************************************************************************)]TJ
+11 TL
+T*[(92:)-600( * Booleans:                                                            *)]TJ
+T*[(93:)-600( ************************************************************************")]TJ
+T*[(94:)-600(| b x y |)]TJ
+T*[(95:)-600(x := 1. y := 2.)]TJ
+T*[(96:)-600(b := \(x = y\).                                               "equals")]TJ
+T*[(97:)-600(b := \(x ~= y\).                                              "not equals")]TJ
+T*[(98:)-600(b := \(x == y\).                                              "identical")]TJ
+T*[(99:)-600(b := \(x ~~ y\).                                              "not identical")]TJ
+-6 -11 Td
+[(100:)-600(b := \(x > y\).                                               "greater than")]TJ
+T*[(101:)-600(b := \(x < y\).                                               "less than")]TJ
+T*[(102:)-600(b := \(x >= y\).                                              "greater than or equal")]TJ
+T*[(103:)-600(b := \(x <= y\).                                              "less than or equal")]TJ
+T*[(104:)-600(b := b not.                                                 "boolean not")]TJ
+T*[(105:)-600(b := \(x < 5\) & \(y > 1\).                                     "boolean and")]TJ
+T*[(106:)-600(b := \(x < 5\) | \(y > 1\).                                     "boolean or")]TJ
+T*[(107:)-600(b := \(x < 5\) and: [y > 1].                                  "boolean and \(short-circuit\)")]TJ
+T*[(108:)-600(b := \(x < 5\) or: [y > 1].                                   "boolean or \(short-circuit\)")]TJ
+T*[(109:)-600(b := \(x < 5\) eqv: \(y > 1\).                                  "test if both trueor both false")]TJ
+T*[(110:)-600(b := \(x < 5\) xor: \(y > 1\).                                  "test if one true and other false")]TJ
+T*[(111:)-600(b := 5 between: 3 and: 12.                                  "between \(inclusive\)")]TJ
+T*[(112:)-600(b := 123 isKindOf: Number.                                  "test if object isclass or subclass of")]TJ
+T*[(113:)-600(b := 123 isMemberOf: SmallInteger.                          "test if object istype of class")]TJ
+T*[(114:)-600(b := 123 respondsTo: sqrt.                                  "test if object responds to message")]TJ
+T*[(115:)-600(b := x isNil.                                               "test if object isnil")]TJ
+T*[(116:)-600(b := x isZero.                                              "test if number iszero")]TJ
+T*[(117:)-600(b := x positive.                                            "test if number ispositive")]TJ
+T*[(118:)-600(b := x strictlyPositive.                                    "test if number isgreater than zero")]TJ
+T*[(119:)-600(b := x negative.                                            "test if number isnegative")]TJ
+T*[(120:)-600(b := x even.                                                "test if number iseven")]TJ
+T*[(121:)-600(b := x odd.                                                 "test if number isodd")]TJ
+T*[(122:)-600(b := x isLiteral.                                           "test if literal constant")]TJ
+T*[(123:)-600(b := x isInteger.                                           "test if object isinteger")]TJ
+T*[(124:)-600(b := x isFloat.                                             "test if object isfloat")]TJ
+T*[(125:)-600(b := x isNumber.                                            "test if object isnumber")]TJ
+T*[(126:)-600(b := $A isUppercase.                                        "test if upper case character")]TJ
+T*[(127:)-600(b := $A isLowercase.                                        "test if lower case character")]TJ
+(128:)'
+T*[(129:)-600("************************************************************************)]TJ
+T*[(130:)-600( * Arithmetic expressions:                                              *)]TJ
+T*[(131:)-600( ************************************************************************")]TJ
+T*[(132:)-600(| x |)]TJ
+T*[(133:)-600(x := 6 + 3.                                                 "addition")]TJ
+T*[(134:)-600(x := 6 - 3.                                                 "subtraction")]TJ
+T*[(135:)-600(x := 6 * 3.                                                 "multiplication")]TJ
+ET
+Q
+Q
+endstream
+endobj
+25 0 obj
+4815
+endobj
+29 0 obj
+<</Length 30 0 R>>
+stream
+q 0.1 0 0 0.1 0 0 cm
+/R7 gs
+0 G
+740 240 5000 7440 re
+S
+5 w
+0 0 0 RG
+740 240 m
+740 7640 l
+740 240 m
+740 960 l
+380 960 l
+380 240 l
+h
+S
+0 0 0 rg
+q
+10 0 0 10 0 0 cm BT
+/R8 12 Tf
+0 1 -1 0 54 38.6641 Tm
+(10/10/14)Tj
+-0.659766 -12.8 Td
+(16:37:29)Tj
+ET
+Q
+380 6920 360 720 re
+S
+q
+10 0 0 10 0 0 cm BT
+/R10 28.8 Tf
+0 1 -1 0 66.8 707.484 Tm
+(4)Tj
+/R10 18 Tf
+16.0129 0 Td
+(/21)Tj
+/R12 14 Tf
+-408.622 -2.7 Td
+(angelfire-notes-smalltalk.txt)Tj
+-96.2402 18 Td
+($cmps112-wm/Languages/smalltalk/angelfire-notes-smalltalk/)Tj
+ET
+Q
+0 g
+q
+10 0 0 10 0 0 cm BT
+/R14 10 Tf
+0 1 -1 0 87 42 Tm
+[(136:)-600(x := 1 + 2 * 3.                                             "evaluation alwaysleft to right \(1 + 2\) * 3")]TJ
+11 TL
+T*[(137:)-600(x := 5 / 3.                                                 "division with fractional result")]TJ
+T*[(138:)-600(x := 5.0 / 3.0.                                             "division with float result")]TJ
+T*[(139:)-600(x := 5.0 // 3.0.                                            "integer divide")]TJ
+T*[(140:)-600(x := 5.0 \\\\ 3.0.                                            "integer remainder")]TJ
+T*[(141:)-600(x := -5.                                                    "unary minus")]TJ
+T*[(142:)-600(x := 5 sign.                                                "numeric sign \(1, -1 or 0\)")]TJ
+T*[(143:)-600(x := 5 negated.                                             "negate receiver")]TJ
+T*[(144:)-600(x := 1.2 integerPart.                                       "integer part of number \(1.0\)")]TJ
+T*[(145:)-600(x := 1.2 fractionPart.                                      "fractional part of number \(0.2\)")]TJ
+T*[(146:)-600(x := 5 reciprocal.                                          "reciprocal function")]TJ
+T*[(147:)-600(x := 6 * 3.1.                                               "auto convert to float")]TJ
+T*[(148:)-600(x := 5 squared.                                             "square function")]TJ
+T*[(149:)-600(x := 25 sqrt.                                               "square root")]TJ
+T*[(150:)-600(x := 5 raisedTo: 2.                                         "power function")]TJ
+T*[(151:)-600(x := 5 raisedToInteger: 2.                                  "power function with integer")]TJ
+T*[(152:)-600(x := 5 exp.                                                 "exponential")]TJ
+T*[(153:)-600(x := -5 abs.                                                "absolute value")]TJ
+T*[(154:)-600(x := 3.99 rounded.                                          "round")]TJ
+T*[(155:)-600(x := 3.99 truncated.                                        "truncate")]TJ
+T*[(156:)-600(x := 3.99 roundTo: 1.                                       "round to specified decimal places")]TJ
+T*[(157:)-600(x := 3.99 truncateTo: 1.                                    "truncate to specified decimal places")]TJ
+T*[(158:)-600(x := 3.99 floor.                                            "truncate")]TJ
+T*[(159:)-600(x := 3.99 ceiling.                                          "round up")]TJ
+T*[(160:)-600(x := 5 factorial.                                           "factorial")]TJ
+T*[(161:)-600(x := -5 quo: 3.                                             "integer divide rounded toward zero")]TJ
+T*[(162:)-600(x := -5 rem: 3.                                             "integer remainderrounded toward zero")]TJ
+T*[(163:)-600(x := 28 gcd: 12.                                            "greatest common denominator")]TJ
+T*[(164:)-600(x := 28 lcm: 12.                                            "least common multiple")]TJ
+T*[(165:)-600(x := 100 ln.                                                "natural logarithm")]TJ
+T*[(166:)-600(x := 100 log.                                               "base 10 logarithm")]TJ
+T*[(167:)-600(x := 100 log: 10.                                           "logarithm with specified base")]TJ
+T*[(168:)-600(x := 100 floorLog: 10.                                      "floor of the log")]TJ
+T*[(169:)-600(x := 180 degreesToRadians.                                  "convert degrees to radians")]TJ
+T*[(170:)-600(x := 3.14 radiansToDegrees.                                 "convert radians to degrees")]TJ
+T*[(171:)-600(x := 0.7 sin.                                               "sine")]TJ
+T*[(172:)-600(x := 0.7 cos.                                               "cosine")]TJ
+T*[(173:)-600(x := 0.7 tan.                                               "tangent")]TJ
+T*[(174:)-600(x := 0.7 arcSin.                                            "arcsine")]TJ
+T*[(175:)-600(x := 0.7 arcCos.                                            "arccosine")]TJ
+T*[(176:)-600(x := 0.7 arcTan.                                            "arctangent")]TJ
+T*[(177:)-600(x := 10 max: 20.                                            "get maximum of two numbers")]TJ
+T*[(178:)-600(x := 10 min: 20.                                            "get minimum of two numbers")]TJ
+T*[(179:)-600(x := Float pi.                                              "pi")]TJ
+T*[(180:)-600(x := Float e.                                               "exp constant")]TJ
+ET
+Q
+Q
+endstream
+endobj
+30 0 obj
+5070
+endobj
+34 0 obj
+<</Length 35 0 R>>
+stream
+q 0.1 0 0 0.1 0 0 cm
+/R7 gs
+0 G
+740 240 5000 7440 re
+S
+5 w
+0 0 0 RG
+740 240 m
+740 7640 l
+740 240 m
+740 960 l
+380 960 l
+380 240 l
+h
+S
+0 0 0 rg
+q
+10 0 0 10 0 0 cm BT
+/R8 12 Tf
+0 1 -1 0 54 38.6641 Tm
+(10/10/14)Tj
+-0.659766 -12.8 Td
+(16:37:29)Tj
+ET
+Q
+380 6920 360 720 re
+S
+q
+10 0 0 10 0 0 cm BT
+/R10 28.8 Tf
+0 1 -1 0 66.8 707.484 Tm
+(5)Tj
+/R10 18 Tf
+16.0129 0 Td
+(/21)Tj
+/R12 14 Tf
+-408.622 -2.7 Td
+(angelfire-notes-smalltalk.txt)Tj
+-96.2402 18 Td
+($cmps112-wm/Languages/smalltalk/angelfire-notes-smalltalk/)Tj
+ET
+Q
+0 g
+q
+10 0 0 10 0 0 cm BT
+/R14 10 Tf
+0 1 -1 0 87 42 Tm
+[(181:)-600(x := Float infinity.                                        "infinity")]TJ
+11 TL
+T*[(182:)-600(x := Float nan.                                             "not-a-number")]TJ
+T*[(183:)-600(x := Random new next; yourself. x next.                     "random number stream \(0.0 to 1.0\))]TJ
+T*[(184:)-600(x := 100 atRandom.                                          "quick random number")]TJ
+(185:)'
+T*[(186:)-600("************************************************************************)]TJ
+T*[(187:)-600( * Bitwise Manipulation:                                                *)]TJ
+T*[(188:)-600( ************************************************************************")]TJ
+T*[(189:)-600(| b x |)]TJ
+T*[(190:)-600(x := 16rFF bitAnd: 16r0F.                                   "and bits")]TJ
+T*[(191:)-600(x := 16rF0 bitOr: 16r0F.                                    "or bits")]TJ
+T*[(192:)-600(x := 16rFF bitXor: 16r0F.                                   "xor bits")]TJ
+T*[(193:)-600(x := 16rFF bitInvert.                                       "invert bits")]TJ
+T*[(194:)-600(x := 16r0F bitShift: 4.                                     "left shift")]TJ
+T*[(195:)-600(x := 16rF0 bitShift: -4.                                    "right shift")]TJ
+T*[(196:)-600("x := 16r80 bitAt: 7."                                      "bit at position \(0|1\) [!Squeak]")]TJ
+T*[(197:)-600(x := 16r80 highbit.                                         "position of highest bit set")]TJ
+T*[(198:)-600(b := 16rFF allMask: 16r0F.                                  "test if all bits set in mask set in receiver")]TJ
+T*[(199:)-600(b := 16rFF anyMask: 16r0F.                                  "test if any bits set in mask set in receiver")]TJ
+T*[(200:)-600(b := 16rFF noMask: 16r0F.                                   "test if all bits set in mask clear in receiver")]TJ
+(201:)'
+T*[(202:)-600("************************************************************************)]TJ
+T*[(203:)-600( * Conversion:                                                          *)]TJ
+T*[(204:)-600( ************************************************************************")]TJ
+T*[(205:)-600(| x |)]TJ
+T*[(206:)-600(x := 3.99 asInteger.                                        "convert number tointeger \(truncates in Squeak\)")]TJ
+T*[(207:)-600(x := 3.99 asFraction.                                       "convert number tofraction")]TJ
+T*[(208:)-600(x := 3 asFloat.                                             "convert number tofloat")]TJ
+T*[(209:)-600(x := 65 asCharacter.                                        "convert integer to character")]TJ
+T*[(210:)-600(x := $A asciiValue.                                         "convert characterto integer")]TJ
+T*[(211:)-600(x := 3.99 printString.                                      "convert object tostring via printOn:")]TJ
+T*[(212:)-600(x := 3.99 storeString.                                      "convert object tostring via storeOn:")]TJ
+T*[(213:)-600(x := 15 radix: 16.                                          "convert to stringin given base")]TJ
+T*[(214:)-600(x := 15 printStringBase: 16.)]TJ
+T*[(215:)-600(x := 15 storeStringBase: 16.)]TJ
+(216:)'
+T*[(217:)-600("************************************************************************)]TJ
+T*[(218:)-600( * Blocks:                                                              *)]TJ
+T*[(219:)-600( *    - blocks are objects and may be assigned to a variable            *)]TJ
+T*[(220:)-600( *    - value is last expression evaluated unless explicit return       *)]TJ
+T*[(221:)-600( *    - blocks may be nested                                            *)]TJ
+T*[(222:)-600( *    - specification [ arguments | | localvars | expressions ]         *)]TJ
+T*[(223:)-600( *    - Squeak does not currently support localvars in blocks           *)]TJ
+T*[(224:)-600( *    - max of three arguments allowed                                  *)]TJ
+T*[(225:)-600( *    - ^expression terminates block & method \(exits all nested blocks\) *)]TJ
+ET
+Q
+Q
+endstream
+endobj
+35 0 obj
+4567
+endobj
+39 0 obj
+<</Length 40 0 R>>
+stream
+q 0.1 0 0 0.1 0 0 cm
+/R7 gs
+0 G
+740 240 5000 7440 re
+S
+5 w
+0 0 0 RG
+740 240 m
+740 7640 l
+740 240 m
+740 960 l
+380 960 l
+380 240 l
+h
+S
+0 0 0 rg
+q
+10 0 0 10 0 0 cm BT
+/R8 12 Tf
+0 1 -1 0 54 38.6641 Tm
+(10/10/14)Tj
+-0.659766 -12.8 Td
+(16:37:29)Tj
+ET
+Q
+380 6920 360 720 re
+S
+q
+10 0 0 10 0 0 cm BT
+/R10 28.8 Tf
+0 1 -1 0 66.8 707.484 Tm
+(6)Tj
+/R10 18 Tf
+16.0129 0 Td
+(/21)Tj
+/R12 14 Tf
+-408.622 -2.7 Td
+(angelfire-notes-smalltalk.txt)Tj
+-96.2402 18 Td
+($cmps112-wm/Languages/smalltalk/angelfire-notes-smalltalk/)Tj
+ET
+Q
+0 g
+q
+10 0 0 10 0 0 cm BT
+/R14 10 Tf
+0 1 -1 0 87 42 Tm
+[(226:)-600( *    - blocks intended for long term storage should not contain ^      *)]TJ
+11 TL
+T*[(227:)-600( ************************************************************************")]TJ
+T*[(228:)-600(| x y z |)]TJ
+T*[(229:)-600(x := [ y := 1. z := 2. ]. x value.                          "simple block usage")]TJ
+T*[(230:)-600(x := [ :argOne :argTwo |   argOne, ' and ' , argTwo.].      "set up block withargument passing")]TJ
+T*[(231:)-600(Transcript show: \(x value: 'First' value: 'Second'\); cr.    "use block with argument passing")]TJ
+T*[(232:)-600("x := [ | z | z := 1.].                                      localvars not available in squeak blocks")]TJ
+(233:)'
+T*[(234:)-600("************************************************************************)]TJ
+T*[(235:)-600( * Method calls:                                                        *)]TJ
+T*[(236:)-600( *    - unary methods are messages with no arguments                    *)]TJ
+T*[(237:)-600( *    - binary methods                                                  *)]TJ
+T*[(238:)-600( *    - keyword methods are messages with selectors including colons    *)]TJ
+T*[(239:)-600( *                                                                      *)]TJ
+T*[(240:)-600( * standard categories/protocols:                                       *)]TJ
+T*[(241:)-600( *    - initialize-release    \(methods called for new instance\)         *)]TJ
+T*[(242:)-600( *    - accessing             \(get/set methods\)                         *)]TJ
+T*[(243:)-600( *    - testing               \(boolean tests - is\)                      *)]TJ
+T*[(244:)-600( *    - comparing             \(boolean tests with parameter             *)]TJ
+T*[(245:)-600( *    - displaying            \(gui related methods\)                     *)]TJ
+T*[(246:)-600( *    - printing              \(methods for printing\)                    *)]TJ
+T*[(247:)-600( *    - updating              \(receive notification of changes\)         *)]TJ
+T*[(248:)-600( *    - private               \(methods private to class\)                *)]TJ
+T*[(249:)-600( *    - instance-creation     \(class methods for creating instance\)     *)]TJ
+T*[(250:)-600( ************************************************************************")]TJ
+T*[(251:)-600(| x |)]TJ
+T*[(252:)-600(x := 2 sqrt.                                                "unary message")]TJ
+T*[(253:)-600(x := 2 raisedTo: 10.                                        "keyword message")]TJ
+T*[(254:)-600(x := 194 * 9.                                               "binary message")]TJ
+T*[(255:)-600(Transcript show: \(194 * 9\) printString; cr.                 "combination \(chaining\)")]TJ
+T*[(256:)-600(x := 2 perform: #sqrt.                                      "indirect method invocation")]TJ
+T*[(257:)-600(Transcript                                                  "Cascading - send multiple messages to receiver")]TJ
+T*[(258:)-600(   show: 'hello ';)]TJ
+T*[(259:)-600(   show: 'world';)]TJ
+T*[(260:)-600(   cr.)]TJ
+T*[(261:)-600(x := 3 + 2; * 100.                                          "result=300. Sendsmessage to same receiver \(3\)")]TJ
+(262:)'
+T*[(263:)-600("************************************************************************)]TJ
+T*[(264:)-600( * Conditional Statements:                                              *)]TJ
+T*[(265:)-600( ************************************************************************")]TJ
+T*[(266:)-600(| x |)]TJ
+T*[(267:)-600(x > 10 ifTrue: [Transcript show: 'ifTrue'; cr].             "if then")]TJ
+T*[(268:)-600(x > 10 ifFalse: [Transcript show: 'ifFalse'; cr].           "if else")]TJ
+T*[(269:)-600(x > 10                                                      "if then else")]TJ
+T*[(270:)-600(   ifTrue: [Transcript show: 'ifTrue'; cr])]TJ
+ET
+Q
+Q
+endstream
+endobj
+40 0 obj
+4344
+endobj
+44 0 obj
+<</Length 45 0 R>>
+stream
+q 0.1 0 0 0.1 0 0 cm
+/R7 gs
+0 G
+740 240 5000 7440 re
+S
+5 w
+0 0 0 RG
+740 240 m
+740 7640 l
+740 240 m
+740 960 l
+380 960 l
+380 240 l
+h
+S
+0 0 0 rg
+q
+10 0 0 10 0 0 cm BT
+/R8 12 Tf
+0 1 -1 0 54 38.6641 Tm
+(10/10/14)Tj
+-0.659766 -12.8 Td
+(16:37:29)Tj
+ET
+Q
+380 6920 360 720 re
+S
+q
+10 0 0 10 0 0 cm BT
+/R10 28.8 Tf
+0 1 -1 0 66.8 707.484 Tm
+(7)Tj
+/R10 18 Tf
+16.0129 0 Td
+(/21)Tj
+/R12 14 Tf
+-408.622 -2.7 Td
+(angelfire-notes-smalltalk.txt)Tj
+-96.2402 18 Td
+($cmps112-wm/Languages/smalltalk/angelfire-notes-smalltalk/)Tj
+ET
+Q
+0 g
+q
+10 0 0 10 0 0 cm BT
+/R14 10 Tf
+0 1 -1 0 87 42 Tm
+[(271:)-600(   ifFalse: [Transcript show: 'ifFalse'; cr].)]TJ
+11 TL
+T*[(272:)-600(x > 10                                                      "if else then")]TJ
+T*[(273:)-600(   ifFalse: [Transcript show: 'ifFalse'; cr])]TJ
+T*[(274:)-600(   ifTrue: [Transcript show: 'ifTrue'; cr].)]TJ
+T*[(275:)-600(Transcript)]TJ
+T*[(276:)-600(   show:)]TJ
+T*[(277:)-600(      \(x > 10)]TJ
+T*[(278:)-600(         ifTrue: ['ifTrue'])]TJ
+T*[(279:)-600(         ifFalse: ['ifFalse']\);)]TJ
+T*[(280:)-600(   cr.)]TJ
+T*[(281:)-600(Transcript                                                  "nested if then else")]TJ
+T*[(282:)-600(   show:)]TJ
+T*[(283:)-600(      \(x > 10)]TJ
+T*[(284:)-600(         ifTrue: [x > 5)]TJ
+T*[(285:)-600(            ifTrue: ['A'])]TJ
+T*[(286:)-600(            ifFalse: ['B']])]TJ
+T*[(287:)-600(         ifFalse: ['C']\);)]TJ
+T*[(288:)-600(   cr.)]TJ
+T*[(289:)-600(switch := Dictionary new.                                   "switch functionality")]TJ
+T*[(290:)-600(switch at: $A put: [Transcript show: 'Case A'; cr].)]TJ
+T*[(291:)-600(switch at: $B put: [Transcript show: 'Case B'; cr].)]TJ
+T*[(292:)-600(switch at: $C put: [Transcript show: 'Case C'; cr].)]TJ
+T*[(293:)-600(result := \(switch at: $B\) value.)]TJ
+(294:)'
+T*[(295:)-600("************************************************************************)]TJ
+T*[(296:)-600( * Iteration statements:                                                *)]TJ
+T*[(297:)-600( ************************************************************************")]TJ
+T*[(298:)-600(| x y |)]TJ
+T*[(299:)-600(x := 4. y := 1.)]TJ
+T*[(300:)-600([x > 0] whileTrue: [x := x - 1. y := y * 2].                "while true loop")]TJ
+T*[(301:)-600([x >= 4] whileFalse: [x := x + 1. y := y * 2].              "while false loop")]TJ
+T*[(302:)-600(x timesRepeat: [y := y * 2].                                "times repear loop\(i := 1 to x\)")]TJ
+T*[(303:)-600(1 to: x do: [:a | y := y * 2].                              "for loop")]TJ
+T*[(304:)-600(1 to: x by: 2 do: [:a | y := y / 2].                        "for loop with specified increment")]TJ
+T*[(305:)-600(#\(5 4 3\) do: [:a | x := x + a].                             "iterate over array elements")]TJ
+(306:)'
+T*[(307:)-600("************************************************************************)]TJ
+T*[(308:)-600( * Character:                                                           *)]TJ
+T*[(309:)-600( ************************************************************************")]TJ
+T*[(310:)-600(| x y |)]TJ
+T*[(311:)-600(x := $A.                                                    "character assignment")]TJ
+T*[(312:)-600(y := x isLowercase.                                         "test if lower case")]TJ
+T*[(313:)-600(y := x isUppercase.                                         "test if upper case")]TJ
+T*[(314:)-600(y := x isLetter.                                            "test if letter")]TJ
+T*[(315:)-600(y := x isDigit.                                             "test if digit")]TJ
+ET
+Q
+Q
+endstream
+endobj
+45 0 obj
+3560
+endobj
+49 0 obj
+<</Length 50 0 R>>
+stream
+q 0.1 0 0 0.1 0 0 cm
+/R7 gs
+0 G
+740 240 5000 7440 re
+S
+5 w
+0 0 0 RG
+740 240 m
+740 7640 l
+740 240 m
+740 960 l
+380 960 l
+380 240 l
+h
+S
+0 0 0 rg
+q
+10 0 0 10 0 0 cm BT
+/R8 12 Tf
+0 1 -1 0 54 38.6641 Tm
+(10/10/14)Tj
+-0.659766 -12.8 Td
+(16:37:29)Tj
+ET
+Q
+380 6920 360 720 re
+S
+q
+10 0 0 10 0 0 cm BT
+/R10 28.8 Tf
+0 1 -1 0 66.8 707.484 Tm
+(8)Tj
+/R10 18 Tf
+16.0129 0 Td
+(/21)Tj
+/R12 14 Tf
+-408.622 -2.7 Td
+(angelfire-notes-smalltalk.txt)Tj
+-96.2402 18 Td
+($cmps112-wm/Languages/smalltalk/angelfire-notes-smalltalk/)Tj
+ET
+Q
+0 g
+q
+10 0 0 10 0 0 cm BT
+/R14 10 Tf
+0 1 -1 0 87 42 Tm
+[(316:)-600(y := x isAlphaNumeric.                                      "test if alphanumeric")]TJ
+11 TL
+T*[(317:)-600(y := x isSeparator.                                         "test if seperatorchar")]TJ
+T*[(318:)-600(y := x isVowel.                                             "test if vowel")]TJ
+T*[(319:)-600(y := x digitValue.                                          "convert to numeric digit value")]TJ
+T*[(320:)-600(y := x asLowercase.                                         "convert to lower case")]TJ
+T*[(321:)-600(y := x asUppercase.                                         "convert to upper case")]TJ
+T*[(322:)-600(y := x asciiValue.                                          "convert to numeric ascii value")]TJ
+T*[(323:)-600(y := x asString.                                            "convert to string")]TJ
+T*[(324:)-600(b := $A <= $B.                                              "comparison")]TJ
+T*[(325:)-600(y := $A max: $B.)]TJ
+(326:)'
+T*[(327:)-600("************************************************************************)]TJ
+T*[(328:)-600( * Symbol:                                                              *)]TJ
+T*[(329:)-600( ************************************************************************")]TJ
+T*[(330:)-600(| b x y |)]TJ
+T*[(331:)-600(x := #Hello.                                                "symbol assignment")]TJ
+T*[(332:)-600(y := 'String', 'Concatenation'.                             "symbol concatenation \(result is string\)")]TJ
+T*[(333:)-600(b := x isEmpty.                                             "test if symbol isempty")]TJ
+T*[(334:)-600(y := x size.                                                "string size")]TJ
+T*[(335:)-600(y := x at: 2.                                               "char at location")]TJ
+T*[(336:)-600(y := x copyFrom: 2 to: 4.                                   "substring")]TJ
+T*[(337:)-600(y := x indexOf: $e ifAbsent: [0].                           "first position ofcharacter within string")]TJ
+T*[(338:)-600(x do: [:a | Transcript show: a printString; cr].            "iterate over the string")]TJ
+T*[(339:)-600(b := x conform: [:a | \(a >= $a\) & \(a <= $z\)].               "test if all elements meet condition")]TJ
+T*[(340:)-600(y := x select: [:a | a > $a].                               "return all elements that meet condition")]TJ
+T*[(341:)-600(y := x asString.                                            "convert symbol tostring")]TJ
+T*[(342:)-600(y := x asText.                                              "convert symbol totext")]TJ
+T*[(343:)-600(y := x asArray.                                             "convert symbol toarray")]TJ
+T*[(344:)-600(y := x asOrderedCollection.                                 "convert symbol toordered collection")]TJ
+T*[(345:)-600(y := x asSortedCollection.                                  "convert symbol tosorted collection")]TJ
+T*[(346:)-600(y := x asBag.                                               "convert symbol tobag collection")]TJ
+T*[(347:)-600(y := x asSet.                                               "convert symbol toset collection")]TJ
+(348:)'
+T*[(349:)-600("************************************************************************)]TJ
+T*[(350:)-600( * String:                                                              *)]TJ
+T*[(351:)-600( ************************************************************************")]TJ
+T*[(352:)-600(| b x y |)]TJ
+T*[(353:)-600(x := 'This is a string'.                                    "string assignment")]TJ
+T*[(354:)-600(x := 'String', 'Concatenation'.                             "string concatenation")]TJ
+T*[(355:)-600(b := x isEmpty.                                             "test if string isempty")]TJ
+T*[(356:)-600(y := x size.                                                "string size")]TJ
+T*[(357:)-600(y := x at: 2.                                               "char at location")]TJ
+T*[(358:)-600(y := x copyFrom: 2 to: 4.                                   "substring")]TJ
+T*[(359:)-600(y := x indexOf: $a ifAbsent: [0].                           "first position ofcharacter within string")]TJ
+T*[(360:)-600(x := String new: 4.                                         "allocate string object")]TJ
+ET
+Q
+Q
+endstream
+endobj
+50 0 obj
+4787
+endobj
+54 0 obj
+<</Length 55 0 R>>
+stream
+q 0.1 0 0 0.1 0 0 cm
+/R7 gs
+0 G
+740 240 5000 7440 re
+S
+5 w
+0 0 0 RG
+740 240 m
+740 7640 l
+740 240 m
+740 960 l
+380 960 l
+380 240 l
+h
+S
+0 0 0 rg
+q
+10 0 0 10 0 0 cm BT
+/R8 12 Tf
+0 1 -1 0 54 38.6641 Tm
+(10/10/14)Tj
+-0.659766 -12.8 Td
+(16:37:29)Tj
+ET
+Q
+380 6920 360 720 re
+S
+q
+10 0 0 10 0 0 cm BT
+/R10 28.8 Tf
+0 1 -1 0 66.8 707.484 Tm
+(9)Tj
+/R10 18 Tf
+16.0129 0 Td
+(/21)Tj
+/R12 14 Tf
+-408.622 -2.7 Td
+(angelfire-notes-smalltalk.txt)Tj
+-96.2402 18 Td
+($cmps112-wm/Languages/smalltalk/angelfire-notes-smalltalk/)Tj
+ET
+Q
+0 g
+q
+10 0 0 10 0 0 cm BT
+/R14 10 Tf
+0 1 -1 0 87 42 Tm
+[(361:)-600(x                                                           "set string elements")]TJ
+11 TL
+T*[(362:)-600(   at: 1 put: $a;)]TJ
+T*[(363:)-600(   at: 2 put: $b;)]TJ
+T*[(364:)-600(   at: 3 put: $c;)]TJ
+T*[(365:)-600(   at: 4 put: $e.)]TJ
+T*[(366:)-600(x := String with: $a with: $b with: $c with: $d.            "set up to 4 elements at a time")]TJ
+T*[(367:)-600(x do: [:a | Transcript show: a printString; cr].            "iterate over the string")]TJ
+T*[(368:)-600(b := x conform: [:a | \(a >= $a\) & \(a <= $z\)].               "test if all elements meet condition")]TJ
+T*[(369:)-600(y := x select: [:a | a > $a].                               "return all elements that meet condition")]TJ
+T*[(370:)-600(y := x asSymbol.                                            "convert string tosymbol")]TJ
+T*[(371:)-600(y := x asArray.                                             "convert string toarray")]TJ
+T*[(372:)-600(x := 'ABCD' asByteArray.                                    "convert string tobyte array")]TJ
+T*[(373:)-600(y := x asOrderedCollection.                                 "convert string toordered collection")]TJ
+T*[(374:)-600(y := x asSortedCollection.                                  "convert string tosorted collection")]TJ
+T*[(375:)-600(y := x asBag.                                               "convert string tobag collection")]TJ
+T*[(376:)-600(y := x asSet.                                               "convert string toset collection")]TJ
+T*[(377:)-600(y := x shuffled.                                            "randomly shuffle string")]TJ
+(378:)'
+T*[(379:)-600("************************************************************************)]TJ
+T*[(380:)-600( * Array:         Fixed length collection                               *)]TJ
+T*[(381:)-600( * ByteArray:     Array limited to byte elements \(0-255\)                *)]TJ
+T*[(382:)-600( * WordArray:     Array limited to word elements \(0-2^32\)               *)]TJ
+T*[(383:)-600( ************************************************************************")]TJ
+T*[(384:)-600(| b x y sum max |)]TJ
+T*[(385:)-600(x := #\(4 3 2 1\).                                            "constant array")]TJ
+T*[(386:)-600(x := Array with: 5 with: 4 with: 3 with: 2.                 "create array withup to 4 elements")]TJ
+T*[(387:)-600(x := Array new: 4.                                          "allocate an arraywith specified size")]TJ
+T*[(388:)-600(x                                                           "set array elements")]TJ
+T*[(389:)-600(   at: 1 put: 5;)]TJ
+T*[(390:)-600(   at: 2 put: 4;)]TJ
+T*[(391:)-600(   at: 3 put: 3;)]TJ
+T*[(392:)-600(   at: 4 put: 2.)]TJ
+T*[(393:)-600(b := x isEmpty.                                             "test if array is empty")]TJ
+T*[(394:)-600(y := x size.                                                "array size")]TJ
+T*[(395:)-600(y := x at: 4.                                               "get array elementat index")]TJ
+T*[(396:)-600(b := x includes: 3.                                         "test if element is in array")]TJ
+T*[(397:)-600(y := x copyFrom: 2 to: 4.                                   "subarray")]TJ
+T*[(398:)-600(y := x indexOf: 3 ifAbsent: [0].                            "first position ofelement within array")]TJ
+T*[(399:)-600(y := x occurrencesOf: 3.                                    "number of times object in collection")]TJ
+T*[(400:)-600(x do: [:a | Transcript show: a printString; cr].            "iterate over the array")]TJ
+T*[(401:)-600(b := x conform: [:a | \(a >= 1\) & \(a <= 4\)].                 "test if all elements meet condition")]TJ
+T*[(402:)-600(y := x select: [:a | a > 2].                                "return collectionof elements that pass test")]TJ
+T*[(403:)-600(y := x reject: [:a | a < 2].                                "return collectionof elements that fail test")]TJ
+T*[(404:)-600(y := x collect: [:a | a + a].                               "transform each element for new collection")]TJ
+T*[(405:)-600(y := x detect: [:a | a > 3] ifNone: [].                     "find position of first element that passes test")]TJ
+ET
+Q
+Q
+endstream
+endobj
+55 0 obj
+4680
+endobj
+59 0 obj
+<</Length 60 0 R>>
+stream
+q 0.1 0 0 0.1 0 0 cm
+/R7 gs
+0 G
+740 240 5000 7440 re
+S
+5 w
+0 0 0 RG
+740 240 m
+740 7640 l
+740 240 m
+740 960 l
+380 960 l
+380 240 l
+h
+S
+0 0 0 rg
+q
+10 0 0 10 0 0 cm BT
+/R8 12 Tf
+0 1 -1 0 54 38.6641 Tm
+(10/10/14)Tj
+-0.659766 -12.8 Td
+(16:37:29)Tj
+ET
+Q
+380 6920 360 720 re
+S
+q
+10 0 0 10 0 0 cm BT
+/R10 28.8 Tf
+0 1 -1 0 66.8 699.478 Tm
+(10)Tj
+/R10 18 Tf
+32.0258 0 Td
+(/21)Tj
+/R12 14 Tf
+-416.629 -2.7 Td
+(angelfire-notes-smalltalk.txt)Tj
+-96.2402 18 Td
+($cmps112-wm/Languages/smalltalk/angelfire-notes-smalltalk/)Tj
+ET
+Q
+0 g
+q
+10 0 0 10 0 0 cm BT
+/R14 10 Tf
+0 1 -1 0 87 42 Tm
+[(406:)-600(sum := 0. x do: [:a | sum := sum + a]. sum.                 "sum array elements")]TJ
+11 TL
+T*[(407:)-600(sum := 0. 1 to: \(x size\) do: [:a | sum := sum + \(x at: a\)]. "sum array elements")]TJ
+T*[(408:)-600(sum := x inject: 0 into: [:a :c | a + c].                   "sum array elements")]TJ
+T*[(409:)-600(max := x inject: 0 into: [:a :c | \(a > c\)                   "find max element in array")]TJ
+T*[(410:)-600(   ifTrue: [a])]TJ
+T*[(411:)-600(   ifFalse: [c]].)]TJ
+T*[(412:)-600(y := x shuffled.                                            "randomly shuffle collection")]TJ
+T*[(413:)-600(y := x asArray.                                             "convert to array")]TJ
+T*[(414:)-600("y := x asByteArray."                                       "note: this instruction not available on Squeak")]TJ
+T*[(415:)-600(y := x asWordArray.                                         "convert to word array")]TJ
+T*[(416:)-600(y := x asOrderedCollection.                                 "convert to ordered collection")]TJ
+T*[(417:)-600(y := x asSortedCollection.                                  "convert to sortedcollection")]TJ
+T*[(418:)-600(y := x asBag.                                               "convert to bag collection")]TJ
+T*[(419:)-600(y := x asSet.                                               "convert to set collection")]TJ
+(420:)'
+T*[(421:)-600("************************************************************************)]TJ
+T*[(422:)-600( * OrderedCollection: acts like an expandable array                     *)]TJ
+T*[(423:)-600( ************************************************************************")]TJ
+T*[(424:)-600(| b x y sum max |)]TJ
+T*[(425:)-600(x := OrderedCollection with: 4 with: 3 with: 2 with: 1.     "create collectionwith up to 4 elements")]TJ
+T*[(426:)-600(x := OrderedCollection new.                                 "allocate collection")]TJ
+T*[(427:)-600(x add: 3; add: 2; add: 1; add: 4; yourself.                 "add element to collection")]TJ
+T*[(428:)-600(y := x addFirst: 5.                                         "add element at beginning of collection")]TJ
+T*[(429:)-600(y := x removeFirst.                                         "remove first element in collection")]TJ
+T*[(430:)-600(y := x addLast: 6.                                          "add element at end of collection")]TJ
+T*[(431:)-600(y := x removeLast.                                          "remove last element in collection")]TJ
+T*[(432:)-600(y := x addAll: #\(7 8 9\).                                    "add multiple elements to collection")]TJ
+T*[(433:)-600(y := x removeAll: #\(7 8 9\).                                 "remove multiple elements from collection")]TJ
+T*[(434:)-600(x at: 2 put: 3.                                             "set element at index")]TJ
+T*[(435:)-600(y := x remove: 5 ifAbsent: [].                              "remove element from collection")]TJ
+T*[(436:)-600(b := x isEmpty.                                             "test if empty")]TJ
+T*[(437:)-600(y := x size.                                                "number of elements")]TJ
+T*[(438:)-600(y := x at: 2.                                               "retrieve element at index")]TJ
+T*[(439:)-600(y := x first.                                               "retrieve first element in collection")]TJ
+T*[(440:)-600(y := x last.                                                "retrieve last element in collection")]TJ
+T*[(441:)-600(b := x includes: 5.                                         "test if element is in collection")]TJ
+T*[(442:)-600(y := x copyFrom: 2 to: 3.                                   "subcollection")]TJ
+T*[(443:)-600(y := x indexOf: 3 ifAbsent: [0].                            "first position ofelement within collection")]TJ
+T*[(444:)-600(y := x occurrencesOf: 3.                                    "number of times object in collection")]TJ
+T*[(445:)-600(x do: [:a | Transcript show: a printString; cr].            "iterate over the collection")]TJ
+T*[(446:)-600(b := x conform: [:a | \(a >= 1\) & \(a <= 4\)].                 "test if all elements meet condition")]TJ
+T*[(447:)-600(y := x select: [:a | a > 2].                                "return collectionof elements that pass test")]TJ
+T*[(448:)-600(y := x reject: [:a | a < 2].                                "return collectionof elements that fail test")]TJ
+T*[(449:)-600(y := x collect: [:a | a + a].                               "transform each element for new collection")]TJ
+T*[(450:)-600(y := x detect: [:a | a > 3] ifNone: [].                     "find position of first element that passes test")]TJ
+ET
+Q
+Q
+endstream
+endobj
+60 0 obj
+5186
+endobj
+64 0 obj
+<</Length 65 0 R>>
+stream
+q 0.1 0 0 0.1 0 0 cm
+/R7 gs
+0 G
+740 240 5000 7440 re
+S
+5 w
+0 0 0 RG
+740 240 m
+740 7640 l
+740 240 m
+740 960 l
+380 960 l
+380 240 l
+h
+S
+0 0 0 rg
+q
+10 0 0 10 0 0 cm BT
+/R8 12 Tf
+0 1 -1 0 54 38.6641 Tm
+(10/10/14)Tj
+-0.659766 -12.8 Td
+(16:37:29)Tj
+ET
+Q
+380 6920 360 720 re
+S
+q
+10 0 0 10 0 0 cm BT
+/R10 28.8 Tf
+0 1 -1 0 66.8 699.478 Tm
+(11)Tj
+/R10 18 Tf
+32.0258 0 Td
+(/21)Tj
+/R12 14 Tf
+-416.629 -2.7 Td
+(angelfire-notes-smalltalk.txt)Tj
+-96.2402 18 Td
+($cmps112-wm/Languages/smalltalk/angelfire-notes-smalltalk/)Tj
+ET
+Q
+0 g
+q
+10 0 0 10 0 0 cm BT
+/R14 10 Tf
+0 1 -1 0 87 42 Tm
+[(451:)-600(sum := 0. x do: [:a | sum := sum + a]. sum.                 "sum elements")]TJ
+11 TL
+T*[(452:)-600(sum := 0. 1 to: \(x size\) do: [:a | sum := sum + \(x at: a\)]. "sum elements")]TJ
+T*[(453:)-600(sum := x inject: 0 into: [:a :c | a + c].                   "sum elements")]TJ
+T*[(454:)-600(max := x inject: 0 into: [:a :c | \(a > c\)                   "find max element in collection")]TJ
+T*[(455:)-600(   ifTrue: [a])]TJ
+T*[(456:)-600(   ifFalse: [c]].)]TJ
+T*[(457:)-600(y := x shuffled.                                            "randomly shuffle collection")]TJ
+T*[(458:)-600(y := x asArray.                                             "convert to array")]TJ
+T*[(459:)-600(y := x asOrderedCollection.                                 "convert to ordered collection")]TJ
+T*[(460:)-600(y := x asSortedCollection.                                  "convert to sortedcollection")]TJ
+T*[(461:)-600(y := x asBag.                                               "convert to bag collection")]TJ
+T*[(462:)-600(y := x asSet.                                               "convert to set collection")]TJ
+(463:)'
+T*[(464:)-600("************************************************************************)]TJ
+T*[(465:)-600( * SortedCollection:    like OrderedCollection except order of elements *)]TJ
+T*[(466:)-600( *                         determined by sorting criteria               *)]TJ
+T*[(467:)-600( ************************************************************************")]TJ
+T*[(468:)-600(| b x y sum max |)]TJ
+T*[(469:)-600(x := SortedCollection with: 4 with: 3 with: 2 with: 1.      "create collectionwith up to 4 elements")]TJ
+T*[(470:)-600(x := SortedCollection new.                                  "allocate collection")]TJ
+T*[(471:)-600(x := SortedCollection sortBlock: [:a :c | a > c].           "set sort criteria")]TJ
+T*[(472:)-600(x add: 3; add: 2; add: 1; add: 4; yourself.                 "add element to collection")]TJ
+T*[(473:)-600(y := x addFirst: 5.                                         "add element at beginning of collection")]TJ
+T*[(474:)-600(y := x removeFirst.                                         "remove first element in collection")]TJ
+T*[(475:)-600(y := x addLast: 6.                                          "add element at end of collection")]TJ
+T*[(476:)-600(y := x removeLast.                                          "remove last element in collection")]TJ
+T*[(477:)-600(y := x addAll: #\(7 8 9\).                                    "add multiple elements to collection")]TJ
+T*[(478:)-600(y := x removeAll: #\(7 8 9\).                                 "remove multiple elements from collection")]TJ
+T*[(479:)-600(y := x remove: 5 ifAbsent: [].                              "remove element from collection")]TJ
+T*[(480:)-600(b := x isEmpty.                                             "test if empty")]TJ
+T*[(481:)-600(y := x size.                                                "number of elements")]TJ
+T*[(482:)-600(y := x at: 2.                                               "retrieve element at index")]TJ
+T*[(483:)-600(y := x first.                                               "retrieve first element in collection")]TJ
+T*[(484:)-600(y := x last.                                                "retrieve last element in collection")]TJ
+T*[(485:)-600(b := x includes: 4.                                         "test if element is in collection")]TJ
+T*[(486:)-600(y := x copyFrom: 2 to: 3.                                   "subcollection")]TJ
+T*[(487:)-600(y := x indexOf: 3 ifAbsent: [0].                            "first position ofelement within collection")]TJ
+T*[(488:)-600(y := x occurrencesOf: 3.                                    "number of times object in collection")]TJ
+T*[(489:)-600(x do: [:a | Transcript show: a printString; cr].            "iterate over the collection")]TJ
+T*[(490:)-600(b := x conform: [:a | \(a >= 1\) & \(a <= 4\)].                 "test if all elements meet condition")]TJ
+T*[(491:)-600(y := x select: [:a | a > 2].                                "return collectionof elements that pass test")]TJ
+T*[(492:)-600(y := x reject: [:a | a < 2].                                "return collectionof elements that fail test")]TJ
+T*[(493:)-600(y := x collect: [:a | a + a].                               "transform each element for new collection")]TJ
+T*[(494:)-600(y := x detect: [:a | a > 3] ifNone: [].                     "find position of first element that passes test")]TJ
+T*[(495:)-600(sum := 0. x do: [:a | sum := sum + a]. sum.                 "sum elements")]TJ
+ET
+Q
+Q
+endstream
+endobj
+65 0 obj
+5126
+endobj
+69 0 obj
+<</Length 70 0 R>>
+stream
+q 0.1 0 0 0.1 0 0 cm
+/R7 gs
+0 G
+740 240 5000 7440 re
+S
+5 w
+0 0 0 RG
+740 240 m
+740 7640 l
+740 240 m
+740 960 l
+380 960 l
+380 240 l
+h
+S
+0 0 0 rg
+q
+10 0 0 10 0 0 cm BT
+/R8 12 Tf
+0 1 -1 0 54 38.6641 Tm
+(10/10/14)Tj
+-0.659766 -12.8 Td
+(16:37:29)Tj
+ET
+Q
+380 6920 360 720 re
+S
+q
+10 0 0 10 0 0 cm BT
+/R10 28.8 Tf
+0 1 -1 0 66.8 699.478 Tm
+(12)Tj
+/R10 18 Tf
+32.0258 0 Td
+(/21)Tj
+/R12 14 Tf
+-416.629 -2.7 Td
+(angelfire-notes-smalltalk.txt)Tj
+-96.2402 18 Td
+($cmps112-wm/Languages/smalltalk/angelfire-notes-smalltalk/)Tj
+ET
+Q
+0 g
+q
+10 0 0 10 0 0 cm BT
+/R14 10 Tf
+0 1 -1 0 87 42 Tm
+[(496:)-600(sum := 0. 1 to: \(x size\) do: [:a | sum := sum + \(x at: a\)]. "sum elements")]TJ
+11 TL
+T*[(497:)-600(sum := x inject: 0 into: [:a :c | a + c].                   "sum elements")]TJ
+T*[(498:)-600(max := x inject: 0 into: [:a :c | \(a > c\)                   "find max element in collection")]TJ
+T*[(499:)-600(   ifTrue: [a])]TJ
+T*[(500:)-600(   ifFalse: [c]].)]TJ
+T*[(501:)-600(y := x asArray.                                             "convert to array")]TJ
+T*[(502:)-600(y := x asOrderedCollection.                                 "convert to ordered collection")]TJ
+T*[(503:)-600(y := x asSortedCollection.                                  "convert to sortedcollection")]TJ
+T*[(504:)-600(y := x asBag.                                               "convert to bag collection")]TJ
+T*[(505:)-600(y := x asSet.                                               "convert to set collection")]TJ
+(506:)'
+T*[(507:)-600("************************************************************************)]TJ
+T*[(508:)-600( * Bag:        like OrderedCollection except elements are in no         *)]TJ
+T*[(509:)-600( *                particular order                                      *)]TJ
+T*[(510:)-600( ************************************************************************")]TJ
+T*[(511:)-600(| b x y sum max |)]TJ
+T*[(512:)-600(x := Bag with: 4 with: 3 with: 2 with: 1.                   "create collectionwith up to 4 elements")]TJ
+T*[(513:)-600(x := Bag new.                                               "allocate collection")]TJ
+T*[(514:)-600(x add: 4; add: 3; add: 1; add: 2; yourself.                 "add element to collection")]TJ
+T*[(515:)-600(x add: 3 withOccurrences: 2.                                "add multiple copies to collection")]TJ
+T*[(516:)-600(y := x addAll: #\(7 8 9\).                                    "add multiple elements to collection")]TJ
+T*[(517:)-600(y := x removeAll: #\(7 8 9\).                                 "remove multiple elements from collection")]TJ
+T*[(518:)-600(y := x remove: 4 ifAbsent: [].                              "remove element from collection")]TJ
+T*[(519:)-600(b := x isEmpty.                                             "test if empty")]TJ
+T*[(520:)-600(y := x size.                                                "number of elements")]TJ
+T*[(521:)-600(b := x includes: 3.                                         "test if element is in collection")]TJ
+T*[(522:)-600(y := x occurrencesOf: 3.                                    "number of times object in collection")]TJ
+T*[(523:)-600(x do: [:a | Transcript show: a printString; cr].            "iterate over the collection")]TJ
+T*[(524:)-600(b := x conform: [:a | \(a >= 1\) & \(a <= 4\)].                 "test if all elements meet condition")]TJ
+T*[(525:)-600(y := x select: [:a | a > 2].                                "return collectionof elements that pass test")]TJ
+T*[(526:)-600(y := x reject: [:a | a < 2].                                "return collectionof elements that fail test")]TJ
+T*[(527:)-600(y := x collect: [:a | a + a].                               "transform each element for new collection")]TJ
+T*[(528:)-600(y := x detect: [:a | a > 3] ifNone: [].                     "find position of first element that passes test")]TJ
+T*[(529:)-600(sum := 0. x do: [:a | sum := sum + a]. sum.                 "sum elements")]TJ
+T*[(530:)-600(sum := x inject: 0 into: [:a :c | a + c].                   "sum elements")]TJ
+T*[(531:)-600(max := x inject: 0 into: [:a :c | \(a > c\)                   "find max element in collection")]TJ
+T*[(532:)-600(   ifTrue: [a])]TJ
+T*[(533:)-600(   ifFalse: [c]].)]TJ
+T*[(534:)-600(y := x asOrderedCollection.                                 "convert to ordered collection")]TJ
+T*[(535:)-600(y := x asSortedCollection.                                  "convert to sortedcollection")]TJ
+T*[(536:)-600(y := x asBag.                                               "convert to bag collection")]TJ
+T*[(537:)-600(y := x asSet.                                               "convert to set collection")]TJ
+(538:)'
+T*[(539:)-600("************************************************************************)]TJ
+T*[(540:)-600( * Set:           like Bag except duplicates not allowed                *)]TJ
+ET
+Q
+Q
+endstream
+endobj
+70 0 obj
+4821
+endobj
+74 0 obj
+<</Length 75 0 R>>
+stream
+q 0.1 0 0 0.1 0 0 cm
+/R7 gs
+0 G
+740 240 5000 7440 re
+S
+5 w
+0 0 0 RG
+740 240 m
+740 7640 l
+740 240 m
+740 960 l
+380 960 l
+380 240 l
+h
+S
+0 0 0 rg
+q
+10 0 0 10 0 0 cm BT
+/R8 12 Tf
+0 1 -1 0 54 38.6641 Tm
+(10/10/14)Tj
+-0.659766 -12.8 Td
+(16:37:29)Tj
+ET
+Q
+380 6920 360 720 re
+S
+q
+10 0 0 10 0 0 cm BT
+/R10 28.8 Tf
+0 1 -1 0 66.8 699.478 Tm
+(13)Tj
+/R10 18 Tf
+32.0258 0 Td
+(/21)Tj
+/R12 14 Tf
+-416.629 -2.7 Td
+(angelfire-notes-smalltalk.txt)Tj
+-96.2402 18 Td
+($cmps112-wm/Languages/smalltalk/angelfire-notes-smalltalk/)Tj
+ET
+Q
+0 g
+q
+10 0 0 10 0 0 cm BT
+/R14 10 Tf
+0 1 -1 0 87 42 Tm
+[(541:)-600( * IdentitySet:   uses identity test \(== rather than =\)                 *)]TJ
+11 TL
+T*[(542:)-600( ************************************************************************")]TJ
+T*[(543:)-600(| b x y sum max |)]TJ
+T*[(544:)-600(x := Set with: 4 with: 3 with: 2 with: 1.                   "create collectionwith up to 4 elements")]TJ
+T*[(545:)-600(x := Set new.                                               "allocate collection")]TJ
+T*[(546:)-600(x add: 4; add: 3; add: 1; add: 2; yourself.                 "add element to collection")]TJ
+T*[(547:)-600(y := x addAll: #\(7 8 9\).                                    "add multiple elements to collection")]TJ
+T*[(548:)-600(y := x removeAll: #\(7 8 9\).                                 "remove multiple elements from collection")]TJ
+T*[(549:)-600(y := x remove: 4 ifAbsent: [].                              "remove element from collection")]TJ
+T*[(550:)-600(b := x isEmpty.                                             "test if empty")]TJ
+T*[(551:)-600(y := x size.                                                "number of elements")]TJ
+T*[(552:)-600(x includes: 4.                                              "test if element is in collection")]TJ
+T*[(553:)-600(x do: [:a | Transcript show: a printString; cr].            "iterate over the collection")]TJ
+T*[(554:)-600(b := x conform: [:a | \(a >= 1\) & \(a <= 4\)].                 "test if all elements meet condition")]TJ
+T*[(555:)-600(y := x select: [:a | a > 2].                                "return collectionof elements that pass test")]TJ
+T*[(556:)-600(y := x reject: [:a | a < 2].                                "return collectionof elements that fail test")]TJ
+T*[(557:)-600(y := x collect: [:a | a + a].                               "transform each element for new collection")]TJ
+T*[(558:)-600(y := x detect: [:a | a > 3] ifNone: [].                     "find position of first element that passes test")]TJ
+T*[(559:)-600(sum := 0. x do: [:a | sum := sum + a]. sum.                 "sum elements")]TJ
+T*[(560:)-600(sum := x inject: 0 into: [:a :c | a + c].                   "sum elements")]TJ
+T*[(561:)-600(max := x inject: 0 into: [:a :c | \(a > c\)                   "find max element in collection")]TJ
+T*[(562:)-600(   ifTrue: [a])]TJ
+T*[(563:)-600(   ifFalse: [c]].)]TJ
+T*[(564:)-600(y := x asArray.                                             "convert to array")]TJ
+T*[(565:)-600(y := x asOrderedCollection.                                 "convert to ordered collection")]TJ
+T*[(566:)-600(y := x asSortedCollection.                                  "convert to sortedcollection")]TJ
+T*[(567:)-600(y := x asBag.                                               "convert to bag collection")]TJ
+T*[(568:)-600(y := x asSet.                                               "convert to set collection")]TJ
+(569:)'
+T*[(570:)-600("************************************************************************)]TJ
+T*[(571:)-600( * Interval:                                                            *)]TJ
+T*[(572:)-600( ************************************************************************")]TJ
+T*[(573:)-600(| b x y sum max |)]TJ
+T*[(574:)-600(x := Interval from: 5 to: 10.                               "create interval object")]TJ
+T*[(575:)-600(x := 5 to: 10.)]TJ
+T*[(576:)-600(x := Interval from: 5 to: 10 by: 2.                         "create interval object with specified increment")]TJ
+T*[(577:)-600(x := 5 to: 10 by: 2.)]TJ
+T*[(578:)-600(b := x isEmpty.                                             "test if empty")]TJ
+T*[(579:)-600(y := x size.                                                "number of elements")]TJ
+T*[(580:)-600(x includes: 9.                                              "test if element is in collection")]TJ
+T*[(581:)-600(x do: [:k | Transcript show: k printString; cr].            "iterate over interval")]TJ
+T*[(582:)-600(b := x conform: [:a | \(a >= 1\) & \(a <= 4\)].                 "test if all elements meet condition")]TJ
+T*[(583:)-600(y := x select: [:a | a > 7].                                "return collectionof elements that pass test")]TJ
+T*[(584:)-600(y := x reject: [:a | a < 2].                                "return collectionof elements that fail test")]TJ
+T*[(585:)-600(y := x collect: [:a | a + a].                               "transform each element for new collection")]TJ
+ET
+Q
+Q
+endstream
+endobj
+75 0 obj
+4928
+endobj
+79 0 obj
+<</Length 80 0 R>>
+stream
+q 0.1 0 0 0.1 0 0 cm
+/R7 gs
+0 G
+740 240 5000 7440 re
+S
+5 w
+0 0 0 RG
+740 240 m
+740 7640 l
+740 240 m
+740 960 l
+380 960 l
+380 240 l
+h
+S
+0 0 0 rg
+q
+10 0 0 10 0 0 cm BT
+/R8 12 Tf
+0 1 -1 0 54 38.6641 Tm
+(10/10/14)Tj
+-0.659766 -12.8 Td
+(16:37:29)Tj
+ET
+Q
+380 6920 360 720 re
+S
+q
+10 0 0 10 0 0 cm BT
+/R10 28.8 Tf
+0 1 -1 0 66.8 699.478 Tm
+(14)Tj
+/R10 18 Tf
+32.0258 0 Td
+(/21)Tj
+/R12 14 Tf
+-416.629 -2.7 Td
+(angelfire-notes-smalltalk.txt)Tj
+-96.2402 18 Td
+($cmps112-wm/Languages/smalltalk/angelfire-notes-smalltalk/)Tj
+ET
+Q
+0 g
+q
+10 0 0 10 0 0 cm BT
+/R14 10 Tf
+0 1 -1 0 87 42 Tm
+[(586:)-600(y := x detect: [:a | a > 3] ifNone: [].                     "find position of first element that passes test")]TJ
+11 TL
+T*[(587:)-600(sum := 0. x do: [:a | sum := sum + a]. sum.                 "sum elements")]TJ
+T*[(588:)-600(sum := 0. 1 to: \(x size\) do: [:a | sum := sum + \(x at: a\)]. "sum elements")]TJ
+T*[(589:)-600(sum := x inject: 0 into: [:a :c | a + c].                   "sum elements")]TJ
+T*[(590:)-600(max := x inject: 0 into: [:a :c | \(a > c\)                   "find max element in collection")]TJ
+T*[(591:)-600(   ifTrue: [a])]TJ
+T*[(592:)-600(   ifFalse: [c]].)]TJ
+T*[(593:)-600(y := x asArray.                                             "convert to array")]TJ
+T*[(594:)-600(y := x asOrderedCollection.                                 "convert to ordered collection")]TJ
+T*[(595:)-600(y := x asSortedCollection.                                  "convert to sortedcollection")]TJ
+T*[(596:)-600(y := x asBag.                                               "convert to bag collection")]TJ
+T*[(597:)-600(y := x asSet.                                               "convert to set collection")]TJ
+(598:)'
+T*[(599:)-600("************************************************************************)]TJ
+T*[(600:)-600( * Associations:                                                        *)]TJ
+T*[(601:)-600( ************************************************************************")]TJ
+T*[(602:)-600(| x y |)]TJ
+T*[(603:)-600(x := #myVar->'hello'.)]TJ
+T*[(604:)-600(y := x key.)]TJ
+T*[(605:)-600(y := x value.)]TJ
+(606:)'
+T*[(607:)-600("************************************************************************)]TJ
+T*[(608:)-600( * Dictionary:                                                          *)]TJ
+T*[(609:)-600( * IdentityDictionary:   uses identity test \(== rather than =\)          *)]TJ
+T*[(610:)-600( ************************************************************************")]TJ
+T*[(611:)-600(| b x y |)]TJ
+T*[(612:)-600(x := Dictionary new.                                        "allocate collection")]TJ
+T*[(613:)-600(x add: #a->4; add: #b->3; add: #c->1; add: #d->2; yourself. "add element to collection")]TJ
+T*[(614:)-600(x at: #e put: 3.                                            "set element at index")]TJ
+T*[(615:)-600(b := x isEmpty.                                             "test if empty")]TJ
+T*[(616:)-600(y := x size.                                                "number of elements")]TJ
+T*[(617:)-600(y := x at: #a ifAbsent: [].                                 "retrieve element at index")]TJ
+T*[(618:)-600(y := x keyAtValue: 3 ifAbsent: [].                          "retrieve key for given value with error block")]TJ
+T*[(619:)-600(y := x removeKey: #e ifAbsent: [].                          "remove element from collection")]TJ
+T*[(620:)-600(b := x includes: 3.                                         "test if element is in values collection")]TJ
+T*[(621:)-600(b := x includesKey: #a.                                     "test if element is in keys collection")]TJ
+T*[(622:)-600(y := x occurrencesOf: 3.                                    "number of times object in collection")]TJ
+T*[(623:)-600(y := x keys.                                                "set of keys")]TJ
+T*[(624:)-600(y := x values.                                              "bag of values")]TJ
+T*[(625:)-600(x do: [:a | Transcript show: a printString; cr].            "iterate over the values collection")]TJ
+T*[(626:)-600(x keysDo: [:a | Transcript show: a printString; cr].        "iterate over the keys collection")]TJ
+T*[(627:)-600(x associationsDo: [:a | Transcript show: a printString; cr]."iterate over the associations")]TJ
+T*[(628:)-600(x keysAndValuesDo: [:aKey :aValue | Transcript              "iterate over keysand values")]TJ
+T*[(629:)-600(   show: aKey printString; space;)]TJ
+T*[(630:)-600(   show: aValue printString; cr].)]TJ
+ET
+Q
+Q
+endstream
+endobj
+80 0 obj
+4453
+endobj
+84 0 obj
+<</Length 85 0 R>>
+stream
+q 0.1 0 0 0.1 0 0 cm
+/R7 gs
+0 G
+740 240 5000 7440 re
+S
+5 w
+0 0 0 RG
+740 240 m
+740 7640 l
+740 240 m
+740 960 l
+380 960 l
+380 240 l
+h
+S
+0 0 0 rg
+q
+10 0 0 10 0 0 cm BT
+/R8 12 Tf
+0 1 -1 0 54 38.6641 Tm
+(10/10/14)Tj
+-0.659766 -12.8 Td
+(16:37:29)Tj
+ET
+Q
+380 6920 360 720 re
+S
+q
+10 0 0 10 0 0 cm BT
+/R10 28.8 Tf
+0 1 -1 0 66.8 699.478 Tm
+(15)Tj
+/R10 18 Tf
+32.0258 0 Td
+(/21)Tj
+/R12 14 Tf
+-416.629 -2.7 Td
+(angelfire-notes-smalltalk.txt)Tj
+-96.2402 18 Td
+($cmps112-wm/Languages/smalltalk/angelfire-notes-smalltalk/)Tj
+ET
+Q
+0 g
+q
+10 0 0 10 0 0 cm BT
+/R14 10 Tf
+0 1 -1 0 87 42 Tm
+[(631:)-600(b := x conform: [:a | \(a >= 1\) & \(a <= 4\)].                 "test if all elements meet condition")]TJ
+11 TL
+T*[(632:)-600(y := x select: [:a | a > 2].                                "return collectionof elements that pass test")]TJ
+T*[(633:)-600(y := x reject: [:a | a < 2].                                "return collectionof elements that fail test")]TJ
+T*[(634:)-600(y := x collect: [:a | a + a].                               "transform each element for new collection")]TJ
+T*[(635:)-600(y := x detect: [:a | a > 3] ifNone: [].                     "find position of first element that passes test")]TJ
+T*[(636:)-600(sum := 0. x do: [:a | sum := sum + a]. sum.                 "sum elements")]TJ
+T*[(637:)-600(sum := x inject: 0 into: [:a :c | a + c].                   "sum elements")]TJ
+T*[(638:)-600(max := x inject: 0 into: [:a :c | \(a > c\)                   "find max element in collection")]TJ
+T*[(639:)-600(   ifTrue: [a])]TJ
+T*[(640:)-600(   ifFalse: [c]].)]TJ
+T*[(641:)-600(y := x asArray.                                             "convert to array")]TJ
+T*[(642:)-600(y := x asOrderedCollection.                                 "convert to ordered collection")]TJ
+T*[(643:)-600(y := x asSortedCollection.                                  "convert to sortedcollection")]TJ
+T*[(644:)-600(y := x asBag.                                               "convert to bag collection")]TJ
+T*[(645:)-600(y := x asSet.                                               "convert to set collection")]TJ
+(646:)'
+T*[(647:)-600(Smalltalk at: #CMRGlobal put: 'CMR entry'.                  "put global in Smalltalk Dictionary")]TJ
+T*[(648:)-600(x := Smalltalk at: #CMRGlobal.                              "read global from Smalltalk Dictionary")]TJ
+T*[(649:)-600(Transcript show: \(CMRGlobal printString\).                   "entries are directly accessible by name")]TJ
+T*[(650:)-600(Smalltalk keys do: [ :k |                                   "print out all classes")]TJ
+T*[(651:)-600(   \(\(Smalltalk at: k\) isKindOf: Class\))]TJ
+T*[(652:)-600(      ifFalse: [Transcript show: k printString; cr]].)]TJ
+T*[(653:)-600(Smalltalk at: #CMRDictionary put: \(Dictionary new\).         "set up user defined dictionary")]TJ
+T*[(654:)-600(CMRDictionary at: #MyVar1 put: 'hello1'.                    "put entry in dictionary")]TJ
+T*[(655:)-600(CMRDictionary add: #MyVar2->'hello2'.                       "add entry to dictionary use key->value combo")]TJ
+T*[(656:)-600(CMRDictionary size.                                         "dictionary size")]TJ
+T*[(657:)-600(CMRDictionary keys do: [ :k |                               "print out keys indictionary")]TJ
+T*[(658:)-600(   Transcript show: k printString; cr].)]TJ
+T*[(659:)-600(CMRDictionary values do: [ :k |                             "print out values in dictionary")]TJ
+T*[(660:)-600(   Transcript show: k printString; cr].)]TJ
+T*[(661:)-600(CMRDictionary keysAndValuesDo: [:aKey :aValue |             "print out keys and values")]TJ
+T*[(662:)-600(   Transcript)]TJ
+T*[(663:)-600(      show: aKey printString;)]TJ
+T*[(664:)-600(      space;)]TJ
+T*[(665:)-600(      show: aValue printString;)]TJ
+T*[(666:)-600(      cr].)]TJ
+T*[(667:)-600(CMRDictionary associationsDo: [:aKeyValue |                 "another iterator for printing key values")]TJ
+T*[(668:)-600(   Transcript show: aKeyValue printString; cr].)]TJ
+T*[(669:)-600(Smalltalk removeKey: #CMRGlobal ifAbsent: [].               "remove entry fromSmalltalk dictionary")]TJ
+T*[(670:)-600(Smalltalk removeKey: #CMRDictionary ifAbsent: [].           "remove user dictionary from Smalltalk dictionary")]TJ
+(671:)'
+T*[(672:)-600("************************************************************************)]TJ
+T*[(673:)-600( * Internal Stream:                                                     *)]TJ
+T*[(674:)-600( ************************************************************************")]TJ
+T*[(675:)-600(| b x ios |)]TJ
+ET
+Q
+Q
+endstream
+endobj
+85 0 obj
+4508
+endobj
+89 0 obj
+<</Length 90 0 R>>
+stream
+q 0.1 0 0 0.1 0 0 cm
+/R7 gs
+0 G
+740 240 5000 7440 re
+S
+5 w
+0 0 0 RG
+740 240 m
+740 7640 l
+740 240 m
+740 960 l
+380 960 l
+380 240 l
+h
+S
+0 0 0 rg
+q
+10 0 0 10 0 0 cm BT
+/R8 12 Tf
+0 1 -1 0 54 38.6641 Tm
+(10/10/14)Tj
+-0.659766 -12.8 Td
+(16:37:29)Tj
+ET
+Q
+380 6920 360 720 re
+S
+q
+10 0 0 10 0 0 cm BT
+/R10 28.8 Tf
+0 1 -1 0 66.8 699.478 Tm
+(16)Tj
+/R10 18 Tf
+32.0258 0 Td
+(/21)Tj
+/R12 14 Tf
+-416.629 -2.7 Td
+(angelfire-notes-smalltalk.txt)Tj
+-96.2402 18 Td
+($cmps112-wm/Languages/smalltalk/angelfire-notes-smalltalk/)Tj
+ET
+Q
+0 g
+q
+10 0 0 10 0 0 cm BT
+/R14 10 Tf
+0 1 -1 0 87 42 Tm
+[(676:)-600(ios := ReadStream on: 'Hello read stream'.)]TJ
+11 TL
+T*[(677:)-600(ios := ReadStream on: 'Hello read stream' from: 1 to: 5.)]TJ
+T*[(678:)-600([\(x := ios nextLine\) notNil])]TJ
+T*[(679:)-600(   whileTrue: [Transcript show: x; cr].)]TJ
+T*[(680:)-600(ios position: 3.)]TJ
+T*[(681:)-600(ios position.)]TJ
+T*[(682:)-600(x := ios next.)]TJ
+T*[(683:)-600(x := ios peek.)]TJ
+T*[(684:)-600(x := ios contents.)]TJ
+T*[(685:)-600(b := ios atEnd.)]TJ
+(686:)'
+T*[(687:)-600(ios := ReadWriteStream on: 'Hello read stream'.)]TJ
+T*[(688:)-600(ios := ReadWriteStream on: 'Hello read stream' from: 1 to: 5.)]TJ
+T*[(689:)-600(ios := ReadWriteStream with: 'Hello read stream'.)]TJ
+T*[(690:)-600(ios := ReadWriteStream with: 'Hello read stream' from: 1 to: 10.)]TJ
+T*[(691:)-600(ios position: 0.)]TJ
+T*[(692:)-600([\(x := ios nextLine\) notNil])]TJ
+T*[(693:)-600(   whileTrue: [Transcript show: x; cr].)]TJ
+T*[(694:)-600(ios position: 6.)]TJ
+T*[(695:)-600(ios position.)]TJ
+T*[(696:)-600(ios nextPutAll: 'Chris'.)]TJ
+T*[(697:)-600(x := ios next.)]TJ
+T*[(698:)-600(x := ios peek.)]TJ
+T*[(699:)-600(x := ios contents.)]TJ
+T*[(700:)-600(b := ios atEnd.)]TJ
+(701:)'
+T*[(702:)-600("************************************************************************)]TJ
+T*[(703:)-600( * FileStream:                                                          *)]TJ
+T*[(704:)-600( ************************************************************************")]TJ
+T*[(705:)-600(| b x ios |)]TJ
+T*[(706:)-600(ios := FileStream newFileNamed: 'ios.txt'.)]TJ
+T*[(707:)-600(ios nextPut: $H; cr.)]TJ
+T*[(708:)-600(ios nextPutAll: 'Hello File'; cr.)]TJ
+T*[(709:)-600('Hello File' printOn: ios.)]TJ
+T*[(710:)-600('Hello File' storeOn: ios.)]TJ
+T*[(711:)-600(ios close.)]TJ
+(712:)'
+T*[(713:)-600(ios := FileStream oldFileNamed: 'ios.txt'.)]TJ
+T*[(714:)-600([\(x := ios nextLine\) notNil])]TJ
+T*[(715:)-600(   whileTrue: [Transcript show: x; cr].)]TJ
+T*[(716:)-600(ios position: 3.)]TJ
+T*[(717:)-600(x := ios position.)]TJ
+T*[(718:)-600(x := ios next.)]TJ
+T*[(719:)-600(x := ios peek.)]TJ
+T*[(720:)-600(b := ios atEnd.)]TJ
+ET
+Q
+Q
+endstream
+endobj
+90 0 obj
+2654
+endobj
+94 0 obj
+<</Length 95 0 R>>
+stream
+q 0.1 0 0 0.1 0 0 cm
+/R7 gs
+0 G
+740 240 5000 7440 re
+S
+5 w
+0 0 0 RG
+740 240 m
+740 7640 l
+740 240 m
+740 960 l
+380 960 l
+380 240 l
+h
+S
+0 0 0 rg
+q
+10 0 0 10 0 0 cm BT
+/R8 12 Tf
+0 1 -1 0 54 38.6641 Tm
+(10/10/14)Tj
+-0.659766 -12.8 Td
+(16:37:29)Tj
+ET
+Q
+380 6920 360 720 re
+S
+q
+10 0 0 10 0 0 cm BT
+/R10 28.8 Tf
+0 1 -1 0 66.8 699.478 Tm
+(17)Tj
+/R10 18 Tf
+32.0258 0 Td
+(/21)Tj
+/R12 14 Tf
+-416.629 -2.7 Td
+(angelfire-notes-smalltalk.txt)Tj
+-96.2402 18 Td
+($cmps112-wm/Languages/smalltalk/angelfire-notes-smalltalk/)Tj
+ET
+Q
+0 g
+q
+10 0 0 10 0 0 cm BT
+/R14 10 Tf
+0 1 -1 0 87 42 Tm
+[(721:)-600(ios close.)]TJ
+11 TL
+(722:)'
+T*[(723:)-600("************************************************************************)]TJ
+T*[(724:)-600( * Date:                                                                *)]TJ
+T*[(725:)-600( ************************************************************************")]TJ
+T*[(726:)-600(| x y |)]TJ
+T*[(727:)-600(x := Date today.                                            "create date for today")]TJ
+T*[(728:)-600(x := Date dateAndTimeNow.                                   "create date from current time/date")]TJ
+T*[(729:)-600(x := Date readFromString: '01/02/1999'.                     "create date from formatted string")]TJ
+T*[(730:)-600(x := Date newDay: 12 month: #July year: 1999                "create date from parts")]TJ
+T*[(731:)-600(x := Date fromDays: 36000.                                  "create date from elapsed days since 1/1/1901")]TJ
+T*[(732:)-600(y := Date dayOfWeek: #Monday.                               "day of week as int \(1-7\)")]TJ
+T*[(733:)-600(y := Date indexOfMonth: #January.                           "month of year as int \(1-12\)")]TJ
+T*[(734:)-600(y := Date daysInMonth: 2 forYear: 1996.                     "day of month as int \(1-31\)")]TJ
+T*[(735:)-600(y := Date daysInYear: 1996.                                 "days in year \(365|366\)")]TJ
+T*[(736:)-600(y := Date nameOfDay: 1                                      "weekday name \(#Monday,...\)")]TJ
+T*[(737:)-600(y := Date nameOfMonth: 1.                                   "month name \(#January,...\)")]TJ
+T*[(738:)-600(y := Date leapYear: 1996.                                   "1 if leap year; 0if not leap year")]TJ
+T*[(739:)-600(y := x weekday.                                             "day of week \(#Monday,...\)")]TJ
+T*[(740:)-600(y := x previous: #Monday.                                   "date for previousday of week")]TJ
+T*[(741:)-600(y := x dayOfMonth.                                          "day of month \(1-31\)")]TJ
+T*[(742:)-600(y := x day.                                                 "day of year \(1-366\)")]TJ
+T*[(743:)-600(y := x firstDayOfMonth.                                     "day of year for first day of month")]TJ
+T*[(744:)-600(y := x monthName.                                           "month of year \(#January,...\)")]TJ
+T*[(745:)-600(y := x monthIndex.                                          "month of year \(1-12\)")]TJ
+T*[(746:)-600(y := x daysInMonth.                                         "days in month \(1-31\)")]TJ
+T*[(747:)-600(y := x year.                                                "year \(19xx\)")]TJ
+T*[(748:)-600(y := x daysInYear.                                          "days in year \(365|366\)")]TJ
+T*[(749:)-600(y := x daysLeftInYear.                                      "days left in year\(364|365\)")]TJ
+T*[(750:)-600(y := x asSeconds.                                           "seconds elapsed since 1/1/1901")]TJ
+T*[(751:)-600(y := x addDays: 10.                                         "add days to date object")]TJ
+T*[(752:)-600(y := x subtractDays: 10.                                    "subtract days to date object")]TJ
+T*[(753:)-600(y := x subtractDate: \(Date today\).                          "subtract date \(result in days\)")]TJ
+T*[(754:)-600(y := x printFormat: #\(2 1 3 $/ 1 1\).                        "print formatted date")]TJ
+T*[(755:)-600(b := \(x <= Date today\).                                     "comparison")]TJ
+(756:)'
+T*[(757:)-600("************************************************************************)]TJ
+T*[(758:)-600( * Time:                                                                *)]TJ
+T*[(759:)-600( ************************************************************************")]TJ
+T*[(760:)-600(| x y |)]TJ
+T*[(761:)-600(x := Time now.                                              "create time from current time")]TJ
+T*[(762:)-600(x := Time dateAndTimeNow.                                   "create time from current time/date")]TJ
+T*[(763:)-600(x := Time readFromString: '3:47:26 pm'.                     "create time from formatted string")]TJ
+T*[(764:)-600(x := Time fromSeconds: \(60 * 60 * 4\).                       "create time from elapsed time from midnight")]TJ
+T*[(765:)-600(y := Time millisecondClockValue.                            "milliseconds since midnight")]TJ
+ET
+Q
+Q
+endstream
+endobj
+95 0 obj
+4920
+endobj
+99 0 obj
+<</Length 100 0 R>>
+stream
+q 0.1 0 0 0.1 0 0 cm
+/R7 gs
+0 G
+740 240 5000 7440 re
+S
+5 w
+0 0 0 RG
+740 240 m
+740 7640 l
+740 240 m
+740 960 l
+380 960 l
+380 240 l
+h
+S
+0 0 0 rg
+q
+10 0 0 10 0 0 cm BT
+/R8 12 Tf
+0 1 -1 0 54 38.6641 Tm
+(10/10/14)Tj
+-0.659766 -12.8 Td
+(16:37:29)Tj
+ET
+Q
+380 6920 360 720 re
+S
+q
+10 0 0 10 0 0 cm BT
+/R10 28.8 Tf
+0 1 -1 0 66.8 699.478 Tm
+(18)Tj
+/R10 18 Tf
+32.0258 0 Td
+(/21)Tj
+/R12 14 Tf
+-416.629 -2.7 Td
+(angelfire-notes-smalltalk.txt)Tj
+-96.2402 18 Td
+($cmps112-wm/Languages/smalltalk/angelfire-notes-smalltalk/)Tj
+ET
+Q
+0 g
+q
+10 0 0 10 0 0 cm BT
+/R14 10 Tf
+0 1 -1 0 87 42 Tm
+[(766:)-600(y := Time totalSeconds.                                     "total seconds since 1/1/1901")]TJ
+11 TL
+T*[(767:)-600(y := x seconds.                                             "seconds past minute \(0-59\)")]TJ
+T*[(768:)-600(y := x minutes.                                             "minutes past hour\(0-59\)")]TJ
+T*[(769:)-600(y := x hours.                                               "hours past midnight \(0-23\)")]TJ
+T*[(770:)-600(y := x addTime: \(Time now\).                                 "add time to time object")]TJ
+T*[(771:)-600(y := x subtractTime: \(Time now\).                            "subtract time to time object")]TJ
+T*[(772:)-600(y := x asSeconds.                                           "convert time to seconds")]TJ
+T*[(773:)-600(x := Time millisecondsToRun: [                              "timing facility")]TJ
+T*[(774:)-600(   1 to: 1000 do: [:index | y := 3.14 * index]].)]TJ
+T*[(775:)-600(b := \(x <= Time now\).                                       "comparison")]TJ
+(776:)'
+T*[(777:)-600("************************************************************************)]TJ
+T*[(778:)-600( * Point:                                                               *)]TJ
+T*[(779:)-600( ************************************************************************")]TJ
+T*[(780:)-600(| x y |)]TJ
+T*[(781:)-600(x := 200@100.                                               "obtain a new point")]TJ
+T*[(782:)-600(y := x x.                                                   "x coordinate")]TJ
+T*[(783:)-600(y := x y.                                                   "y coordinate")]TJ
+T*[(784:)-600(x := 200@100 negated.                                       "negates x and y")]TJ
+T*[(785:)-600(x := \(-200@-100\) abs.                                       "absolute value ofx and y")]TJ
+T*[(786:)-600(x := \(200.5@100.5\) rounded.                                 "round x and y")]TJ
+T*[(787:)-600(x := \(200.5@100.5\) truncated.                               "truncate x and y")]TJ
+T*[(788:)-600(x := 200@100 + 100.                                         "add scale to bothx and y")]TJ
+T*[(789:)-600(x := 200@100 - 100.                                         "subtract scale from both x and y")]TJ
+T*[(790:)-600(x := 200@100 * 2.                                           "multiply x and y by scale")]TJ
+T*[(791:)-600(x := 200@100 / 2.                                           "divide x and y byscale")]TJ
+T*[(792:)-600(x := 200@100 // 2.                                          "divide x and y byscale")]TJ
+T*[(793:)-600(x := 200@100 \\\\ 3.                                          "remainder of x and y by scale")]TJ
+T*[(794:)-600(x := 200@100 + 50@25.                                       "add points")]TJ
+T*[(795:)-600(x := 200@100 - 50@25.                                       "subtract points")]TJ
+T*[(796:)-600(x := 200@100 * 3@4.                                         "multiply points")]TJ
+T*[(797:)-600(x := 200@100 // 3@4.                                        "divide points")]TJ
+T*[(798:)-600(x := 200@100 max: 50@200.                                   "max x and y")]TJ
+T*[(799:)-600(x := 200@100 min: 50@200.                                   "min x and y")]TJ
+T*[(800:)-600(x := 20@5 dotProduct: 10@2.                                 "sum of product \(x1*x2 + y1*y2\)")]TJ
+(801:)'
+T*[(802:)-600("************************************************************************)]TJ
+T*[(803:)-600( * Rectangle:                                                           *)]TJ
+T*[(804:)-600( ************************************************************************")]TJ
+T*[(805:)-600(Rectangle fromUser.)]TJ
+(806:)'
+T*[(807:)-600("************************************************************************)]TJ
+T*[(808:)-600( * Pen:                                                                 *)]TJ
+T*[(809:)-600( ************************************************************************")]TJ
+T*[(810:)-600(| myPen |)]TJ
+ET
+Q
+Q
+endstream
+endobj
+100 0 obj
+4535
+endobj
+104 0 obj
+<</Length 105 0 R>>
+stream
+q 0.1 0 0 0.1 0 0 cm
+/R7 gs
+0 G
+740 240 5000 7440 re
+S
+5 w
+0 0 0 RG
+740 240 m
+740 7640 l
+740 240 m
+740 960 l
+380 960 l
+380 240 l
+h
+S
+0 0 0 rg
+q
+10 0 0 10 0 0 cm BT
+/R8 12 Tf
+0 1 -1 0 54 38.6641 Tm
+(10/10/14)Tj
+-0.659766 -12.8 Td
+(16:37:29)Tj
+ET
+Q
+380 6920 360 720 re
+S
+q
+10 0 0 10 0 0 cm BT
+/R10 28.8 Tf
+0 1 -1 0 66.8 699.478 Tm
+(19)Tj
+/R10 18 Tf
+32.0258 0 Td
+(/21)Tj
+/R12 14 Tf
+-416.629 -2.7 Td
+(angelfire-notes-smalltalk.txt)Tj
+-96.2402 18 Td
+($cmps112-wm/Languages/smalltalk/angelfire-notes-smalltalk/)Tj
+ET
+Q
+0 g
+q
+10 0 0 10 0 0 cm BT
+/R14 10 Tf
+0 1 -1 0 87 42 Tm
+[(811:)-600(Display restoreAfter: [)]TJ
+11 TL
+T*[(812:)-600(   Display fillWhite.)]TJ
+(813:)'
+T*[(814:)-600(myPen := Pen new.                                           "get graphic pen")]TJ
+T*[(815:)-600(myPen squareNib: 1.)]TJ
+T*[(816:)-600(myPen color: \(Color blue\).                                  "set pen color")]TJ
+T*[(817:)-600(myPen home.                                                 "position pen at center of display")]TJ
+T*[(818:)-600(myPen up.                                                   "makes nib unable to draw")]TJ
+T*[(819:)-600(myPen down.                                                 "enable the nib todraw")]TJ
+T*[(820:)-600(myPen north.                                                "points direction towards top")]TJ
+T*[(821:)-600(myPen turn: -180.                                           "add specified degrees to direction")]TJ
+T*[(822:)-600(myPen direction.                                            "get current angleof pen")]TJ
+T*[(823:)-600(myPen go: 50.                                               "move pen specified number of pixels")]TJ
+T*[(824:)-600(myPen location.                                             "get the pen position")]TJ
+T*[(825:)-600(myPen goto: 200@200.                                        "move to specifiedpoint")]TJ
+T*[(826:)-600(myPen place: 250@250.                                       "move to specifiedpoint without drawing")]TJ
+T*[(827:)-600(myPen print: 'Hello World' withFont: \(TextStyle default fontAt: 1\).)]TJ
+T*[(828:)-600(Display extent.                                             "get display width@height")]TJ
+T*[(829:)-600(Display width.                                              "get display width")]TJ
+T*[(830:)-600(Display height.                                             "get display height")]TJ
+(831:)'
+T*[(832:)-600(].)]TJ
+(833:)'
+T*[(834:)-600("************************************************************************)]TJ
+T*[(835:)-600( * Dynamic Message Calling/Compiling:                                   *)]TJ
+T*[(836:)-600( ************************************************************************")]TJ
+T*[(837:)-600(| receiver message result argument keyword1 keyword2 argument1 argument2 |)]TJ
+T*[(838:)-600("unary message")]TJ
+T*[(839:)-600(receiver := 5.)]TJ
+T*[(840:)-600(message := 'factorial' asSymbol.)]TJ
+T*[(841:)-600(result := receiver perform: message.)]TJ
+T*[(842:)-600(result := Compiler evaluate: \(\(receiver storeString\), ' ', message\).)]TJ
+T*[(843:)-600(result := \(Message new setSelector: message arguments: #\(\)\) sentTo: receiver.)]TJ
+(844:)'
+T*[(845:)-600("binary message")]TJ
+T*[(846:)-600(receiver := 1.)]TJ
+T*[(847:)-600(message := '+' asSymbol.)]TJ
+T*[(848:)-600(argument := 2.)]TJ
+T*[(849:)-600(result := receiver perform: message withArguments: \(Array with: argument\).)]TJ
+T*[(850:)-600(result := Compiler evaluate: \(\(receiver storeString\), ' ', message, ' ', \(argument storeString\)\).)]TJ
+T*[(851:)-600(result := \(Message new setSelector: message arguments: \(Array with: argument\)\)sentTo: receiver.)]TJ
+(852:)'
+T*[(853:)-600("keyword messages")]TJ
+T*[(854:)-600(receiver := 12.)]TJ
+T*[(855:)-600(keyword1 := 'between:' asSymbol.)]TJ
+ET
+Q
+Q
+endstream
+endobj
+105 0 obj
+3765
+endobj
+109 0 obj
+<</Length 110 0 R>>
+stream
+q 0.1 0 0 0.1 0 0 cm
+/R7 gs
+0 G
+740 240 5000 7440 re
+S
+5 w
+0 0 0 RG
+740 240 m
+740 7640 l
+740 240 m
+740 960 l
+380 960 l
+380 240 l
+h
+S
+0 0 0 rg
+q
+10 0 0 10 0 0 cm BT
+/R8 12 Tf
+0 1 -1 0 54 38.6641 Tm
+(10/10/14)Tj
+-0.659766 -12.8 Td
+(16:37:29)Tj
+ET
+Q
+380 6920 360 720 re
+S
+q
+10 0 0 10 0 0 cm BT
+/R10 28.8 Tf
+0 1 -1 0 66.8 699.478 Tm
+(20)Tj
+/R10 18 Tf
+32.0258 0 Td
+(/21)Tj
+/R12 14 Tf
+-416.629 -2.7 Td
+(angelfire-notes-smalltalk.txt)Tj
+-96.2402 18 Td
+($cmps112-wm/Languages/smalltalk/angelfire-notes-smalltalk/)Tj
+ET
+Q
+0 g
+q
+10 0 0 10 0 0 cm BT
+/R14 10 Tf
+0 1 -1 0 87 42 Tm
+[(856:)-600(keyword2 := 'and:' asSymbol.)]TJ
+11 TL
+T*[(857:)-600(argument1 := 10.)]TJ
+T*[(858:)-600(argument2 := 20.)]TJ
+T*[(859:)-600(result := receiver)]TJ
+T*[(860:)-600(   perform: \(keyword1, keyword2\) asSymbol)]TJ
+T*[(861:)-600(   withArguments: \(Array with: argument1 with: argument2\).)]TJ
+T*[(862:)-600(result := Compiler evaluate:)]TJ
+T*[(863:)-600(   \(\(receiver storeString\), ' ', keyword1, \(argument1 storeString\) , ' ', keyword2, \(argument2 storeString\)\).)]TJ
+T*[(864:)-600(result := \(Message)]TJ
+T*[(865:)-600(   new)]TJ
+T*[(866:)-600(      setSelector: \(keyword1, keyword2\) asSymbol)]TJ
+T*[(867:)-600(      arguments: \(Array with: argument1 with: argument2\)\))]TJ
+T*[(868:)-600(   sentTo: receiver.)]TJ
+(869:)'
+T*[(870:)-600("************************************************************************)]TJ
+T*[(871:)-600( * class/meta-class:                                                    *)]TJ
+T*[(872:)-600( ************************************************************************")]TJ
+T*[(873:)-600(| b x |)]TJ
+T*[(874:)-600(x := String name.                                           "class name")]TJ
+T*[(875:)-600(x := String category.                                       "organization category")]TJ
+T*[(876:)-600(x := String comment.                                        "class comment")]TJ
+T*[(877:)-600(x := String kindOfSubclass.                                 "subclass type - subclass: variableSubclass, etc")]TJ
+T*[(878:)-600(x := String definition.                                     "class definition")]TJ
+T*[(879:)-600(x := String instVarNames.                                   "immediate instance variable names")]TJ
+T*[(880:)-600(x := String allInstVarNames.                                "accumulated instance variable names")]TJ
+T*[(881:)-600(x := String classVarNames.                                  "immediate class variable names")]TJ
+T*[(882:)-600(x := String allClassVarNames.                               "accumulated classvariable names")]TJ
+T*[(883:)-600(x := String sharedPools.                                    "immediate dictionaries used as shared pools")]TJ
+T*[(884:)-600(x := String allSharedPools.                                 "accumulated dictionaries used as shared pools")]TJ
+T*[(885:)-600(x := String selectors.                                      "message selectorsfor class")]TJ
+T*[(886:)-600(x := String sourceCodeAt: #size.                            "source code for specified method")]TJ
+T*[(887:)-600(x := String allInstances.                                   "collection of allinstances of class")]TJ
+T*[(888:)-600(x := String superclass.                                     "immediate superclass")]TJ
+T*[(889:)-600(x := String allSuperclasses.                                "accumulated superclasses")]TJ
+T*[(890:)-600(x := String withAllSuperclasses.                            "receiver class and accumulated superclasses")]TJ
+T*[(891:)-600(x := String subclasses.                                     "immediate subclasses")]TJ
+T*[(892:)-600(x := String allSubclasses.                                  "accumulated subclasses")]TJ
+T*[(893:)-600(x := String withAllSubclasses.                              "receiver class and accumulated subclasses")]TJ
+T*[(894:)-600(b := String instSize.                                       "number of named instance variables")]TJ
+T*[(895:)-600(b := String isFixed.                                        "true if no indexed instance variables")]TJ
+T*[(896:)-600(b := String isVariable.                                     "true if has indexed instance variables")]TJ
+T*[(897:)-600(b := String isPointers.                                     "true if index instance vars contain objects")]TJ
+T*[(898:)-600(b := String isBits.                                         "true if index instance vars contain bytes/words")]TJ
+T*[(899:)-600(b := String isBytes.                                        "true if index instance vars contain bytes")]TJ
+T*[(900:)-600(b := String isWords.                                        true if index instance vars contain words")]TJ
+ET
+Q
+Q
+endstream
+endobj
+110 0 obj
+4672
+endobj
+114 0 obj
+<</Length 115 0 R>>
+stream
+q 0.1 0 0 0.1 0 0 cm
+/R7 gs
+0 G
+740 240 5000 7440 re
+S
+5 w
+0 0 0 RG
+740 240 m
+740 7640 l
+740 240 m
+740 960 l
+380 960 l
+380 240 l
+h
+S
+0 0 0 rg
+q
+10 0 0 10 0 0 cm BT
+/R8 12 Tf
+0 1 -1 0 54 38.6641 Tm
+(10/10/14)Tj
+-0.659766 -12.8 Td
+(16:37:29)Tj
+ET
+Q
+380 6920 360 720 re
+S
+q
+10 0 0 10 0 0 cm BT
+/R10 28.8 Tf
+0 1 -1 0 66.8 699.478 Tm
+(21)Tj
+/R10 18 Tf
+32.0258 0 Td
+(/21)Tj
+/R12 14 Tf
+-416.629 -2.7 Td
+(angelfire-notes-smalltalk.txt)Tj
+-96.2402 18 Td
+($cmps112-wm/Languages/smalltalk/angelfire-notes-smalltalk/)Tj
+ET
+Q
+0 g
+q
+10 0 0 10 0 0 cm BT
+/R14 10 Tf
+0 1 -1 0 87 42 Tm
+[(901:)-600(Object withAllSubclasses size.                              "get total number of class entries")]TJ
+11 TL
+(902:)'
+T*[(903:)-600("************************************************************************)]TJ
+T*[(904:)-600( * debuging:                                                            *)]TJ
+T*[(905:)-600( ************************************************************************")]TJ
+T*[(906:)-600(| a b x |)]TJ
+T*[(907:)-600(x yourself.                                                 "returns receiver")]TJ
+T*[(908:)-600(String browse.                                              "browse specified class")]TJ
+T*[(909:)-600(x inspect.                                                  "open object inspector window")]TJ
+T*[(910:)-600(x confirm: 'Is this correct?'.)]TJ
+T*[(911:)-600(x halt.                                                     "breakpoint to open debugger window")]TJ
+T*[(912:)-600(x halt: 'Halt message'.)]TJ
+T*[(913:)-600(x notify: 'Notify text'.)]TJ
+T*[(914:)-600(x error: 'Error string'.                                    "open up error window with title")]TJ
+T*[(915:)-600(x doesNotUnderstand: #cmrMessage.                           "flag message is not handled")]TJ
+T*[(916:)-600(x shouldNotImplement.                                       "flag message should not be implemented")]TJ
+T*[(917:)-600(x subclassResponsibility.                                   "flag message as abstract")]TJ
+T*[(918:)-600(x errorImproperStore.                                       "flag an improper store into indexable object")]TJ
+T*[(919:)-600(x errorNonIntegerIndex.                                     "flag only integers should be used as index")]TJ
+T*[(920:)-600(x errorSubscriptBounds.                                     "flag subscript out of bounds")]TJ
+T*[(921:)-600(x primitiveFailed.                                          "system primitive failed")]TJ
+(922:)'
+T*[(923:)-600(a := 'A1'. b := 'B2'. a become: b.                          "switch two objects")]TJ
+T*[(924:)-600(Transcript show: a, b; cr.)]TJ
+(925:)'
+T*[(926:)-600("************************************************************************)]TJ
+T*[(927:)-600( * Misc.                                                                *)]TJ
+T*[(928:)-600( ************************************************************************")]TJ
+T*[(929:)-600(| x |)]TJ
+T*[(930:)-600("Smalltalk condenseChanges."                                "compress the change file")]TJ
+T*[(931:)-600(x := FillInTheBlank request: 'Prompt Me'.                   "prompt user for input")]TJ
+T*[(932:)-600(Utilities openCommandKeyHelp)]TJ
+T*[(933:)-600(     _________________________________________________________________)]TJ
+(934:)'
+(935:)'
+T*[(936:)-600(    [3]Chris Rathman / [4]ChrisRath@aol.com)]TJ
+(937:)'
+T*[(938:)-600(References)]TJ
+(939:)'
+T*[(940:)-600(   1. http://www.angelfire.com/tx4/cus/index.html)]TJ
+T*[(941:)-600(   2. mailto:ChrisRath@aol.com)]TJ
+T*[(942:)-600(   3. http://www.angelfire.com/tx4/cus/index.html)]TJ
+T*[(943:)-600(   4. mailto:ChrisRath@aol.com)]TJ
+ET
+Q
+Q
+endstream
+endobj
+115 0 obj
+3630
+endobj
+4 0 obj
+<</Type/Page/MediaBox [0 0 612 792]
+/Parent 3 0 R
+/Resources<</ProcSet[/PDF /Text]
+/ExtGState 16 0 R
+/Font 17 0 R
+>>
+/Contents 5 0 R
+>>
+endobj
+18 0 obj
+<</Type/Page/MediaBox [0 0 612 792]
+/Parent 3 0 R
+/Resources<</ProcSet[/PDF /Text]
+/ExtGState 21 0 R
+/Font 22 0 R
+>>
+/Contents 19 0 R
+>>
+endobj
+23 0 obj
+<</Type/Page/MediaBox [0 0 612 792]
+/Parent 3 0 R
+/Resources<</ProcSet[/PDF /Text]
+/ExtGState 26 0 R
+/Font 27 0 R
+>>
+/Contents 24 0 R
+>>
+endobj
+28 0 obj
+<</Type/Page/MediaBox [0 0 612 792]
+/Parent 3 0 R
+/Resources<</ProcSet[/PDF /Text]
+/ExtGState 31 0 R
+/Font 32 0 R
+>>
+/Contents 29 0 R
+>>
+endobj
+33 0 obj
+<</Type/Page/MediaBox [0 0 612 792]
+/Parent 3 0 R
+/Resources<</ProcSet[/PDF /Text]
+/ExtGState 36 0 R
+/Font 37 0 R
+>>
+/Contents 34 0 R
+>>
+endobj
+38 0 obj
+<</Type/Page/MediaBox [0 0 612 792]
+/Parent 3 0 R
+/Resources<</ProcSet[/PDF /Text]
+/ExtGState 41 0 R
+/Font 42 0 R
+>>
+/Contents 39 0 R
+>>
+endobj
+43 0 obj
+<</Type/Page/MediaBox [0 0 612 792]
+/Parent 3 0 R
+/Resources<</ProcSet[/PDF /Text]
+/ExtGState 46 0 R
+/Font 47 0 R
+>>
+/Contents 44 0 R
+>>
+endobj
+48 0 obj
+<</Type/Page/MediaBox [0 0 612 792]
+/Parent 3 0 R
+/Resources<</ProcSet[/PDF /Text]
+/ExtGState 51 0 R
+/Font 52 0 R
+>>
+/Contents 49 0 R
+>>
+endobj
+53 0 obj
+<</Type/Page/MediaBox [0 0 612 792]
+/Parent 3 0 R
+/Resources<</ProcSet[/PDF /Text]
+/ExtGState 56 0 R
+/Font 57 0 R
+>>
+/Contents 54 0 R
+>>
+endobj
+58 0 obj
+<</Type/Page/MediaBox [0 0 612 792]
+/Parent 3 0 R
+/Resources<</ProcSet[/PDF /Text]
+/ExtGState 61 0 R
+/Font 62 0 R
+>>
+/Contents 59 0 R
+>>
+endobj
+63 0 obj
+<</Type/Page/MediaBox [0 0 612 792]
+/Parent 3 0 R
+/Resources<</ProcSet[/PDF /Text]
+/ExtGState 66 0 R
+/Font 67 0 R
+>>
+/Contents 64 0 R
+>>
+endobj
+68 0 obj
+<</Type/Page/MediaBox [0 0 612 792]
+/Parent 3 0 R
+/Resources<</ProcSet[/PDF /Text]
+/ExtGState 71 0 R
+/Font 72 0 R
+>>
+/Contents 69 0 R
+>>
+endobj
+73 0 obj
+<</Type/Page/MediaBox [0 0 612 792]
+/Parent 3 0 R
+/Resources<</ProcSet[/PDF /Text]
+/ExtGState 76 0 R
+/Font 77 0 R
+>>
+/Contents 74 0 R
+>>
+endobj
+78 0 obj
+<</Type/Page/MediaBox [0 0 612 792]
+/Parent 3 0 R
+/Resources<</ProcSet[/PDF /Text]
+/ExtGState 81 0 R
+/Font 82 0 R
+>>
+/Contents 79 0 R
+>>
+endobj
+83 0 obj
+<</Type/Page/MediaBox [0 0 612 792]
+/Parent 3 0 R
+/Resources<</ProcSet[/PDF /Text]
+/ExtGState 86 0 R
+/Font 87 0 R
+>>
+/Contents 84 0 R
+>>
+endobj
+88 0 obj
+<</Type/Page/MediaBox [0 0 612 792]
+/Parent 3 0 R
+/Resources<</ProcSet[/PDF /Text]
+/ExtGState 91 0 R
+/Font 92 0 R
+>>
+/Contents 89 0 R
+>>
+endobj
+93 0 obj
+<</Type/Page/MediaBox [0 0 612 792]
+/Parent 3 0 R
+/Resources<</ProcSet[/PDF /Text]
+/ExtGState 96 0 R
+/Font 97 0 R
+>>
+/Contents 94 0 R
+>>
+endobj
+98 0 obj
+<</Type/Page/MediaBox [0 0 612 792]
+/Parent 3 0 R
+/Resources<</ProcSet[/PDF /Text]
+/ExtGState 101 0 R
+/Font 102 0 R
+>>
+/Contents 99 0 R
+>>
+endobj
+103 0 obj
+<</Type/Page/MediaBox [0 0 612 792]
+/Parent 3 0 R
+/Resources<</ProcSet[/PDF /Text]
+/ExtGState 106 0 R
+/Font 107 0 R
+>>
+/Contents 104 0 R
+>>
+endobj
+108 0 obj
+<</Type/Page/MediaBox [0 0 612 792]
+/Parent 3 0 R
+/Resources<</ProcSet[/PDF /Text]
+/ExtGState 111 0 R
+/Font 112 0 R
+>>
+/Contents 109 0 R
+>>
+endobj
+113 0 obj
+<</Type/Page/MediaBox [0 0 612 792]
+/Parent 3 0 R
+/Resources<</ProcSet[/PDF /Text]
+/ExtGState 116 0 R
+/Font 117 0 R
+>>
+/Contents 114 0 R
+>>
+endobj
+3 0 obj
+<< /Type /Pages /Kids [
+4 0 R
+18 0 R
+23 0 R
+28 0 R
+33 0 R
+38 0 R
+43 0 R
+48 0 R
+53 0 R
+58 0 R
+63 0 R
+68 0 R
+73 0 R
+78 0 R
+83 0 R
+88 0 R
+93 0 R
+98 0 R
+103 0 R
+108 0 R
+113 0 R
+] /Count 21
+>>
+endobj
+1 0 obj
+<</Type /Catalog /Pages 3 0 R
+/Metadata 123 0 R
+>>
+endobj
+7 0 obj
+<</Type/ExtGState
+/OPM 1>>endobj
+16 0 obj
+<</R7
+7 0 R>>
+endobj
+17 0 obj
+<</R14
+14 0 R/R8
+8 0 R/R12
+12 0 R/R10
+10 0 R>>
+endobj
+21 0 obj
+<</R7
+7 0 R>>
+endobj
+22 0 obj
+<</R14
+14 0 R/R8
+8 0 R/R12
+12 0 R/R10
+10 0 R>>
+endobj
+26 0 obj
+<</R7
+7 0 R>>
+endobj
+27 0 obj
+<</R14
+14 0 R/R8
+8 0 R/R12
+12 0 R/R10
+10 0 R>>
+endobj
+31 0 obj
+<</R7
+7 0 R>>
+endobj
+32 0 obj
+<</R14
+14 0 R/R8
+8 0 R/R12
+12 0 R/R10
+10 0 R>>
+endobj
+36 0 obj
+<</R7
+7 0 R>>
+endobj
+37 0 obj
+<</R14
+14 0 R/R8
+8 0 R/R12
+12 0 R/R10
+10 0 R>>
+endobj
+41 0 obj
+<</R7
+7 0 R>>
+endobj
+42 0 obj
+<</R14
+14 0 R/R8
+8 0 R/R12
+12 0 R/R10
+10 0 R>>
+endobj
+46 0 obj
+<</R7
+7 0 R>>
+endobj
+47 0 obj
+<</R14
+14 0 R/R8
+8 0 R/R12
+12 0 R/R10
+10 0 R>>
+endobj
+51 0 obj
+<</R7
+7 0 R>>
+endobj
+52 0 obj
+<</R14
+14 0 R/R8
+8 0 R/R12
+12 0 R/R10
+10 0 R>>
+endobj
+56 0 obj
+<</R7
+7 0 R>>
+endobj
+57 0 obj
+<</R14
+14 0 R/R8
+8 0 R/R12
+12 0 R/R10
+10 0 R>>
+endobj
+61 0 obj
+<</R7
+7 0 R>>
+endobj
+62 0 obj
+<</R14
+14 0 R/R8
+8 0 R/R12
+12 0 R/R10
+10 0 R>>
+endobj
+66 0 obj
+<</R7
+7 0 R>>
+endobj
+67 0 obj
+<</R14
+14 0 R/R8
+8 0 R/R12
+12 0 R/R10
+10 0 R>>
+endobj
+71 0 obj
+<</R7
+7 0 R>>
+endobj
+72 0 obj
+<</R14
+14 0 R/R8
+8 0 R/R12
+12 0 R/R10
+10 0 R>>
+endobj
+76 0 obj
+<</R7
+7 0 R>>
+endobj
+77 0 obj
+<</R14
+14 0 R/R8
+8 0 R/R12
+12 0 R/R10
+10 0 R>>
+endobj
+81 0 obj
+<</R7
+7 0 R>>
+endobj
+82 0 obj
+<</R14
+14 0 R/R8
+8 0 R/R12
+12 0 R/R10
+10 0 R>>
+endobj
+86 0 obj
+<</R7
+7 0 R>>
+endobj
+87 0 obj
+<</R14
+14 0 R/R8
+8 0 R/R12
+12 0 R/R10
+10 0 R>>
+endobj
+91 0 obj
+<</R7
+7 0 R>>
+endobj
+92 0 obj
+<</R14
+14 0 R/R8
+8 0 R/R12
+12 0 R/R10
+10 0 R>>
+endobj
+96 0 obj
+<</R7
+7 0 R>>
+endobj
+97 0 obj
+<</R14
+14 0 R/R8
+8 0 R/R12
+12 0 R/R10
+10 0 R>>
+endobj
+101 0 obj
+<</R7
+7 0 R>>
+endobj
+102 0 obj
+<</R14
+14 0 R/R8
+8 0 R/R12
+12 0 R/R10
+10 0 R>>
+endobj
+106 0 obj
+<</R7
+7 0 R>>
+endobj
+107 0 obj
+<</R14
+14 0 R/R8
+8 0 R/R12
+12 0 R/R10
+10 0 R>>
+endobj
+111 0 obj
+<</R7
+7 0 R>>
+endobj
+112 0 obj
+<</R14
+14 0 R/R8
+8 0 R/R12
+12 0 R/R10
+10 0 R>>
+endobj
+116 0 obj
+<</R7
+7 0 R>>
+endobj
+117 0 obj
+<</R14
+14 0 R/R8
+8 0 R/R12
+12 0 R/R10
+10 0 R>>
+endobj
+14 0 obj
+<</BaseFont/AXPGRA+Courier-Bold/FontDescriptor 15 0 R/Type/Font
+/FirstChar 32/LastChar 126/Widths[
+600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600
+600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600
+600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600
+600 0 600 600 600 600 600 600 600 600 600 600 600 600 600 600
+0 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600
+600 600 600 600 600 600 600 600 600 600 600 0 600 0 600]
+/Encoding 122 0 R/Subtype/Type1>>
+endobj
+122 0 obj
+<</Type/Encoding/BaseEncoding/WinAnsiEncoding/Differences[
+39/quoteright
+126/tilde]>>
+endobj
+8 0 obj
+<</BaseFont/ADKKKE+Times-Bold/FontDescriptor 9 0 R/Type/Font
+/FirstChar 47/LastChar 58/Widths[ 278
+500 500 500 500 500 0 500 500 0 500 333]
+/Encoding/WinAnsiEncoding/Subtype/Type1>>
+endobj
+12 0 obj
+<</BaseFont/PSRWDO+Times-Roman/FontDescriptor 13 0 R/Type/Font
+/FirstChar 36/LastChar 120/Widths[ 500 0 0 0 0 0 0 0 0 333 250 278
+0 500 500 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 611 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 444 0 444 0 444 333 500 0 278 0 500 278 778 500 500
+500 0 333 389 278 500 0 722 500]
+/Encoding/WinAnsiEncoding/Subtype/Type1>>
+endobj
+10 0 obj
+<</BaseFont/FXAAYL+Helvetica-Bold/FontDescriptor 11 0 R/Type/Font
+/FirstChar 47/LastChar 57/Widths[ 278
+556 556 556 556 556 556 556 556 556 556]
+/Encoding/WinAnsiEncoding/Subtype/Type1>>
+endobj
+15 0 obj
+<</Type/FontDescriptor/FontName/AXPGRA+Courier-Bold/FontBBox[-21 -205 623 695]/Flags 7
+/Ascent 695
+/CapHeight 597
+/Descent -205
+/ItalicAngle 0
+/StemV 150
+/AvgWidth 600
+/MaxWidth 600
+/MissingWidth 600
+/XHeight 451
+/CharSet(/A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/R/S/T/U/V/W/X/Y/Z/a/ampersand/asciicircum/asterisk/at/b/backslash/bar/bracketleft/bracketright/c/colon/comma/d/dollar/e/eight/equal/exclam/f/five/four/g/greater/h/hyphen/i/j/k/l/less/m/n/nine/numbersign/o/one/p/parenleft/parenright/percent/period/plus/q/question/quotedbl/quoteright/r/s/semicolon/seven/six/slash/space/t/three/tilde/two/u/underscore/v/w/x/y/z/zero)/FontFile3 118 0 R>>
+endobj
+118 0 obj
+<</Filter[/ASCII85Decode
+/FlateDecode]
+/Subtype/Type1C/Length 10297>>stream
+Gatm^#ujjTg@gAbP>emC)NP&='6%!BXhAId*NKp;3hh/'#RFiGo99A512T9!#pCQ*Aro;TE'Qjo
+@ia9,CKp,ThVQu;[e:WAD>3SXoNV>j65Tk%h=[t$M$uE-m,8tVpNbVD=G5]gK#M34]NQ-o,7'0p
+]h0+_B_c$g1P*NX5)ad)+T_C'GBgiQr<D4X3p,OoOXr37!K;-%G^]Rs1!G2MiLS@moEsQm@O5UO
+<XY[c@g'UkEA#_LDqQk_c#$MM-hEZU=lQ_?fm^nO9i.o637;@frZr^9>Sn1f'H-YRbA)EKGdnm3
+,re"I.O<Ta5;4c>d.3QjIs=eWb?@3A+=^!Ni%f`R%$q.hk09NX^Ff!j7-ohmFkJ1%'Y8P!=LQTF
+'7q?S=%;U_-1kLajg-<1]pQ44lf-c^?_?8JkeA9TT1<q;`fra7TF^a7$4b`5fG_=QCjWZn`/\-0
+r+>DhZY/^=q;MPchd#f>b<K5J:L#Yhl/]=O/=ZL][+';t0;#LYVQUq)9I)eEQ4T799uKq=19m6l
+S!ZNY+f5lVM.smd@QLcbQpGs/1Pm-*)mPT/7EcsgM:KO\_M;5\bTV@jpP?Au>%/PXNgNVT:TPoZ
+'(3]-`!0Z_iBb+FCaB!GGS5pkGDMTBGDT28Eagl1Jp;uoPo)m`&R8cr5ni:7f*E/N6jt<1#mXp%
+iCHWbfYm(Y8\@?.#Tc8DB`t&QM/XVm'<]7Z@Mpn`fS)JLD`l1r2f/&ho*uaq@uadH%dZIS4]9N2
+VC:`\9,YW+%0(%[2^8DprqkfE;<4[-d;H.HIc^.$@B[O&-LP^<+(No^rI`\K:WKRWpZH<P:2`,j
+i+s=X)uo;Y/JGjF^%.0ED`%%a_0a*:o,IJV?,jMO\eMZ]\=@Vcm.u9KX6\5kJJ4GCIZs1qhD*\r
+ElmAI;t`o4:)uLbQ"fQ^Djd1QK0LSik+nF,1I#uNl'CCRA_,R<Rb@:F2p_J=Nf*XT'_<h/?S]M6
+VC"*WGnVg'.lXfpaCq6jQE.rEGm[(C,.4p_Y#4I>WrN>!A2u'`<Tf]^1e(jU#";+`7])L7$3B^/
+&tMiY).e.q-5Ueh/(5uU=Z(`@7\[G!g__0SQ^qu';kXpTa*H$Wi1O7VTcuE&:iU%-,rYBRdqCpj
+(N*_e(2ST[QpXSXIPJ_oo5!+pE!N_@SkU\"(6E,sAu6i+-kKFAE[7,@1)2/@.'hpuh-1Jl767uf
+HRk-M=g]0c$aZk+43>0Wk%(6lA&?d-3$1=fb6a,'%`?IQ_>h7,C8o5JdQejqkCC`I7fs6U<p_Eo
+%CQ:gf[l1i/s^3-Yo!OcdVqDB4HrcA$6#Fc6!5D::H"i(#GOnG10(Ig!ATD^VUe?$+I:J-aK!j-
+MEur;n(NGFRR\hn2Ft1C1nm+C2%)$%)kG>RjMTgrT+l0#3a\YfD:>2nE=XC^$?DcUO\S^!aH3LA
+A.[^9F2A=Z2'eCjj]H_7L(hhYeNDu,1JBZE_&!(LB/;+dA$(dX2/KO&XjguaiYbOSE;88TO0/dM
+<k%S/bjji$VN12]/H-'_H)RD53Jh!QInlk<(1gJJWe<2R<uSY:B?mp&YlT;;iN)d1NRDN#&Ph7(
+"c^Z>0ua+)7V%I<*?Qh'?H9sa':E9sR<@!fDjh^)"icHidh-pVE^Je/3>l$"Oh\_PO@J:ejN>f?
+7XoW'e&iD@2_S:;p<o:7h7WM-hmu6'^r1hMG_k6b((D'I3BNQiPYkKg)JlR>(Wn>4RS1Zmh/uu-
+W)beq]oHCkH;0O)"B8Q1Q%iRU]mTnkb$J.H@?nt%4LbO9fk?7)-Ye__/%0aT"acshYOK>cl%#>n
+:?(A-bfj=u^bhnpqdLVQQ+95&Dq8_4;=Bm&k+L[H'RGtXSqCXk=-*N3p[_0R)isTZX3,0B,ukmc
+)3pYV/sZ"%KE+PC1#`2PDEsnXn(obiYB,0mim-$8(:gr@="i"!k/SO!buLbYC5#to$k/dsXXu0T
+j;*;]l<bN-SZPq,..4_\\O_oH+U+[@;Ni]kK)ElT@tmT3lO,N8`"lYO0mtt<\EL4%4F[/>Ne[2%
+?]iN$J!%JVrrf&U3$*AZ'\bod`sY8$Vl5*0=g#oT$>[#a<Fc9[ogrMeeOm.&BL$D]i=*_mD?io,
+R`,&UZMbo1H>fSQU4o20[i3FnlcXQ2VC'Pb?jgn-CM#^b6P3Y*T:*\b1lhNMf.?PH#K5[Qo&X&[
+6#Q&F^'<(bT>>XiFM<[VT#UQ@'c^&6?)Z2m92[TkM*S/(V(#tY;@l3tk4D>tNDXV;pqf]0`?g:B
+Z\<=ApKmDPE2E-tfoB!2=2Ab=,R;UbNppU:Q%q]I^/74N<?r[FRCfsc_hGufkJ1NR_2rto@1V!Z
+q/O3qe.?&5GZ\Y5#GAgVR`t8[fn!9hOku&a.EbW]=M%C]d<Q"Ep5*8kj(TVd5uBk&m^\4Rh5&@o
+ItJ"*eRam_)M^f^2@o@3T.mXCjeJ6JQ2^b-mknNF_3+9cQm@7,+8>qh2Pr%2,,k`&JYo`=qML`I
+->e+=5N&?X4`L!&%WM]!_$p0E,me%%jnWqVfSKK'@eYWne527O!?.&dXi[M7/rd^bMLCSDI3?R%
+VgJjs8uafT5:h/tRG(n'W2&:pY3h_["g8/q]!sn"f3?\i:riO*$%oQT:n=FSf>pQP[K'.H,^=>5
+&5kTO`YJVPAmT-lEsMP9_]-/n)fWb_'?ClLPc:rJUM!hkbo,;t%O'Nfraj_c]/8=TgGq)Y+?l;b
+Ep%lLbMfJ@$$r7=01j,!e+J6kXfSTS<U(3Ur:$./>mTp#5q-`%d+@J4Cig-3"1uD0Ei%FH&u2PK
+i*'mt=:AMqK3g(;n(D/h\M`TQ#1r5&=<CQP0K=O6XXibQ1\`*#-&a[oYjn;ES4<5%K84C_%"lG;
+R+^s5Xc(fSZ*f*JXjuAV=9>@bdigW'M<2l*"Y[*%TA%>;JW$tL^$Kb>F:n+/<0_)5Q0!m4#tUoP
+]Fm/>pFi\+jN.pio[.nLfXhcM/\48/[\2--%#RqZ%+KPkR^T"JZAWt,oZrlmG=3P-;oOeO"r+2d
+DU>>&,l+/9R0I?'dSn.A8"8RrFZ_1IA%P65'D4/OW$gR$FIcTR"P%[e@*>n,\G@U[X;SHs0s;mU
+;?@TI^]ShJ#jT<C,Y,Wrl8f/lRQ?q,)B)?f/qD]L1L;#p%L8XlWL!9f\ltS%M"BP?%]I73Y#SY2
+RKR/YZrm?KT;(^\$#ksqg>V-.^(Mupeo8EOea(r`T(`.Aniu&JE44j)PEa>]"_K_8QVeA#:al6m
+L?n5_d`5Ee)s9NQ+-8.mVE>;,<<f1sKcut;Ol$UHLJSi`eh&OGT"Sp@4O#s(e.mTcW\0u#8ug*u
+VsnlMq+A=c&.fVS'rq\J1n`XD_I0_g`gBkq1PV>M@A0EXX-b[cc=D+Lo^X,h[$q2s(bXL+=&o[n
+qh<qWJ_n5.9Ok&4-"nJ0KbI,#.Y%oJ?t6q?E+E*l;^U&6[F3\+L;5;jrgOX+l^o$*>&ke:N%#4Z
+8s:9_66"tobUeb0YjUS4D)&$HJGMN5H(#6_E,G$XW9UmF\OAMR#(.fN<497fU+u@Tl3VDN2!R.u
+;SKnbqXS>>0CGfh2KHb^dSF0t,^kJ&3^6GcfO<`1(O,-E4RA=ZkK2a!`[:"Zr9ht0OuE1(MF6qs
+*(;(f$tJH2>/mX56Vc^#<2=/M4UL"85Hpd=+7KO/i3goiaFp5ld<9Ri%'q%ETbRAL(#.d.JAHP`
+!n@fu%laV2-@oO$4<Yk#5$/F+"@/XMWLt;8J6C?^NS&bARR1q4Ibalni^If(>VI183SA:4$pLP7
+NV"B!:Z"M)fal2S_&o.e/HP:p0<F;t$%7M"[f`^:XcNrVZT[7Kp-S<PZlfq*Xp/XR.;->k0:B&)
+1:N_e$Z5_ddZiOWoe$$fl/usZG'nPb4QbiL;#/%-.iH?@*./'J\j!TB0_-B=]?-[GSk#Qh=/Mki
+ne*Z6K*3[04MFRccTP[sFm*$#RfITE?7b$TEV:-%kCnHj?u>ORn(9%.#RI>/hXc,Bq6Ia2'T`-<
+%WnMU$+?^I#LqU,A&[E-LH]Qmbttk=Hc#PjCN0cYYFPD:l2&VfBTb.k2P;8eaN-'`%rsRWj4O^i
+^tDKMjZ#RY9BZ$`/A""U,m,<Hdn7atBJ#\?"D8_6$lp'=LQ78lV0L9*HDr($fttB)'5?Y5LGe8f
+M1KR5c0O[Y+\4%U/PGd/G4Ib4/Abn_3eJ'X6]Fc&W2hMK#011eMl*/PK)XaCkAPF,XB;F]hu;h4
+cPWK<$,ejanLY.a-[BhV_62C'H^$'mbpccK.lX%]dYJg?)gYN'1=6)tmR:.@&:$1D/bLmo!aI/B
+38SYLl6<_=5*!>;GMMZ^f('R6"0bG*=$XS>hXi8DQrYlAMCB-f:`ti*@Ub!fK%+(V>3L82DNhf6
+\scu-f;(La7q]V_<]#Q"+Yqr8KV:d1pgP%`b9.7_DBC[nE#WMDJ/A!ZKs&Wg@2tan@*3H.VruI^
+&Aaqr&@:_'!V<G0<.WT3kp/r24Ib\'@["nsId_-nfQ8bbM..&'@h7aegH$I*7[d+&q_iAGV9'/a
+<"GDo&0ka:1R?%F/MoaC:JgQ_9to=5fLg#pVkH\Rj^)d)r6rA]'7Rn7kIRhPe6ZHaK1TAi(;";O
+%#(2fSWKG*Ul&1=9+Sg6]sOd;raC4J9b"k?^/]Xe*!\(d)Or)WncR#0n[U-W9!'N+X*?4TdG?0?
+16";/L:8lmh164WB,V7M#M;8(ciG1qUS@pJ95jB\ZR9+Po#Pc1K.mTgN'n=U-fVs;2I_g('04b!
++DX:^8B=?J`%&^be;/!s?u8P>4k?AUl$a<!KX%n&Q<ViE$YEkM>66\KHX3ribJMhAG&>cjX_Zi'
+%aq+=p0qY$K76]W![K.)L%H^"\'1q[-"%f^M#&JAHA1//]Z]dF=:Vbdq!IV+'>#-lKCr5K3d,`6
+\WH;,Y"qQFca?RmO;`Y$]spk44EuDE[&.5RN'7pYK.qWZq>t"H-l1CRe4?#n1MG2q='&T]nPl,S
+]PWBl3"]4I4<!LrGjNIE,2$"'g1X2J4,6)]L<d\(kQHa"R+L#Io='6Drc]FKhH,N8$9i_(K:.FI
+^^BoD#P-6G-YN^QMB&N:-hKH1\\YhcSsGg?n>_A'oY?.EDafmQ/LrW:2`EWA_[e:$??L6hW4W@W
+abQ3eDWA+6'Oo]afiptJE\mVXGjjg_T4p+e]o(Z3bKr<^s+GIO/BEN`^r;AOms&*rHZcpO^5iYe
+j5YX75o_^tadebTQMq$?d.,sgs5D^Bl/+IhI.;Go/Yq9@!+>GnRTh;q<,9"rE%5/DbgU-;ZO6b5
+;dN=..5jX1o#!:*L&UkM&M(?7jmVp_X?i`1ARYJ,r84l$J*ZgQ/A<\:b\"B$.X%$UYgi8MoRFrS
+5c=/Il,H)e-U@t@*Thj2\3)#S83-^n;B%Z=WLZd>>XpcD]Ql>Eb?"Y)[<sg$["7e/p,kBlo4SUi
+Kaqqi2.A=m`_W"WS<;:LBlO"'@jTA?r,%rEqa7j^0KKWjWpb[[7hW,qhu/0<T,WO1,Fk`h^PMmc
+UJ37>HYcm"I,j<ADI:*T(#Rk\moE,$7o*:ThbEQ<<`S4=^%Pbmj_/4E"/A1rl*YFP0:oAoSHKCp
+/DV^/8e.Wt!JQhD`/f&L5">qQ1@7%dr:K>H"[,EJRZC`ulqZ=P?kXZ%PSl*ZqE)^^mhkm5GuX\Q
+%I9NUh0m[J##&A2V7A=28gXF#g#''8rH?qh;rASequ#2^*"U$fJ#$Fc]kJ!e*8r+*aLU.>[b#k9
+n3;6)le_)??mH`+#a_'RY_'_ADCo22^cm:oZ@]9B%#l0o*Pc"ej@4'2NZu#0,`IRL_^E=[4agqn
+rF[hIR003sl=c.UC6_8^\"J3pO=Oir+Vf?]G2d.ARBq;+Q3ONKOo35[7bJ78VeLmEEbRt24qY-k
+]phAjY4nl5Oms-n!%86:Rac_ANL6MbG=pJ.FrM&()%$nAN4dWek>FO_COP7%B@"jM[0JPZ_lJF^
+D]2[?drQ21nO;G0/F&:=2I3q@.Om^$.guNQd+Y;HpGT!%NP05(j(YpZFZ@7q@R8!?K+rXgSN[P>
+9X)iW6r3Z@QLt"9msN+cSKFZ/gH0OR?m\!&UCe0u#dUA<*&[b1L+JiQ:GL1JX>sg8H*qhDqK6*%
+p9%l3IH^8!e"9oNpVE`IV8V@idEjkZ^8KVEBnGc]`a]ij9UG$oS!TG0+TmmFni[s[p0\,63&s>t
+oHn[6_]Q/Lltj(:c*HI<El:6s[Bu39R4:3>f1@CY\'$ndn-<0QIrI$c^"J1#is.-EUl;c8$Eo`[
+e]YG'`L<dBf!O"AbN+'8hpuK,"G]eml+,J[c'lnT5N9MfJZ:1o.oe*@K[s#sM1Vu&PdYB82/p@"
+\uceB*Xb+Wq@K/%-On+b/fq(,!,cp8M.QD3L'8[Np)Xa$5V`lcMY0,hfsU1c`9`6gJ"N)dD&.Zb
+\c=,,BJOtV/fW/2l>8jIpR`j2T4h2<1=b&)!-`W53^"g`5Ef1Z$?J%LcGfq!$(1SRI,m-"U,lG>
+;OpeqW%,+!$#I3k3`s+&j.;".(n'OYo)9mG%DjWY%pKNP3C30gS9[4>#I]M_5DOThq-[?&m=]5V
+<6.S]J*u2jC5=MNZJ=!c@aJN?enATVese4]+$;k$*st#8DS<8`?^Oq,cAQ?C2$@BKROA[Y;SDcc
+#7o6ITn@/4gTN;f#P3qOTXOlo*I;R9J3QPYT^(VmJN\ipNY6qP2>\)2KD("jT"P`n1QWn7P(:n%
+3gan%gE3J%]HHG.S55'4;mgUqMMd=MOli[NM0sRFYI=rBSZE/Xf2PaNCGWBh;G/Hh69(QCMm>+7
+fYT+NYs-^:e#<dk*mW&ObGdIiDIu*$%`UV<H8?G"Km0/Q*k[>I(W$@%%;;I6HG=NIlh/HPeKn`)
+.>>lcrt]LE6aj/&p5J6?T5AbW$uhMpdr5HLQcEdfbCFYNAS#^ML,ul8O*3hrnj8N#KFA"q4%E;j
+eX?j:CFUmC>)ZJG<AE<5?f0QU=hgT$9En!T":$$-BX&BT^"US;Qkf7#No&)&/ZWE&R6PDf.CT9k
+;:Se:`ML][@NPC*YGLgN9GrpPa&L%.<#'2<9<<c8)/h=s)p>c)Y%J<ni()`hn$@T]hm+hA$h-k'
+"FKSK/d:jF=WB-!DJA9ok2900(VrOZWiWb-o5*5Gn0<Y$HV-Ngq"3.>NcgO>s5H`C>IS4(hl"e:
+9Z%>E@qZR^/O5Vj"sTT_9lW&E]U\mThKP7OY1ZbR7O+KH)?m50bjI+K3>tk":7PWMEjYJas*APO
+K,6,<mRAaOm+?#sQiJr@i2]MA[FL=fW&b?)@*Uk&)`2<YQGh\]Sfg/L#D>t%Q1;9DANF<bYGa0'
+=0&C#3E4E2W#M:Y3s@)'e)p1Emn4:%mD,VH1-Se[p/t?S&1(rn;g,4&@GIqsGrK.p_keU;'-a3o
+;OXoda0LT/b2k"7l9i@9&1<H/&Oj\,Q`UE15X[oF;5DIX9`pV65$kbj^&X2mm[V#U35;5bmK0m$
+Y4(gahMR62N?^<_kJr5KjPsYX5t?*_XTt*6FK`qd'lgYXiW>*ohfu*&kWGMU*fJh8n%[c#7][)0
+=.+%FCjeL+`efRP>uTC6@<GDn^b^N_ml8u2h>3eq@8:$%\Ig[PrgG_Tbp;7AR*N-X*%K24_=NU>
+_u86G6Df]r]*E%]g'cSZe4PI\a4>#5EXRbMa"!,8RK3$&$(mL+I.pEWO&/nJnARG"T#?3snPNL4
+mY)m8^199ISDS@_ln#Y7_6NT]7P@7=<75/Y\AKFFFT%3<XM_@L_E2ic*<#BC+$]r!Z\pRI.W(IU
+:j&%gF[pW*]Jk%ks-!-P4#]P\#7J?4dW]GR&$Pk$n.#-qS1\SkCMk^e""mK5rRSlC4+i]>qXV"L
+6e@ptCcM]u&!-O'Fq4rLE"?jb:2DX<rlR,R^_1=*cY-qB`q5KH"ctf9=2ieB'Gn4moADr)aF;q;
+hEjup;r%Xc.*ZP$Cd>dpAh*#7iZ(*0TK35#I_,^a5@oj#-]M2g3qFQ<P3RR=*@NMaCS:BpN*a_!
++ns_FUQoc(_V-AVQ$LS4k':PUNk`9IrKULo5Gt]leK"bT.J''V=P?YoQVR(NgNt5sa8KjB5j45f
+j'<_-Jn*cL#Ij`oEIS-n6dKX`UX2O[UotjNhVl.0fY_3CbF(0,>H[S.^S*^/O3[sqo_-tQDOjSh
+REfkjf.D&"G;5W$c9.tnOZG-b,Ju3K!c%+RRKcmXo_H#55..Ke2s>!r*=GqL#K@dUV;oqd\I2\o
+*2Mag%u:R'\T42SEH/k2PL6!c]RTSQ-i>dPC[Q]Xi)]D5UJD)BlIife]FTCQJcc/QPBVU1'OlPR
+pQ*V;AS4d.A<9/Kq03/5"k<7Z*LCX`DS((eAcJ5Gefr"]r!.E!<b<"N";g0#jAn`O7g!D/KrJ8d
+k>^-O1pkJ@%>h:NPigK7=%2gfQ"DJOUFfQBqn9=DPC]$@0O.c'8>RguF?jW_p4aD:)`=E*/]q)q
+--1%c.$(QM101dRFDr,pF3B9=Uo`d[Qs/F,H%)GfQX<QkR8ZudQT<T*C>)sG%DC#,R3ebo8G+(k
+`^.o+m+f`t)NE@Ug2`Z?lBlia=.iG21mZGupO']iV_X6d!-X_^_9K&GT=$ntqTJt(A,_7l\'%1Q
+0TC?5Ln^V(Mo;)CJ9SfWF5%caIN`mG+K\6;+k0iU;"ng5eI;kT<)UoiP(H[10oiAklY1Vt7;dI;
+TbQ^Ak(#bT.*9dr.]4'B90)QpI]l:MSRE*thf,0TY2009JRd[a;74e/_1mrgmWte%g=S0^10T`<
+?YOFO8]p'.7$WUE/S1\RX7'qS2HjFi30:8fXA(1(_Ek-AP,;mQAE7:a8Fi>4H)fZl*(=a+OBR#$
+bT^l<^Z?pqi!"FN6r[R0_5J"p%bA"p8(RH<'D2R"ET7GM2qI^^^:^/UruGJ[o,#*q_diMSf0&JK
+Fm[nLG<N,^j1@AoD$oqH&.%t5#b'N&R[`(,d"%kTM?:0i(au/T7'+N4)/25*5A5;S;P=(7k7kV>
+jFAR9[u^h0BC&!7F_ALO!W24N>4UVPCo!aG3`kT'3`+rI$F1!p$aOiE<-hE("=SdO1JQE-$ACGo
+X&)3HW[Le_M,$E8JNbI5.BbG7&EJI!\LpWilb+l*0c5_\1^@FtWb5G\LRn^J,h:&\5`p+n<COSm
+YDB@E[9#2NC5P9QF*1`1N)H7(2\N5cb`;qWdP^JF%51DTp#C*t2[0Yu^-CKAo8R_A\V'2<K08S!
++u/tiU#2YFOLk#"d\?H8gp1rs",oi8^8/28?8%J2^Dsp_-V:/&=O1iB.Qc'X>'n=u[/nVO0+:8P
+Z]lNtm/q,kNYsq:Uq^QrY-H(.s6WB.l[A3j\#boNh+YRDL+?iJT22?55cRM@(a"m&+U1i+=s,Lr
+g_C:T.>;aT,!i"Q-8Hl5Q3\b#81u]4eH^u]]_Wl<6>I'Beg==#C#ne28]?@/:o1@40!A:8"JYNt
+I>Xkg_PaVu7XF,8QR5K1aj*/>X3+B'A2tAq$rT5:"@[UI!bN/UEU$^2,GYLk49]\iJ<[G5eEe`a
+9P'M&W'IX8X\roiQOu8<0^G?lUbN7D`s&Y5XM&9uDujWS$f]r.m.t#,;J_s$MMbSC<e8K1?OIml
+*eC6I8].=LTVL(g.Bec3NN\/FZ"?I[EI3i$i>Jtg[dcTZ><@Sr1CQFEaj@+Q%&iL4"l=TYUX<0c
+rmlP#LO*>Z4jX7;5'Q?=\48j*\*fnj2XF$.F5t)eXtrG1=I=\a"./!&7)m8;V-tAhinm.aNG`,2
+Ql>Dd*cdL%Z;_s+MQ2K9YL$tn<Ut%F@E7;.n0`b(Jg"b9A4N4b/W-sL[l3R<e##5$(oP!IYO5`/
+$]!P\@,)T#)EB;(I1OPq(>i<eX[\M<>JeQGa_<=YXtqPc7"p$@b^g8mrY#lWgar(I>/<SpE53s`
+l@[iPXumeP+&K`-5B=%b\MQK%4]<Q`-RAtmm/_Q!GY.6F_9%qBi%#/[j1qqO*rYEi0u*BD<9ksS
+9#m3QndTJM5CL3+irZrcJ.!6PhQ]NiO6'$79tk9Kl:ejsT:]Cp/l\moD.9D&6R+5Hn$r&Z\s=Og
+$)hjHM5uMrB4e1WG`.7Aml:Iu]_r#6"e8#(#mH_W1>j,c*u>Yl/8:C??Vl!^0idilEhG=s;oo2m
+);rB*47SfO<W%=CE%m!#Y.0E#QAQG,lO"HCpqDbd/lB]lRKG-2'0-/%IaKRG.1R`"`T3-ZX\jp%
+B"\M20pt_rPMo;,r1kAoo#\t>$0(sd6#t^?~>
+endstream
+endobj
+9 0 obj
+<</Type/FontDescriptor/FontName/ADKKKE+Times-Bold/FontBBox[-24 -19 476 691]/Flags 65568
+/Ascent 691
+/CapHeight 691
+/Descent -19
+/ItalicAngle 0
+/StemV 71
+/MissingWidth 500
+/CharSet(/colon/four/nine/one/seven/six/slash/three/two/zero)/FontFile3 119 0 R>>
+endobj
+119 0 obj
+<</Filter[/ASCII85Decode
+/FlateDecode]
+/Subtype/Type1C/Length 1361>>stream
+Gar>CCJ7Z>)#b#AV^L7(e2&WW4c*F$^hAijJ\b0%L'<YU*905ULUPX#Zp;eK@;^sMMBE"U%aLkT
+->V]5@oL`Kbp6U.E/C!o(o,3Mc6^[-a7nN4bZ^0@5PF9bH[VJEchgV]f*>.ej^2gXn[>7\(8KG"
+DA"m)@YBdZ.Btm$lcMt:,g%3p#3#Uh%e(Keq)fA:KYXkETKO,`.*Bs'b->'>N<Ys1cDgO(/r<@p
+8Gk-98P;_:C7YB*\6Rm&d$_FHO42;l/QNO'[V'P>So1=N:rhgZ:936keS)A'eiWSSNKJ/;hDH,Z
+<i`'b;rtr=.;H7;a^a0Y1mi$ICtrodWQ*-s>10p.Y(5+BRS<`7+GBZUeXD`IWE\4O91LBIKqM6f
+8*^_E_U*TCN]&#0Nu#ggj#GFt.Y\k8T(nQG*:eA(8JXC?@*0XoU^.Z>?.m>7B[Zm(RIjQA8F1/^
+>Z"0m/kCO!8<H138hTu^cE"+mBddjk_HRmUq\t@o"gGa/4B+Yd-:f7qeFI?;Mi/'VIV`j[IrrJd
+R8V'LW0H5)6,L^NKo87uM2UqtA!]/=relQ?&6';;d0!-i#US:SqlIE5]DM@ks4GH>0f(`7<2!Q.
+AN6fg<Ro(@7":OsID#4e^;l%&1+s%a_ucS\\-rr^Yn;)ZNAfr>r%nU6,_:\%nA`d=SQisT'ecl\
+&l`&kU=2VH[4MSU2D[p#h3aVCK"o9B`u3]@F.WWjEODROU$RD*I1;#ZC;qm'H:\TO&sj\n_DK2C
+"!&_<FA3J%g$A(RmkJm)XtDq7Y>6u(>@e>imac(S,JQBQ*j-t'cf$Bufc1*$mu>c@R805*_cpu4
+4kFgP+Tp9t%C$`CIq([?Cj*2redXG+8%7VM^01qp>khT`._@OKGYKFaJjCSqKMW4&L2;O&@IcWO
+2>"05NXT&f(0O-_nre2C.Yne!O_C0\)8nf49p!_tp3"7$^r%ItpQQ?\l9&I*RKPJr+]0HOoa7j@
+'K!L%6@?+sLbC(^L2;5%!TG6saWI+D#B%:Pk_>rZD5O6LLjSms@a?g*K?USnUW$b"nN1D6ZTJ%S
+3g?c7N]["R^<uhqae$6'TbBe\=kd4E%?ZmbDe1H2RS$YF7d1aQEm+.;<Qm]K9e'2AV9dcm9E9G]
+?;48VOQ]hB/X^?`JJ4?imP"Q^n&c"HEX&ruK9U=#7&(rg`:$G*:p]1F6PE<=P/R"%8[On:.9L2o
+g:@c<*rY0(j2c\n'\F3f"3f]VMdp,$gBWt@/H%YL0")g<kcA6Fi,K]H66'N6O:H$6P1Na":Y3oG
+bg'I\kN==ZE8.jbkGub&lPJ\rB0EfY$>!%l+P$fp,1(3li;DF!J,nLs!s0)2#8hITj8~>
+endstream
+endobj
+13 0 obj
+<</Type/FontDescriptor/FontName/PSRWDO+Times-Roman/FontBBox[-9 -218 775 727]/Flags 32
+/Ascent 727
+/CapHeight 662
+/Descent -218
+/ItalicAngle 0
+/StemV 116
+/MissingWidth 500
+/XHeight 460
+/CharSet(/L/a/c/dollar/e/f/g/hyphen/i/k/l/m/n/o/one/p/period/r/s/slash/t/two/u/w/x)/FontFile3 120 0 R>>
+endobj
+120 0 obj
+<</Filter[/ASCII85Decode
+/FlateDecode]
+/Subtype/Type1C/Length 3616>>stream
+Gar>GGAn4.(1/5\mt6-6<Wj0@8XE(0&t0sI4+RO=0lVqXj$n$)j!n9Xh3(cT8M6V\bE?EO(V08A
+2TD*skJ.WO%@i%N.>F=F&CPX1q3G0$k#TUZg`JJ]Za7:4mJGc;^%[!E0o3A]#R5pd+BC&<-s.E5
+Q_qn,mq^#+%.`(3j9fKZ-%"GB31%%)&2c6[U'45t?uG;::OO7BB:d-B7G,,;?nrRqNm7p@6CBLP
+at=C2MMk&NEV8TSs80)F4?Qkn9_i%P0J]CgS0\iOU`YIM,]\Sq6WWu:0S7lA8Ao5Z/;[8e>p)g8
+:X;QBr"bnSaiG2dM'ZVb6=)3J(%J#;@qb(\[Iik:I:DHGU&s<BSdY;7_hB:C9L`'F,W5W%,m6O'
+A9(+f6"*V^C8iU5,;Vu_/!6u?[sl67k6YT^EI`il%MH$7*"bsl'&/71`*+@JLa%!T]8437,%<41
+NsHpF&W;KRJjZbuAMeYM>b[Uq^kcNCb^"V31Gaj?3B(^@Fk-pO%I8(Y3*6T"O9N,2?g"]WrFoTj
+]S^uYk0(lH+L2@MaCQ/)T?ZB:=_8oS*4O5UZ8<]V;m/A9TI^)^kV\3^:lVf0+L+u77O&HTJ[;9/
+gk,m(l]CHK:`07i[&QIoV0!e=CtH5F3J`sYgZ4:IOsI%j48F)Od<\nDf#O*HkS"CgjMi61n(64h
+2&"`c'J?d=F>_%8Q9SW2K5pC)s2'/rFT!HL)1bi6S\;\)>!]FMhRPL,ZX^(=+J1-qJS*i81KS5a
+Zn4o(UhWq>WF:;cH8#'E/2"NKP[gjD=)dIW%TJMIOMc$:n0AsG"MOeb$$'(HYShE:D?a;sg'2X.
+iXK9TVo(3K+J/TBSr6skMg'RAd_Y#B\7EEm@'[ceB5;!W4T*W.DVrEqad_JMU*.E;]J\\^bX`g?
+#iDQMgYujn3m2W,bICk_]u>t=B73pgJ?f2taCsA(UN&$b^eUBALSc4I!X#@GGLtB7%1W5)9nUQ?
+@#(qbB<^#A:6cP`*Ys,*bguQ`/FA!d)D%JR:$3nUq6b(Ump*ij2jSL8i/dCuge.Jq9@'cD/iVA2
+<$In?)6A-Gj>8lTMJDaKDiRDJ3&m"Cmtfn"c>Z?R!Kur8F6/6fM5RJ??eef@Y+:;Y<2bT>E7J-+
+IlX6LjK3<tiFt(?FB:@R^]"/.)s7S5pQ#S.idH*I\eB5X`qk$/Vu+COgZb[6%9)>>JRB!H;gW/D
+Epd?`):.DL?\or\<F[iTNTI$XUELj?j[`N#jP83'9h+_0<+W&;<C>()GH&?^2ta"P5'N`2C65W9
+.*bm3M@_F>h0i"J7fhf0cg3ob>`/'8Y;^1._)&DWME[kn/3(s5Z]k"jP61Y&[1R?^<T%VWgOKc"
+8dCI5XO65H71u.*_=ZNVE<2sDhka@g^tC3@)C7\l%Q9qRr;6$3`pRaDWDflP^_,*tTD+C']]8)W
+4jMRPaj#8=q(WnI)@RKh7\i@c;h88[J]\MVKF:eD#U']h[5Bqh31u=)<eKFtDS89[;<fR3;he1?
+6<7N5V5r=(>WgO$Fq3'N>.`:W^"R169>o#Q7j2cL;cAJ<aQ[\gdFDh;GsLW-RC/nQ`,d&JIH)/M
+q`fflO5'#Mq?RX#*\^:.>TuNrJhMS0=+.fIF.1nY+]kMfRFMQY)SHdcS,gp#\Q@Ta1m6:-!5Z(t
+%Z:\m-1)_TrjLN!H]:Bh?!lV[%bNqk2Kl6-(<>;;W-*Ge'e("h,oSM\JXf-U7.QV"PH@bbp`*(]
+]t*q!nfc`ei=iSS>5olb8^-;8\cRl(]GSJ$q9UQV/O5XuNo5U)0Yef[nmrmFpFj?S5.1TZ1eK*n
+B5h>$QZtehG@0B\L$,3hW^1""bCh]CV^ooVQq]W<[RB-dOcM#JO9^%oN]mg[<gpT@oV"`ks3Yba
+k<gXU'eVX]0]l@)eG'1hOR)8)3eu&A(Yluf*`0^WPLY=[4JXf7k#Bg$@+8(89)dTYr8TG'3=><]
+hTf,4BF<:im.=Ck(kTBPgU21A!`BBPN7WF.%U5mj;K1+Gd@_NLaT92^UE(9GFu/2!-maYb=hL:?
+8AHSuX-_4ZRn5f!6b,^1A/3$*(qSld%">lDoD+24TBR!<'fkC#b#ZIHC27Ou\Dtf1_hf[B`rq0\
+jZCk%81hBa%PpnA2>3+#]/s\"0#N4qlW?&q_$GZuK>Y2hhF`pt5qsda=#R0C@2uA_!q@"K`<V.S
+quQ%Q;JQ=pKT7N<`(,k;,#L=qpn,3V_4t5$0eptOmbftXL-%cCYFmDE6gf4'rkV6W)8N47N*g4c
+paTRue0;Ic0=CGEB_<9Sc2>RD\"O,Ep6Ok7OlW\DHfGi4H%N]iMQE7*@!M)Ue44>^?*B.lYe%j[
+_JT,RF:7)hE"E<%Y&##km)Ma\ER(MrLXC/FQeh)t@?NW]#^>o8:kI3*&kA'?7,_%ro+509/L"0D
+Sag-KTN%miRERZHD$_[X`GXMRP/mbp%a'IpGEO'(]$iN#`BVc-1k8>oX%14>fdL`D8A$gp*]5/A
+i,H03^;a#[6S6i[RQ>O1NVWF_#CCj9kWJ,f[qc0jAULeB4)"Q9F:Q+lKA*Ej\'c_VbL+!:m1.J;
+H%?u#jBh6lT'YoD8K7KMg$U,M%M-^fPP1o'n6LRpB[!(=%K#\4?\7bEnet4_^Yt!aHs.W8;?Ni9
+D=q#r&[15=G#nb[@F.LJn1j^RDL7'FI0),-*&8*BEtsC_Ed:kt:N(SaDbjfR9^p)u%J)<gTI7]g
+-C;/OE?R=*dN/u_.Ak-a<E2Fp;J:KO`0+_4HdOMXMZ=Mjqe_VL.Vk<OMWZhK9ZRXcb=t$HW>`s-
+lsuT]-1r9n/WLA+m@O.Cl=@)^kH"8Zl,5W2</QDn>16;>2dJk_7\caABM\sP"tH_m3a"mn),FGP
+qE8N3&$sIqg8?uTK>h\I+unN/cpKT"TK%p3A>[&gqgbVGk<]t-q(;PpJh"YLV4ouVKoTld']]0D
+('Q=&$b\fMCsKftd8aOs6pT9+Co@lqco1HC+Ps,95bel$"(ZPc*0/><;bb.8::+U$&5[IM*n9Lc
+!e;'_5`A.fKW[XX#CWKSRjSf<DH;DsW%<6<WMkV2dRnO%aKnL@g1E1a_oDbKTDm]:d><.rEI?lT
+\2t0H,Io-p"E2]"7q*p\H`243=5`jhN)<it*5sP5#hN;`6.i(/1[rjXEM`JV&m8jrDgti$Dgu)[
+<'XrgnNZ0bd]pi$gg+_gq<o`_a6Z#Gq6"pr(5VE8nH:G>G(m4Y^hn"gXgL&KRVM*2[aqL#"]#U/
+PZ(F]<j"(,<2Bdqkk0MOQ807;$d%i>SV00QgM\k:KDS>?N`U2-p<4@jq:g]q<Nu"**;S.&d8/.1
+hG:?4rc;mB;-G;2=00\I7CJXP`dSaB\;oM6FNgU68aA9O'MqY+1eU=k$Wrt2q9L5.^<7e2OB#Q0
+"QH!eh^0/P-5HWE;-oiX-WZJ-TbMUU0mbIX=5KgG8V>MH=DNaX;t(`*;bPd3AWH(hX5GKqrr>"6
+rU,g)_4HsVkU[XP(t&0N:Fc:l_Aa'<J6BeSe>Ch?[<ioQls`O6RR@sHL9>m^0_IU'@<AOOm7"Xn
+1:O2j:l1g'pZ#@?]5R\^Vtunk(>N\3Y`L",!u!bchZ~>
+endstream
+endobj
+11 0 obj
+<</Type/FontDescriptor/FontName/FXAAYL+Helvetica-Bold/FontBBox[0 -24 528 724]/Flags 65568
+/Ascent 724
+/CapHeight 724
+/Descent -24
+/ItalicAngle 0
+/StemV 79
+/MissingWidth 500
+/CharSet(/eight/five/four/nine/one/seven/six/slash/three/two/zero)/FontFile3 121 0 R>>
+endobj
+121 0 obj
+<</Filter[/ASCII85Decode
+/FlateDecode]
+/Subtype/Type1C/Length 1552>>stream
+Gaqc4HV@@>(dFA8b8lmX@2H.5HSn"&$3M!9!cn\M.M,sCO$OkpPWLOa87`RSgjDfYE@t0dVE=nc
+nsG&e'Nc+U\n&OPpqglFgu=hb9pX_mGKF:8DN0S-5NePakPN!bH[LT8hHl#4./uuA:i:FFKr1ff
+G/</El,6Cj%.b+LA[kDr0jZCA7p36\rNJVC(#H'$Epj",;o-NRi1,a:'X_fXd8YIlEsln:G&S&(
+X7@HW\iHr=Z$O*T1HYWKiR4f=]PTG`;`^.I"aas?FgE<L99lddJM6)#K!VhoN&+Tf<f<klX\#a7
+imN+'0.jSuEtPC6>[0rrCm;<FkO9e[X_$:&e)iD<Mt=aa?N_N/l)g?*\@M4jk9hP?&XnYX-iaFF
+2\Ct":bW5B;ihnH,TVt*$:VAd/2`,B7c!Qkp?M8gQ'KGYMu/ac;;"3cA\<O>k'mO0<>s*AJm9`7
+3^=i0!BJ[7**@`T6-FL-]+?XMA6`PLZRlBFE(j6=EF7l%Ae&$8nW3HC8)O&(6Of)1KO>)>rd[4G
+\sD3DL`%E2m_Wi0f+rd3E]=6K`lYiU5-f)cPrK+j&[p:mFB,d<)So5=ki'/(D9(K"brqGV!+6,b
+:=$g>`Cb<J'"IK)d6:bJ()r)C1XSCX$rDdUTW-BO$MdSs=9U1?%+9:$`eNZ#_#Iip&:VbeGglg.
+8S5rf,I@.&>mERCJ@^U:\U39*7@,_\AW&f_LeL/MqP((I,a]1el.>8(i!")\%H)g?LS4jRZes]@
+rQT]'rh/)+o9a>]6-`AtldfAO$)8#mBoh:^#%g-plo3:Mg4kbcCBK(^iCn%e'fGd3*?jAL1@0:?
+)LLuZ)fZY""+kn1\.7(3WiPCJX?V?*o:>f:1p\c2]7YRS*l<K%i.?_c4g_GO`(Zo'ajGre3Uqf@
+&hEbjHeX=g#7O82Bul&#YAAi'OSo>49(_`)<fX@r-iE51$*>0Kk[RtBf"3YX_n@ZddBIL[%c?g4
+4tY1/T9@;l&jR\8TC_t@7)=i75=t@V`B+4/[L"/=0^q[KVu\Q=/r`:IBL%(s1@[0*TA;Z7ZcUlu
+FEUgagNY>G[2@@dknV=-Ya?i"/aQY`B'F0UIAutjV_9/2_@iFOj[r07^-R*b"QRh_CG,@kcJsB/
+m&V^F,0=Tn9(0?UL&#MiQQ$-!Id.l`U4"JHGelc4KSRl[U4O2g0n2AqmF`GUDi*=?FAdIs"rt,1
+*CpA:o*TEt+-7`CfI5FoJ3V]%:YI*VT8?ES&DLH2jNs%S[anV@*ah71]1[`ILi*7`c8]ONb\I:#
+oEIK<5u#j=d1?Tr@uipX$%.Kro0`@<L8\N2HdQ\9PA@D`A/e:9)fiPCB`lC>+fEt$GQ+<F6U=1r
+Z2a[F^4E=+#%\F;&7D/;)VL=;F=tqH#7:&O$'b4/4RD@HfmTjiD[\HDX15WQYi*fiT)$h'R5TBr
+M'+U(SHT%"VlGe:C29gZ=#IB>,h/9N]Rb"gh5>NHY%4a/Y"_SEj=O_FGkUR=So68sQ&[2r])beJ
+2E&t@lO-W=JT$f?!E6$6IL,l[F>d<X~>
+endstream
+endobj
+123 0 obj
+<</Type/Metadata
+/Subtype/XML/Length 1438>>stream
+<?xpacket begin='﻿' id='W5M0MpCehiHzreSzNTczkc9d'?>
+<?adobe-xap-filters esc="CRLF"?>
+<x:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='XMP toolkit 2.9.1-13, framework 1.6'>
+<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' xmlns:iX='http://ns.adobe.com/iX/1.0/'>
+<rdf:Description rdf:about='uuid:2d7b3e53-d3d4-11f1-0000-dae8709dae62' xmlns:pdf='http://ns.adobe.com/pdf/1.3/' pdf:Producer='GPL Ghostscript 9.07'/>
+<rdf:Description rdf:about='uuid:2d7b3e53-d3d4-11f1-0000-dae8709dae62' xmlns:xmp='http://ns.adobe.com/xap/1.0/'><xmp:ModifyDate>2016-10-26T13:06:06-07:00</xmp:ModifyDate>
+<xmp:CreateDate>2016-10-26T13:06:06-07:00</xmp:CreateDate>
+<xmp:CreatorTool>GNU Enscript 1.6.6</xmp:CreatorTool></rdf:Description>
+<rdf:Description rdf:about='uuid:2d7b3e53-d3d4-11f1-0000-dae8709dae62' xmlns:xapMM='http://ns.adobe.com/xap/1.0/mm/' xapMM:DocumentID='uuid:2d7b3e53-d3d4-11f1-0000-dae8709dae62'/>
+<rdf:Description rdf:about='uuid:2d7b3e53-d3d4-11f1-0000-dae8709dae62' xmlns:dc='http://purl.org/dc/elements/1.1/' dc:format='application/pdf'><dc:title><rdf:Alt><rdf:li xml:lang='x-default'>angelfire-notes-smalltalk.ps</rdf:li></rdf:Alt></dc:title><dc:creator><rdf:Seq><rdf:li>Wesley Mackey</rdf:li></rdf:Seq></dc:creator></rdf:Description>
+</rdf:RDF>
+</x:xmpmeta>
+                                                                        
+                                                                        
+<?xpacket end='w'?>
+endstream
+endobj
+2 0 obj
+<</Producer(GPL Ghostscript 9.07)
+/CreationDate(D:20161026130606-07'00')
+/ModDate(D:20161026130606-07'00')
+/Title(angelfire-notes-smalltalk.ps)
+/Author(Wesley Mackey)
+/Creator(GNU Enscript 1.6.6)>>endobj
+xref
+0 124
+0000000000 65535 f 
+0000099003 00000 n 
+0000122733 00000 n 
+0000098800 00000 n 
+0000095575 00000 n 
+0000000009 00000 n 
+0000004417 00000 n 
+0000099069 00000 n 
+0000101696 00000 n 
+0000113531 00000 n 
+0000102270 00000 n 
+0000119286 00000 n 
+0000101893 00000 n 
+0000115263 00000 n 
+0000101071 00000 n 
+0000102473 00000 n 
+0000099110 00000 n 
+0000099140 00000 n 
+0000095726 00000 n 
+0000004437 00000 n 
+0000009135 00000 n 
+0000099203 00000 n 
+0000099233 00000 n 
+0000095879 00000 n 
+0000009156 00000 n 
+0000014023 00000 n 
+0000099296 00000 n 
+0000099326 00000 n 
+0000096032 00000 n 
+0000014044 00000 n 
+0000019166 00000 n 
+0000099389 00000 n 
+0000099419 00000 n 
+0000096185 00000 n 
+0000019187 00000 n 
+0000023806 00000 n 
+0000099482 00000 n 
+0000099512 00000 n 
+0000096338 00000 n 
+0000023827 00000 n 
+0000028223 00000 n 
+0000099575 00000 n 
+0000099605 00000 n 
+0000096491 00000 n 
+0000028244 00000 n 
+0000031856 00000 n 
+0000099668 00000 n 
+0000099698 00000 n 
+0000096644 00000 n 
+0000031877 00000 n 
+0000036716 00000 n 
+0000099761 00000 n 
+0000099791 00000 n 
+0000096797 00000 n 
+0000036737 00000 n 
+0000041469 00000 n 
+0000099854 00000 n 
+0000099884 00000 n 
+0000096950 00000 n 
+0000041490 00000 n 
+0000046728 00000 n 
+0000099947 00000 n 
+0000099977 00000 n 
+0000097103 00000 n 
+0000046749 00000 n 
+0000051927 00000 n 
+0000100040 00000 n 
+0000100070 00000 n 
+0000097256 00000 n 
+0000051948 00000 n 
+0000056821 00000 n 
+0000100133 00000 n 
+0000100163 00000 n 
+0000097409 00000 n 
+0000056842 00000 n 
+0000061822 00000 n 
+0000100226 00000 n 
+0000100256 00000 n 
+0000097562 00000 n 
+0000061843 00000 n 
+0000066348 00000 n 
+0000100319 00000 n 
+0000100349 00000 n 
+0000097715 00000 n 
+0000066369 00000 n 
+0000070929 00000 n 
+0000100412 00000 n 
+0000100442 00000 n 
+0000097868 00000 n 
+0000070950 00000 n 
+0000073656 00000 n 
+0000100505 00000 n 
+0000100535 00000 n 
+0000098021 00000 n 
+0000073677 00000 n 
+0000078649 00000 n 
+0000100598 00000 n 
+0000100628 00000 n 
+0000098174 00000 n 
+0000078670 00000 n 
+0000083258 00000 n 
+0000100691 00000 n 
+0000100722 00000 n 
+0000098329 00000 n 
+0000083280 00000 n 
+0000087099 00000 n 
+0000100786 00000 n 
+0000100817 00000 n 
+0000098486 00000 n 
+0000087121 00000 n 
+0000091847 00000 n 
+0000100881 00000 n 
+0000100912 00000 n 
+0000098643 00000 n 
+0000091869 00000 n 
+0000095553 00000 n 
+0000100976 00000 n 
+0000101007 00000 n 
+0000103130 00000 n 
+0000113799 00000 n 
+0000115567 00000 n 
+0000119562 00000 n 
+0000101593 00000 n 
+0000121217 00000 n 
+trailer
+<< /Size 124 /Root 1 0 R /Info 2 0 R
+/ID [<37355EE4E213E2FC5C0BA8FE78A5E9A1><37355EE4E213E2FC5C0BA8FE78A5E9A1>]
+>>
+startxref
+122945
+%%EOF

@@ -1,0 +1,327 @@
+head	1.10;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.10
+date	2012.02.24.02.57.51;	author -;	state -;
+branches;
+next	1.9;
+
+1.9
+date	2011.05.20.21.15.09;	author -;	state -;
+branches;
+next	1.8;
+
+1.8
+date	2011.05.16.21.28.47;	author -;	state -;
+branches;
+next	1.7;
+
+1.7
+date	2011.05.06.04.02.05;	author -;	state -;
+branches;
+next	1.6;
+
+1.6
+date	2011.05.06.03.45.48;	author -;	state -;
+branches;
+next	1.5;
+
+1.5
+date	2011.05.06.03.45.21;	author -;	state -;
+branches;
+next	1.4;
+
+1.4
+date	2011.04.23.00.15.12;	author -;	state -;
+branches;
+next	1.3;
+
+1.3
+date	2011.04.23.00.14.29;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2011.04.23.00.07.58;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2011.04.20.00.30.56;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.10
+log
+@-
+@
+text
+@#!/afs/cats.ucsc.edu/courses/cmps112-wm/usr/smalltalk/bin/gst -f
+"$Id: tree.st,v 1.9 2011-05-20 14:15:09-07 - - $"
+
+nl := Character nl.
+
+Object subclass: Leaf [
+   |char count|
+   char [ ^ char ]
+   count [ ^ count ]
+
+   Leaf class >> new [
+      self shouldNotImplement
+   ]
+
+   Leaf class >> new: aChar count: aCount [
+      |result|
+      result := super new.
+      result setChar: aChar andCount: aCount.
+      ^result
+   ]
+
+   setChar: aChar andCount: aCount [
+      char := aChar.
+      count := aCount.
+   ]
+
+   <= other [
+      ^ (count < other count)
+      | ((count = other count) & (char <= other char))
+   ]
+
+   printBase: aStream [
+      ^ aStream << self class << '(' << char << ',' << count
+   ]
+
+   printOn: aStream [
+      (self printBase: aStream) << ')'.
+   ]
+
+   inorder: visitor prefix: string [
+      visitor value: char value: string.
+   ]
+
+]
+
+
+Leaf subclass: Tree [
+   |left right|
+
+   Tree class >> new: aChar count: aCount [
+      self shouldNotImplement
+   ]
+
+   Tree class >> new: aChar count: aCount left: aLeft right: aRight [
+      |result|
+      result := super new: aChar count: aCount.
+      result setLeft: aLeft andRight: aRight.
+      ^ result
+   ]
+
+   setLeft: aLeft andRight: aRight [
+      left := aLeft.
+      right := aRight.
+   ]
+
+   printOn: aStream [
+      (self printBase: aStream) << ',' << left << ',' << right << ')'.
+   ]
+
+   inorder: visitor prefix: string [
+      left inorder: visitor prefix: string, '0'.
+      right inorder: visitor prefix: string, '1'.
+   ]
+
+]
+
+
+a := Leaf new: $a count: 10.
+b := Leaf new: $b count: 20.
+c := Leaf new: $c count: 15.
+t := Tree new: $t count: 30 left: a right: b.
+u := Tree new: $u count: 50 left: t right: c.
+x := Leaf new: $x count: 20.
+z := Tree new: $z count: 80 left: u right: x.
+
+sortcol := SortedCollection new.
+sortcol add: t; add: u; add: a; add: b; add: x; add: z; inspect.
+
+stdout << nl << 'Before vising z Tree' << nl.
+z inorder: [:char :string |
+   stdout << '[' << char << ']=' << string << nl.
+] prefix: ''.
+
+stdout << nl << 'Before sortcol do: loop' << nl.
+sortcol do: [:item |
+   stdout << item << nl.
+].
+
+stdout << nl << 'Before remove loop.' << nl.
+[sortcol notEmpty] whileTrue: [
+   |first|
+   first := sortcol removeFirst.
+   stdout << first << nl.
+]
+
+"TEST: tree.st"
+
+@
+
+
+1.9
+log
+@-
+@
+text
+@d2 1
+a2 1
+"$Id: tree.st,v 1.8 2011-05-16 14:28:47-07 - - $"
+d46 1
+d77 1
+@
+
+
+1.8
+log
+@-
+@
+text
+@d2 1
+a2 1
+"$Id: tree.st,v 1.7 2011-05-05 21:02:05-07 - - $"
+d22 1
+a22 1
+   setChar: aChar count: aCount [
+@
+
+
+1.7
+log
+@-
+@
+text
+@d2 1
+a2 1
+"$Id: tree.st,v 1.6 2011-05-05 20:45:48-07 - - $"
+d22 1
+a22 1
+   setChar: aChar andCount: aCount [
+@
+
+
+1.6
+log
+@-
+@
+text
+@d2 1
+a2 1
+"$Id: tree.st,v 1.5 2011-05-05 20:45:21-07 - - $"
+d40 4
+d69 5
+d78 1
+d80 1
+a80 1
+u := Tree new: $u count: 50 left: t right: b.
+d82 1
+d85 6
+a90 1
+sortcol add: t; add: u; add: a; add: b; add: x; inspect.
+@
+
+
+1.5
+log
+@-
+@
+text
+@d2 1
+a2 1
+"$Id$"
+d88 2
+a89 1
+"TEST: 
+@
+
+
+1.4
+log
+@-
+@
+text
+@d2 1
+d88 1
+@
+
+
+1.3
+log
+@-
+@
+text
+@d73 1
+a73 5
+sortcol add: t; inspect.
+sortcol add: u; inspect.
+sortcol add: a; inspect.
+sortcol add: b; inspect.
+sortcol add: x; inspect.
+@
+
+
+1.2
+log
+@-
+@
+text
+@d27 2
+a28 1
+      ^ (count < other count) | (char <= other char)
+d70 1
+d73 5
+a77 10
+sortcol add: t.
+sortcol add: u.
+sortcol add: a.
+sortcol add: b.
+stdout<<'hello1'<<nl.
+"sortcol beConsistent."
+stdout<<'hello2'<<nl.
+sortcol inspect.
+stdout<<'hello3'<<nl.
+sortcol do: [:i|stdout<<'out'<<nl].
+a86 2
+   stdout << 'before removeFirst' << nl.
+   sortcol beConsistent.
+@
+
+
+1.1
+log
+@-
+@
+text
+@d1 1
+a1 2
+#!/bin/sh
+"exec" "gst" "-f" "$0" "$@@"
+a26 1
+      stdout << count.
+d70 16
+a85 2
+col := OrderedCollection new.
+col add: a; add: b; add: t; add: u.
+d87 2
+a88 1
+[col isEmpty not] whileTrue: [
+d90 3
+a92 1
+   first := col removeFirst.
+@

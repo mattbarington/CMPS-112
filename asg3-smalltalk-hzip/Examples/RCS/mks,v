@@ -1,0 +1,49 @@
+head	1.1;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.1
+date	2012.02.24.02.34.28;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@-
+@
+text
+@#!/usr/bin/perl
+# $Id: mkts,v 1.1 2012-02-23 18:31:52-08 - - $
+#
+# Run Smalltalk programs and capture output.
+#
+
+$0 =~ s|.*/||;
+system "cid $0";
+for $prog (@@ARGV) {
+   system "cid $prog";
+   @@commands = `perl -ne 'print if s|"TEST: (.*)"|\$1|' $prog`;
+   print @@commands;
+   $lis = "$prog.lis";
+   open LIS, ">$lis" or die "$0: $lis: $!\n";
+   for $command (@@commands) {
+      chomp $command;
+      $command =~ s/$/ 2>&1/;
+      print LIS "****$0**** $command\n";
+      print LIS `$command`;
+      printf LIS "****status: 0x%04X\n\n", $?;
+      print "\n";
+   }
+   close LIS;
+   system "mkpspdf $prog.ps $prog $prog.lis";
+}
+
+@

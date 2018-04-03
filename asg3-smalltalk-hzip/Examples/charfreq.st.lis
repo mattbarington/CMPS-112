@@ -1,0 +1,8 @@
+****mks**** echo aaaaaaaaaa bbbbb ccc | charfreq.st 2>&1
+freq[8r12]=1
+freq[$ ]=2
+freq[$a]=10
+freq[$b]=5
+freq[$c]=3
+****status: 0x0000
+

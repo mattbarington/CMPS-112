@@ -1,0 +1,52 @@
+head	1.2;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.2
+date	2015.11.13.22.51.58;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2015.11.13.22.51.46;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@-
+@
+text
+@#!/afs/cats.ucsc.edu/courses/cmps112-wm/usr/smalltalk/bin/gst -f
+"$Id: char.st,v 1.1 2015-11-13 14:51:46-08 - - $"
+
+nl := Character nl.
+
+(0 to: 255) do: [:i|
+   |c|
+   c := i asCharacter.
+   stdout << c.
+]
+@
+
+
+1.1
+log
+@-
+@
+text
+@d2 1
+a2 1
+"$Id: string.st,v 1.5 2015-11-13 14:42:01-08 - - $"
+d6 1
+a6 1
+(1 to: 255) do: [:i|
+@

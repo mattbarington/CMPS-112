@@ -1,0 +1,7 @@
+An instance of Tree
+  char: 0
+  count: 1
+  left: Tree(0,1,Tree(0,1,Tree(0,1,Tree(0,1,Leaf(2,0),Leaf(3,0)),Tree(0,1,Leaf(4,0),Leaf(5,0))),Tree(0,1,Tree(0,1,Leaf(6,0),Leaf(7,0)),Tree(0,1,Leaf(8,0),Leaf(9,0)))),Tree(0,1,Tree(0,1,Tree(0,1,Leaf(10,0),Leaf(11,0)),Tree(0,1,Leaf(12,0),Leaf(13,0))),Tree(0,1,Tree(0,1,Leaf(14,0),Leaf(15,0)),Tree(0,1,Leaf(16,0),Leaf(17,0)))))
+  right: Tree(0,1,Tree(0,1,Tree(0,1,Tree(0,1,Leaf(18,0),Leaf(19,0)),Tree(0,1,Leaf(20,0),Leaf(21,0))),Tree(0,1,Tree(0,1,Leaf(22,0),Leaf(23,0)),Tree(0,1,Leaf(24,0),Leaf(25,0)))),Tree(0,1,Tree(0,1,Tree(0,1,Leaf(26,0),Leaf(27,0)),Tree(0,1,Leaf(28,0),Leaf(29,0))),Tree(0,1,Tree(0,1,Leaf(30,0),Leaf(31,0)),Tree(0,1,Leaf(256,0),Leaf(1,0)))))
+x01 x19 x1E x02 x06 x0A 
+x0E x12 x16 x1A x1F x03 x07 x0B x0F x13 x17 x1B 
