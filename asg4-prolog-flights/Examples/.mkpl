@@ -1,0 +1,43 @@
+#!/usr/bin/perl
+# $Id: mkpl,v 1.4 2012-03-06 20:52:27-08 - - $
+
+use strict;
+use warnings;
+$0 =~ s|.*/||;
+
+sub sendexpect ($) {
+   my ($line) = @_;
+   $line =~ s/\[/\\[/g;
+   print EXPECT "send \"$line\\n\"\n";
+   print EXPECT "expect \"|\"\n";
+}
+
+sub maketest ($@) {
+   my ($prog, @inputs) = @_;
+   my $cmd = "| expect >$prog.lis 2>&1";
+   open EXPECT, $cmd or die "$0: $cmd: $!\n";
+   print "$0: open: $cmd: OK\n";
+   my $wait = "expect \"|\"\n";
+   print EXPECT "spawn gprolog\n";
+   (my $base = $prog) =~ s/\.pl$//;
+   unshift @inputs, "[$base].";
+   push @inputs, "halt.";
+   for my $input (@inputs) {
+      print "$0: % TEST: $input\n";
+      print EXPECT "expect -re \"^\"\n";
+      sendexpect "$input\n";
+   }
+   print EXPECT "wait\n";
+   print EXPECT "close\n";
+   close EXPECT;
+   system "cat $prog.lis";
+   system "mkpspdf $prog.ps $prog $prog.lis";
+}
+
+for my $prog (@ARGV) {
+   open PROG, "<$prog" or warn "$0: $prog: $!\n" and next;
+   my @tests = grep {s/^\s*%\s*TEST:\s*(.*)\n/$1/ and $_} <PROG>;
+   close PROG;
+   maketest $prog, @tests;
+}
+

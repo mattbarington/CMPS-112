@@ -1,0 +1,18 @@
+CMPS 112
+Winter 2018
+Assignment 4
+
+Author:   Matthew Ovenden
+CruzId:   movenden@ucsc.edu
+
+Files:
+functions.pl
+
+Prolog flight itinerary graph traversal scheduler.
+Interacted with via fly(Start,Finish).
+If flight path is successful, prints itinerary.
+If flight path is not possibly completed within 1 day,
+  prints "There are no flights from Start to "Destination"
+  and fails.
+If a suggested Start or Finish point is not in the Database
+  prints "What is airport 'x'?" and fails.

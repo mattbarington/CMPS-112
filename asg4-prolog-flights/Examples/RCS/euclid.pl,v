@@ -1,0 +1,53 @@
+head	1.2;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.2
+date	2015.11.16.20.54.31;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2015.11.16.20.48.14;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@-
+@
+text
+@% $Id: euclid.pl,v 1.1 2015-11-16 12:48:14-08 - - $
+
+% Euclid's algorithm for greatest common divisor.
+% The C version:
+% int gcd (int x, int y) {
+%    while (x != y) if (x > y) x -= y; else y -= x;
+%    return x;
+% }
+
+gcd( X, Y, Z ) :- X > Y, T is X - Y, gcd( T, Y, Z ).
+gcd( X, Y, Z ) :- X < Y, T is Y - X, gcd( X, T, Z ).
+gcd( X, X, X ).
+
+% TEST: gcd( 111, 259, Z ).
+@
+
+
+1.1
+log
+@-
+@
+text
+@d1 8
+a8 1
+% $Id: euclid.pl,v 1.1 2015-11-16 12:47:28-08 - - $
+@

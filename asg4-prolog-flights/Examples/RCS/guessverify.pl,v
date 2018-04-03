@@ -1,0 +1,131 @@
+head	1.4;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.4
+date	2012.03.15.20.31.34;	author -;	state -;
+branches;
+next	1.3;
+
+1.3
+date	2012.03.15.20.28.08;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2012.03.15.20.26.25;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2012.03.15.20.25.43;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.4
+log
+@-
+@
+text
+@% $Id: guessverify.pl,v 1.3 2012-03-15 13:28:08-07 - - $
+
+%
+% Illustrate guess and verify style.
+% We have a set of numbers and we want to find all pairs
+% where the first number is greater than the second.
+%
+
+a_number( 1.41421356237309504880).
+a_number( 2.5).
+a_number( 2.7182818284590452354).
+a_number( 3.14159265358979323846).
+a_number( 6.02e23).
+a_number( 8).
+
+guess( X, Y) :- a_number( X), a_number( Y).
+
+verify( X, Y) :- X > Y.
+
+getpair( X, Y) :- guess( X, Y), verify( X, Y).
+
+% TEST: getpair( X, Y).
+% TEST: ;
+% TEST: ;
+% TEST: ;
+% TEST: ;
+% TEST: ;
+% TEST: ;
+% TEST: ;
+% TEST: ;
+% TEST: ;
+% TEST: ;
+% TEST: ;
+@
+
+
+1.3
+log
+@-
+@
+text
+@d1 1
+a1 1
+% $Id: guessverify.pl,v 1.2 2012-03-15 13:26:25-07 - - $
+d22 12
+a33 1
+
+@
+
+
+1.2
+log
+@-
+@
+text
+@d1 1
+a1 1
+% $Id: guessverify.pl,v 1.1 2012-03-15 13:25:43-07 - - $
+d9 6
+a14 6
+number( 1.41421356237309504880).
+number( 2.5).
+number( 2.7182818284590452354).
+number( 3.14159265358979323846).
+number( 6.02e23).
+number( 8).
+d16 1
+a16 1
+guess( X, Y) :- number( X), number( Y).
+d18 1
+a18 1
+verify( X, Y) :- X > y.
+d20 1
+a20 1
+getpair( X, Y) :- guess (X, Y), verify( X, Y).
+@
+
+
+1.1
+log
+@-
+@
+text
+@d1 1
+a1 1
+% $Id$
+d9 1
+a9 1
+number( 1.41421356237309504880)
+d11 2
+a12 2
+number( 2.7182818284590452354)
+number( 3.14159265358979323846)
+@

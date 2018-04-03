@@ -1,0 +1,108 @@
+head	1.3;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.3
+date	2011.05.20.02.53.59;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2009.02.24.23.41.55;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2009.02.24.23.05.30;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@-
+@
+text
+@% $Id: towers.pl,v 1.2 2009-02-24 15:41:55-08 - - $ */
+
+%
+% Towers problem.
+%
+
+towers( N ) :-
+   move( N, source, spare, target ).
+
+move( 0, _, _, _ ) :-
+   !.
+
+move( N, Source, Spare, Target ) :-
+   M is N - 1,
+   move( M, Source, Target, Spare ),
+   report( Source, Target ),
+   move( M, Spare, Source, Target ).
+
+report( Source, Target ) :-
+   write( 'Move a disk from the ' ),
+   write( Source ),
+   write( ' peg to the ' ),
+   write( Target ),
+   write( ' peg.'),
+   nl.
+
+% TEST: towers(4).
+@
+
+
+1.2
+log
+@-
+@
+text
+@d1 1
+a1 1
+/* $Id: towers.pl,v 1.1 2009-02-24 15:05:30-08 - - $ */
+d3 3
+a5 3
+/*
+* Towers problem.
+*/
+d27 1
+@
+
+
+1.1
+log
+@-
+@
+text
+@d1 1
+a1 1
+/* $Id: towers.pl,v 1.1 2008-03-07 18:13:12-08 - - $ */
+d8 1
+a8 1
+	move( N, source, spare, target ).
+d11 1
+a11 1
+	!.
+d14 4
+a17 4
+	M is N - 1,
+	move( M, Source, Target, Spare ),
+	report( Source, Target ),
+	move( M, Spare, Source, Target ).
+d20 6
+a25 6
+	write( 'Move a disk from the ' ),
+	write( Source ),
+	write( ' peg to the ' ),
+	write( Target ),
+	write( ' peg.'),
+	nl.
+@

@@ -1,0 +1,56 @@
+#!/usr/bin/perl
+# $Id: mk.tests,v 1.2 2011-05-19 19:21:12-07 - - $
+
+use strict;
+use warnings;
+
+sub sendexpect ($) {
+   my ($line) = @_;
+   $line =~ s/\[/\\[/g;
+   print EXPECT "send \"$line\\n\"\n";
+   print EXPECT "expect \"|\"\n";
+}
+
+sub maketest ($@) {
+   my ($test, @input) = @_;
+   print "$0: Making $test.out\n";
+   my $cmd = "| expect 2>&1 >$test.out";
+   open EXPECT, $cmd or die "$0: $cmd: $!\n";
+   print "open: $cmd: OK\n";
+   my $wait = "expect \"|\"\n";
+   print EXPECT "spawn gprolog\n";
+   sendexpect "[$test].";
+   for my $input (@input) {
+      print $input;
+      sendexpect $input;
+   }
+   sendexpect "halt.";
+   print EXPECT "wait\nclose\n";
+   close EXPECT;
+}
+
+maketest "allpairs", <<END;
+allpairs.
+END
+
+__END__
+maketest "dfa", <<END;
+match( [b, b, a, a, b, a, b]).
+
+match( [b, b, b, b]).
+
+END
+
+maketest "einstein", <<END;
+riddle.
+END
+
+maketest "factorial", <<END;
+factorial(5,N).
+factorial(20,N).
+END
+
+maketest "foxchicken", <<END;
+travel.
+halt.
+END

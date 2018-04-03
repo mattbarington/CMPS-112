@@ -1,0 +1,98 @@
+head	1.3;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.3
+date	2011.05.20.02.53.59;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2009.02.24.23.47.38;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2009.02.24.23.42.18;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@-
+@
+text
+@% $Id: viiiqueens.pl,v 1.2 2009-02-24 15:47:38-08 - - $ */
+
+not( X ) :- X, !, fail.
+not( _ ).
+
+remove( Item, [ Item | Tail ], Tail ).
+
+remove( Item, [ Head1 | Tail1 ], [ Head1 | Tail2 ] ) :-
+   remove( Item, Tail1, Tail2 ).
+
+threatens( Rank1, File1, Rank2, File2 ) :-
+   Rankdiff is abs( Rank1 - Rank2 ),
+   Filediff is abs( File1 - File2 ),
+   Rankdiff =:= Filediff.
+
+place( Rank, File, Rank, [], [ File ] ).
+
+place( Rank1, File1, Rank2, [ File2 | Rest ], [ File2 | Gives ] ) :-
+   not( threatens( Rank1, File1, Rank2, File2 )),
+   Nextrank2 is Rank2 + 1,
+   place( Rank1, File1, Nextrank2, Rest, Gives ).
+
+queens( _, [], Sequence, Sequence ).
+
+queens( Rank, Start, Partial, Answer ) :-
+   remove( One, Start, Remaining ),
+   place( Rank, One, 1, Partial, New ),
+   Nextrank is Rank + 1,
+   queens( Nextrank, Remaining, New, Answer ).
+
+queens :-
+   queens( 1, [1,2,3,4,5,6,7,8], [], Answer ),
+   write( Answer ), nl,
+   fail.
+
+% TEST: queens.
+@
+
+
+1.2
+log
+@-
+@
+text
+@d1 1
+a1 1
+/* $Id: viiiqueens.pl,v 1.1 2009-02-24 15:42:18-08 - - $ */
+d36 1
+a36 2
+initialization( queens ).
+
+@
+
+
+1.1
+log
+@-
+@
+text
+@d1 4
+a4 1
+/* $Id: viiiqueens.pl,v 1.1 2008-03-07 18:13:12-08 - - $ */
+d36 1
+a36 1
+:- queens.
+@

@@ -1,0 +1,63 @@
+head	1.2;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.2
+date	2011.05.20.02.53.59;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2009.02.24.23.40.23;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@-
+@
+text
+@% $Id: allpairs.pl,v 1.1 2009-02-24 15:40:23-08 - - $ */
+
+%
+% Query pair will return all pairs.
+%
+
+positive(red).
+positive(green).
+positive(blue).
+negative(cyan).
+negative(magenta).
+negative(yellow).
+
+pair(Pos,Neg) :- positive(Pos), negative(Neg).
+
+allpairs :- pair(Pos,Neg), print( pair(Pos,Neg) ), nl, fail.
+
+% TEST: allpairs.
+@
+
+
+1.1
+log
+@-
+@
+text
+@d1 1
+a1 1
+/* $Id: allpairs.pl,v 1.1 2008-03-07 18:13:12-08 - - $ */
+d3 3
+a5 3
+/*
+* Query pair will return all pairs.
+*/
+d18 1
+@

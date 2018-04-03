@@ -1,0 +1,61 @@
+head	1.2;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.2
+date	2011.05.20.02.53.59;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2009.02.24.23.52.39;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@-
+@
+text
+@% $Id: factorial.pl,v 1.1 2009-02-24 15:52:39-08 - - $ */
+
+%
+% Factorial, the old intro to recursion standby.
+%
+
+factorial( 0, 1 ) :-
+	!.
+
+factorial( N, Nfac ) :-
+	M is N - 1,
+	factorial( M, Mfac ),
+	Nfac is N * Mfac.
+
+% TEST: factorial(5,N).
+% TEST: factorial(20,N).
+@
+
+
+1.1
+log
+@-
+@
+text
+@d1 1
+a1 1
+/* $Id: factorial.pl,v 1.1 2008-03-07 18:13:12-08 - - $ */
+d3 3
+a5 3
+/*
+* Factorial, the old intro to recursion standby.
+*/
+d15 2
+@

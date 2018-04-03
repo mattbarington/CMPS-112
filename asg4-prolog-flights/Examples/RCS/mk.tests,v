@@ -1,0 +1,111 @@
+head	1.2;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.2
+date	2011.05.20.02.21.12;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2009.03.04.02.19.35;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@-
+@
+text
+@#!/usr/bin/perl
+# $Id: mk.tests,v 1.1 2009-03-03 18:19:35-08 - - $
+
+use strict;
+use warnings;
+
+sub sendexpect ($) {
+   my ($line) = @@_;
+   $line =~ s/\[/\\[/g;
+   print EXPECT "send \"$line\\n\"\n";
+   print EXPECT "expect \"|\"\n";
+}
+
+sub maketest ($@@) {
+   my ($test, @@input) = @@_;
+   print "$0: Making $test.out\n";
+   my $cmd = "| expect 2>&1 >$test.out";
+   open EXPECT, $cmd or die "$0: $cmd: $!\n";
+   print "open: $cmd: OK\n";
+   my $wait = "expect \"|\"\n";
+   print EXPECT "spawn gprolog\n";
+   sendexpect "[$test].";
+   for my $input (@@input) {
+      print $input;
+      sendexpect $input;
+   }
+   sendexpect "halt.";
+   print EXPECT "wait\nclose\n";
+   close EXPECT;
+}
+
+maketest "allpairs", <<END;
+allpairs.
+END
+
+__END__
+maketest "dfa", <<END;
+match( [b, b, a, a, b, a, b]).
+
+match( [b, b, b, b]).
+
+END
+
+maketest "einstein", <<END;
+riddle.
+END
+
+maketest "factorial", <<END;
+factorial(5,N).
+factorial(20,N).
+END
+
+maketest "foxchicken", <<END;
+travel.
+halt.
+END
+@
+
+
+1.1
+log
+@-
+@
+text
+@d2 11
+a12 1
+# $Id$
+d16 1
+d19 1
+a19 1
+   print "$cmd: OK\n";
+d21 2
+a22 2
+   print EXPECT "spawn gprolog\n", $wait;
+   print EXPECT "send \"\\[$test].\"\n", $wait;
+d24 2
+a25 1
+      print EXPECT $input, $wait;
+d27 2
+d32 1
+a32 1
+maketest allpairs <<END
+d36 21
+@

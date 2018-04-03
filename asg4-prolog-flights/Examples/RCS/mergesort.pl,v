@@ -1,0 +1,157 @@
+head	1.3;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.3
+date	2011.05.20.02.53.59;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2009.02.24.23.41.55;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2009.02.24.23.13.24;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@-
+@
+text
+@% $Id: mergesort.pl,v 1.2 2009-02-24 15:41:55-08 - - $ */
+
+%
+% Some sorting examples.
+%
+
+%
+% Insertion sort's top level function accepts the Unsorted list
+% and returns the Sorted list.  Insert inserts one element into
+% list such that the output list is sorted.
+%
+
+insertion_sort( Unsorted, Sorted ) :-
+   insertion_sort_gather( Unsorted, [], Sorted ).
+
+insertion_sort_gather( [], Gathered, Gathered ).
+insertion_sort_gather( [Head|Tail], Gathered, Sorted ) :-
+   insert( Head, Gathered, NewGathered ),
+   insertion_sort_gather( Tail, NewGathered, Sorted ).
+
+insert( Item, [], [Item] ).
+insert( Item, [Head|Tail], [Item,Head|Tail] ) :-
+   Item =< Head.
+insert( Item, [Head|Tail], [Head|NewTail] ) :-
+   Item > Head,
+   insert( Item, Tail, NewTail ).
+
+%
+% Merge sort divides the unsorted list into subparts and then
+% merges the sublists back again in pairs.
+%
+
+mergesort( [], [] ).
+mergesort( [Only], [Only] ).
+mergesort( Unsorted, Sorted ) :-
+   split( Unsorted, UnsortedHalf1, UnsortedHalf2 ),
+   mergesort( UnsortedHalf1, SortedHalf1 ),
+   mergesort( UnsortedHalf2, SortedHalf2 ),
+   merge( SortedHalf1, SortedHalf2, Sorted ).
+
+split( [], [], [] ).
+split( [Only], [Only], [] ).
+split( [First,Second|Tail], [First|Tail1], [Second|Tail2] ) :-
+   split( Tail, Tail1, Tail2 ).
+
+merge( [], List, List ).
+merge( List, [], List ).
+merge( [Head1|Tail1], [Head2|Tail2], [Head1|NewTail] ) :-
+   Head1 =< Head2,
+   merge( Tail1, [Head2|Tail2], NewTail ).
+merge( [Head1|Tail1], [Head2|Tail2], [Head2|NewTail] ) :-
+   Head1 > Head2,
+   merge( [Head1|Tail1], Tail2, NewTail ).
+
+@
+
+
+1.2
+log
+@-
+@
+text
+@d1 1
+a1 1
+/* $Id: mergesort.pl,v 1.1 2009-02-24 15:13:24-08 - - $ */
+d3 9
+a11 9
+/*
+* Some sorting examples.
+*/
+
+/*
+* Insertion sort's top level function accepts the Unsorted list
+* and returns the Sorted list.  Insert inserts one element into
+* list such that the output list is sorted.
+*/
+d28 4
+a31 4
+/*
+* Merge sort divides the unsorted list into subparts and then
+* merges the sublists back again in pairs.
+*/
+@
+
+
+1.1
+log
+@-
+@
+text
+@d1 1
+a1 1
+/* $Id: mergesort.pl,v 1.1 2008-03-07 18:13:12-08 - - $ */
+d14 1
+a14 1
+	insertion_sort_gather( Unsorted, [], Sorted ).
+d18 2
+a19 2
+	insert( Head, Gathered, NewGathered ),
+	insertion_sort_gather( Tail, NewGathered, Sorted ).
+d23 1
+a23 1
+	Item =< Head.
+d25 2
+a26 2
+	Item > Head,
+	insert( Item, Tail, NewTail ).
+d36 4
+a39 4
+	split( Unsorted, UnsortedHalf1, UnsortedHalf2 ),
+	mergesort( UnsortedHalf1, SortedHalf1 ),
+	mergesort( UnsortedHalf2, SortedHalf2 ),
+	merge( SortedHalf1, SortedHalf2, Sorted ).
+d44 1
+a44 1
+	split( Tail, Tail1, Tail2 ).
+d49 2
+a50 2
+	Head1 =< Head2,
+	merge( Tail1, [Head2|Tail2], NewTail ).
+d52 2
+a53 2
+	Head1 > Head2,
+	merge( [Head1|Tail1], Tail2, NewTail ).
+@
