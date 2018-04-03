@@ -1,0 +1,12 @@
+CMPS 112 
+Winter 2018
+Assignment 1
+
+Author:    Matthew Ovenden
+CruzId:	   movenden@ucsc.edu
+
+Files:
+sbi.scm
+	Reads in a Silly Basic Intermediate Representation file as a command line 
+	argument. sbi.scm then interprets the file, storing variables and arrays
+	in symbol tables, and printing to standard output.

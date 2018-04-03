@@ -1,0 +1,9 @@
+
+(
+(1	LABELYLABEL (print "Hello, WOrld!"))
+(2 	(print (+ 3 4)))
+(3	(print (* (+ 1 2) (+ 4 1))))
+(4	LOOP  	 (print "it's a statement"))
+(5	)
+(6	(goto LOOP))
+)
